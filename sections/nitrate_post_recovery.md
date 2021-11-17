@@ -8,7 +8,7 @@ Pictures should be taken for biofuiling assessment.
 ## Sensor storage
 XXX
 
-## Lab calibration
+## Post-deployment lab calibration
 ### UV Spectrometers
 After recovery, two lamp reference calibrations are strongly recommended.
 
@@ -35,5 +35,17 @@ For Deep SUNAs the lamp life time should be noted and, if necessary, a lamp repl
 The raw data is stored on a flashcard on the LoC analyser and can be retrieved via USB. Visibly inspect the filter integrity, there has not been any reports of filter biofouling issues to date. 
 
 
-## Field calibration
-If you recover the glider from a small boat or a research vessel follow protocols described in {numref}`deployment_small_boat` and {numref}`deployment_ship_CTD` accordingly.
+## Post-deployment field calibration
+### UV Spectrometers
+After recovery of the instrument similar field calibration procedures could be used as before the deployment. 
+To get a meaningful calibration that could possibly be applied to deployment data any Spectrometer-on-CTD casts would have to be done before the instrument gets cleaned so as to have the effects of bio-fouling still present. 
+
+## Cleaning and storage
+### UV Spectrometers
+After the post-deployment lab calibrations the instrument should be cleaned and stored according to the manufacturers’ recommendations.
+
+### Lab-on-Chip Instruments
+For the LoC devices, dispose of waste reagents in accordance with local regulations. 
+If the analyser is not intended to be used for several weeks, the cadmium tube should be removed and stored as per manufacturer instructions. 
+If this is not done, there is a risk of the tube drying out and becoming blocked.
+
