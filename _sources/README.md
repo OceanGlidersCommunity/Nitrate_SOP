@@ -1,11 +1,8 @@
 WORK IN PROGRESS 
 
-MIGRATION FROM GOOGLE DOC TO GITHUB IS HAPPENING NOW
-
-
 ![oceangliders](images/logo-ocean-gliders.png)
 
-# OceanGliders Nitrate SOP (!WORK IN PROGRESS!)
+# OceanGliders Nitrate SOP
 
 This [GitHub repository](https://github.com/OceanGlidersCommunity/Nitrate_SOP) is for the [OceanGliders](https://www.oceangliders.org) Nitrate Standard Operating Procedure (SOP).
 
