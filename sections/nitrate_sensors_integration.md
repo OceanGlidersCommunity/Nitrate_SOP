@@ -128,9 +128,9 @@ Bio-fouling and other influences are not included.
 
 |  Sensor / Glider |  Slocum  |  Autosub/ALR (NOC) |  Seaglider | Deepglider |  SeaExplorer |  Spray |
 |---|---|---|---|---|---|---|
-|Deep SUNA|X|---|---|---|X|---|
-|OPUS|---|---|---|---|---|---|
-|LoC|Integration performed by no successful deployment to date|Yes, via the Autonuts project|X|---|Integration currently being performed|---|
+|Deep SUNA| X | | | | X | |
+|OPUS| | | | | | |
+|LoC|Integration performed by no successful deployment to date|Yes, via the Autonuts project|X|---|Integration currently being performed| |
 
 ## Sensor integration with gliders
 
