@@ -329,28 +329,38 @@ commentsRunWhenDOMLoaded(addUtterances);
   </a>
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id2">
+     3.3.1. UV Spectrometers
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#lab-on-chip-instruments">
+     3.3.2. Lab-on-Chip Instruments
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#mounting-location">
-     3.3.1. Mounting location
+     3.3.3. Mounting location
     </a>
     <ul class="nav section-nav flex-column">
      <li class="toc-h4 nav-item toc-entry">
       <a class="reference internal nav-link" href="#spray">
-       3.3.1.1. Spray
+       3.3.3.1. Spray
       </a>
      </li>
      <li class="toc-h4 nav-item toc-entry">
       <a class="reference internal nav-link" href="#seaglider">
-       3.3.1.2. Seaglider
+       3.3.3.2. Seaglider
       </a>
      </li>
      <li class="toc-h4 nav-item toc-entry">
       <a class="reference internal nav-link" href="#slocum">
-       3.3.1.3. Slocum
+       3.3.3.3. Slocum
       </a>
      </li>
      <li class="toc-h4 nav-item toc-entry">
       <a class="reference internal nav-link" href="#seaexplorer">
-       3.3.1.4. SeaExplorer
+       3.3.3.4. SeaExplorer
       </a>
      </li>
     </ul>
@@ -568,22 +578,45 @@ Bio-fouling and other influences are not included.</p>
 </div>
 <div class="section" id="sensor-integration-with-gliders">
 <h2><span class="section-number">3.3. </span>Sensor integration with gliders<a class="headerlink" href="#sensor-integration-with-gliders" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id2">
+<h3><span class="section-number">3.3.1. </span>UV Spectrometers<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h3>
+<p>Deep SUNA instruments have to our knowledge been integrated into Slocum and Seaexplorer gliders. Dedicated mounting brackets are needed to mount the instrument on top of the gliders. This position is not optimal since the sampled water volume is in a slit perpendicular to the glider’s movement direction. Whether this has a large influence on the measured values or whether the water exchange through the slit is sufficient has not been tested.</p>
+<p>TriOS OPUS have so far not been mounted to gliders.</p>
+</div>
+<div class="section" id="lab-on-chip-instruments">
+<h3><span class="section-number">3.3.2. </span>Lab-on-Chip Instruments<a class="headerlink" href="#lab-on-chip-instruments" title="Permalink to this headline">¶</a></h3>
+<p>The LoC analyser has been successfully integrated into the Ogive Seaglider faring, which allows a larger payload space to accommodate the analyser and reagent storage backs.
+A custom mounting was used to position the analyser.
+Any air bubbles in reagent bags should be expelled as much as possible and reflect the conditions under which ballast testing occurred as deviations will affect flight performance.
+The bags should be backed into the glider bay carefully, avoid snagging any cables and leave space for the Seaglider bladder to expand.
+Note that waste bags will expand during the deployment and the final volume of waste will also include any sample drawn into the analyser.
+The sample inlet tube, which extends from the analyser to the hatch cover of the glider, is fitted with a 0.45 µm poly(ether-sulfone) luer lock syringe filter (MERCK, Millipore, USA).
+The length of the sample inlet tube is minimised to keep its volume as low as possible (to prevent carryover).</p>
+<p>The LoC analyser receives power from the Seaglider and is linked via a RS232 serial communication.
+The Seaglider software uses a CNF file that contains the configuration for each on-board instrument and a CMD file that provides mission parameters.
+The CNF file enables communication between the Seaglider and the LoC NOx analyser.
+The LoC analyser is set to ‘logger’ mode in the CNF file, which enables the glider to send a number of commands.
+These commands allow the Seaglider to send and receive data to and from the analyser.
+Commands include: ‘clock-set’, used only at the start of each dive, but which enables the analyser to store any time offset between glider and analyser, ‘status’, which sends the analyser depth every 5 s and ‘download’, sent at the end of each dive requesting the sensor to send both ascent and descent data files of processed values.
+Whilst integration into the Seaglider should be straightforward and follows established procedures available from the National Oceanography Centre, human error (e.g. ‘typos’) and glider firmware updates have caused issues in the past.
+It is recommended that simulation dives are performed with the sensor and actual deployment glider ahead of the planned deployment.</p>
+</div>
 <div class="section" id="mounting-location">
-<h3><span class="section-number">3.3.1. </span>Mounting location<a class="headerlink" href="#mounting-location" title="Permalink to this headline">¶</a></h3>
+<h3><span class="section-number">3.3.3. </span>Mounting location<a class="headerlink" href="#mounting-location" title="Permalink to this headline">¶</a></h3>
 <div class="section" id="spray">
-<h4><span class="section-number">3.3.1.1. </span>Spray<a class="headerlink" href="#spray" title="Permalink to this headline">¶</a></h4>
+<h4><span class="section-number">3.3.3.1. </span>Spray<a class="headerlink" href="#spray" title="Permalink to this headline">¶</a></h4>
 <ul class="simple">
 <li><p>XXX</p></li>
 </ul>
 </div>
 <div class="section" id="seaglider">
-<h4><span class="section-number">3.3.1.2. </span>Seaglider<a class="headerlink" href="#seaglider" title="Permalink to this headline">¶</a></h4>
+<h4><span class="section-number">3.3.3.2. </span>Seaglider<a class="headerlink" href="#seaglider" title="Permalink to this headline">¶</a></h4>
 <ul class="simple">
 <li><p>XXX</p></li>
 </ul>
 </div>
 <div class="section" id="slocum">
-<h4><span class="section-number">3.3.1.3. </span>Slocum<a class="headerlink" href="#slocum" title="Permalink to this headline">¶</a></h4>
+<h4><span class="section-number">3.3.3.3. </span>Slocum<a class="headerlink" href="#slocum" title="Permalink to this headline">¶</a></h4>
 <ul class="simple">
 <li><p>XXX</p></li>
 </ul>
@@ -591,7 +624,7 @@ Bio-fouling and other influences are not included.</p>
 Figure 1:  Deep SUNA on a G2 Slocum glider.</p>
 </div>
 <div class="section" id="seaexplorer">
-<h4><span class="section-number">3.3.1.4. </span>SeaExplorer<a class="headerlink" href="#seaexplorer" title="Permalink to this headline">¶</a></h4>
+<h4><span class="section-number">3.3.3.4. </span>SeaExplorer<a class="headerlink" href="#seaexplorer" title="Permalink to this headline">¶</a></h4>
 <ul class="simple">
 <li><p>XXX</p></li>
 </ul>

@@ -134,6 +134,29 @@ Bio-fouling and other influences are not included.
 
 ## Sensor integration with gliders
 
+### UV Spectrometers
+Deep SUNA instruments have to our knowledge been integrated into Slocum and Seaexplorer gliders. Dedicated mounting brackets are needed to mount the instrument on top of the gliders. This position is not optimal since the sampled water volume is in a slit perpendicular to the glider’s movement direction. Whether this has a large influence on the measured values or whether the water exchange through the slit is sufficient has not been tested.
+
+TriOS OPUS have so far not been mounted to gliders.
+
+### Lab-on-Chip Instruments
+The LoC analyser has been successfully integrated into the Ogive Seaglider faring, which allows a larger payload space to accommodate the analyser and reagent storage backs. 
+A custom mounting was used to position the analyser. 
+Any air bubbles in reagent bags should be expelled as much as possible and reflect the conditions under which ballast testing occurred as deviations will affect flight performance. 
+The bags should be backed into the glider bay carefully, avoid snagging any cables and leave space for the Seaglider bladder to expand. 
+Note that waste bags will expand during the deployment and the final volume of waste will also include any sample drawn into the analyser. 
+The sample inlet tube, which extends from the analyser to the hatch cover of the glider, is fitted with a 0.45 µm poly(ether-sulfone) luer lock syringe filter (MERCK, Millipore, USA). 
+The length of the sample inlet tube is minimised to keep its volume as low as possible (to prevent carryover).
+
+The LoC analyser receives power from the Seaglider and is linked via a RS232 serial communication. 
+The Seaglider software uses a CNF file that contains the configuration for each on-board instrument and a CMD file that provides mission parameters. 
+The CNF file enables communication between the Seaglider and the LoC NOx analyser. 
+The LoC analyser is set to ‘logger’ mode in the CNF file, which enables the glider to send a number of commands.
+These commands allow the Seaglider to send and receive data to and from the analyser. 
+Commands include: ‘clock-set’, used only at the start of each dive, but which enables the analyser to store any time offset between glider and analyser, ‘status’, which sends the analyser depth every 5 s and ‘download’, sent at the end of each dive requesting the sensor to send both ascent and descent data files of processed values. 
+Whilst integration into the Seaglider should be straightforward and follows established procedures available from the National Oceanography Centre, human error (e.g. ‘typos’) and glider firmware updates have caused issues in the past. 
+It is recommended that simulation dives are performed with the sensor and actual deployment glider ahead of the planned deployment.
+
 ### Mounting location
 
 #### Spray
