@@ -130,7 +130,7 @@ Bio-fouling and other influences are not included.
 |---|---|---|---|---|---|---|
 |Deep SUNA| X | | | | X | |
 |OPUS| | | | | | |
-|LoC|Integration performed by no successful deployment to date|Yes, via the Autonuts project|X|---|Integration currently being performed| |
+|LoC|Integration performed by no successful deployment to date|Yes, via the Autonuts project|X|  |Integration currently being performed| |
 
 ## Sensor integration with gliders
 
