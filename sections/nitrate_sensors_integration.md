@@ -68,7 +68,7 @@ The specifications of the TriOS OPUS give a power consumption <= 8 W, presumably
 
 We are not aware of any application of a TriOS OPUS on gliders, but once mounting solutions and data and power cables have been developed this should be possible.
 
-### Lab-on-Chip (LOC) Intruments
+### Lab-on-Chip (LOC) Instruments
 Lab-on-Chip nitrate+nitrite analysers developed at the National Oceanography Centre, UK have been recently commercialized by ClearWater sensors, UK (https://www.clearwatersensors.com/nitrate-sensor/).
 
 Lab-on-Chip analysers developed at the National Oceanography Centre, and recently commercialized by ClearWater sensors have been successfully deployed on Seagliders to observe key seasonal transitions of biogeochemistry, such as spring bloom dynamics, in the Celtic Sea and North Sea (Vincent et al., 2017; Hull et al., 2021). 
