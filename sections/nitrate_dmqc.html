@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>6. Data sharing &#8212; Nitrate SOP</title>
+    <title>5. Delayed Mode Quality Control &#8212; Nitrate SOP</title>
     
   <link href="../_static/css/theme.css" rel="stylesheet">
   <link href="../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
@@ -85,8 +85,8 @@ commentsRunWhenDOMLoaded(addUtterances);
     <script async="async" src="../_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="7. Acknowledgement" href="acknowledgement.html" />
-    <link rel="prev" title="5. Delayed Mode Quality Control" href="nitrate_dmqc.html" />
+    <link rel="next" title="6. Data sharing" href="data_sharing.html" />
+    <link rel="prev" title="4. Required Metadata, Real Time Data Processing &amp; Quality Control" href="nitrate_rtqc.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -151,13 +151,13 @@ commentsRunWhenDOMLoaded(addUtterances);
    4. Required Metadata, Real Time Data Processing &amp; Quality Control
   </a>
  </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="nitrate_dmqc.html">
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
    5. Delayed Mode Quality Control
   </a>
  </li>
- <li class="toctree-l1 current active">
-  <a class="current reference internal" href="#">
+ <li class="toctree-l1">
+  <a class="reference internal" href="data_sharing.html">
    6. Data sharing
   </a>
  </li>
@@ -207,7 +207,7 @@ commentsRunWhenDOMLoaded(addUtterances);
         <!-- ipynb file if we had a myst markdown file -->
         
         <!-- Download raw file -->
-        <a class="dropdown-buttons" href="../_sources/sections/data_sharing.md"><button type="button"
+        <a class="dropdown-buttons" href="../_sources/sections/nitrate_dmqc.md"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
                 data-placement="left">.md</button></a>
         <!-- Download PDF via print -->
@@ -227,10 +227,10 @@ commentsRunWhenDOMLoaded(addUtterances);
                 data-toggle="tooltip" data-placement="left" title="Source repository"><i
                     class="fab fa-github"></i>repository</button></a>
         <a class="issues-button"
-            href="https://github.com/OceanGlidersCommunity/Nitrate_SOP/issues/new?title=Issue%20on%20page%20%2Fsections/data_sharing.html&body=Your%20issue%20content%20here."><button
+            href="https://github.com/OceanGlidersCommunity/Nitrate_SOP/issues/new?title=Issue%20on%20page%20%2Fsections/nitrate_dmqc.html&body=Your%20issue%20content%20here."><button
                 type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
                 title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
-        <a class="edit-button" href="https://github.com/OceanGlidersCommunity/Nitrate_SOP/edit/main/sections/data_sharing.md"><button
+        <a class="edit-button" href="https://github.com/OceanGlidersCommunity/Nitrate_SOP/edit/main/sections/nitrate_dmqc.md"><button
                 type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
                 title="Edit this page"><i class="fas fa-pencil-alt"></i>suggest edit</button></a>
     </div>
@@ -250,6 +250,34 @@ commentsRunWhenDOMLoaded(addUtterances);
         <!-- Table of contents -->
         <div class="d-none d-md-block col-md-2 bd-toc show">
             
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#calculation-of-nitrate">
+   5.1. Calculation of nitrate
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#sensor-drift-correction">
+   5.2. Sensor drift correction
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#sensor-time-response-correction">
+   5.3. Sensor time response correction
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#light-intrusion">
+   5.4. Light intrusion
+  </a>
+ </li>
+</ul>
+
+            </nav>
         </div>
     </div>
 </div>
@@ -258,10 +286,24 @@ commentsRunWhenDOMLoaded(addUtterances);
         
               <div>
                 
-  <div class="tex2jax_ignore mathjax_ignore section" id="data-sharing">
-<h1><span class="section-number">6. </span>Data sharing<a class="headerlink" href="#data-sharing" title="Permalink to this headline">¶</a></h1>
-<p>OceanGliders strongly encourages all glider operators to share their data to the public and provide open access both in real time and delayed mode.
-The best practices of data sharing are described in the [OceanGliders data management user manual](add link to the OceanGliders data management user manual).</p>
+  <div class="tex2jax_ignore mathjax_ignore section" id="delayed-mode-quality-control">
+<h1><span class="section-number">5. </span>Delayed Mode Quality Control<a class="headerlink" href="#delayed-mode-quality-control" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="calculation-of-nitrate">
+<h2><span class="section-number">5.1. </span>Calculation of nitrate<a class="headerlink" href="#calculation-of-nitrate" title="Permalink to this headline">¶</a></h2>
+<p>XXXX</p>
+</div>
+<div class="section" id="sensor-drift-correction">
+<h2><span class="section-number">5.2. </span>Sensor drift correction<a class="headerlink" href="#sensor-drift-correction" title="Permalink to this headline">¶</a></h2>
+<p>XXXX</p>
+</div>
+<div class="section" id="sensor-time-response-correction">
+<h2><span class="section-number">5.3. </span>Sensor time response correction<a class="headerlink" href="#sensor-time-response-correction" title="Permalink to this headline">¶</a></h2>
+<p>XXXX</p>
+</div>
+<div class="section" id="light-intrusion">
+<h2><span class="section-number">5.4. </span>Light intrusion<a class="headerlink" href="#light-intrusion" title="Permalink to this headline">¶</a></h2>
+<p>XXXX</p>
+</div>
 </div>
 
     <script type="text/x-thebe-config">
@@ -289,17 +331,17 @@ The best practices of data sharing are described in the [OceanGliders data manag
         
             <!-- Previous / next buttons -->
 <div class='prev-next-area'> 
-    <a class='left-prev' id="prev-link" href="nitrate_dmqc.html" title="previous page">
+    <a class='left-prev' id="prev-link" href="nitrate_rtqc.html" title="previous page">
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
             <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title"><span class="section-number">5. </span>Delayed Mode Quality Control</p>
+            <p class="prev-next-title"><span class="section-number">4. </span>Required Metadata, Real Time Data Processing &amp; Quality Control</p>
         </div>
     </a>
-    <a class='right-next' id="next-link" href="acknowledgement.html" title="next page">
+    <a class='right-next' id="next-link" href="data_sharing.html" title="next page">
     <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title"><span class="section-number">7. </span>Acknowledgement</p>
+        <p class="prev-next-title"><span class="section-number">6. </span>Data sharing</p>
     </div>
     <i class="fas fa-angle-right"></i>
     </a>
