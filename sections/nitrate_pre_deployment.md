@@ -28,8 +28,33 @@ Before any measurement (UV & LoC) with a nitrate measuring instrument it is most
 In Slocum gliders the clock offset of Deep SUNAs can be recovered by comparing glider timestamps and Deep SUNA timestamps for exactly matching nitrate concentrations which are sent in real-time from the Deep SUNA to the glider.
 It is however much better to set the clock properly.
 
-## Sensor configuration for deployment
-XXXX
+## Pre-deployment lab calibrations
+### Data traceability
+Cross-checking a measurement against a reference material with a certified value has become the most important test of the accuracy of a device or procedure for many environmental measurements. 
+Certified reference materials (CRMs) for nutrient analysis have only recently become available due to the poor stability of solutions of dissolved nutrients. 
+However materials are now available from the National Research Council of Canada (https://doi.org/10.4224/crm.2014.moos-3) and KANSO in Japan (http://www.kanso.co.jp/eng/production/). 
+
+SCOR working group 147 (https://scor-int.org/group/147/) recommends the use of certified reference materials for every set of field measurements and has collaborated with the Japan Agency for Marine-Earth Science and Technology (JAMSTEC) to make KANSO nutrient CRMs more widely available to purchase by the community (http://www.jamstec.go.jp/scor/background.html).
+
+While the cost of these materials is not insignificant, and their stability is poor once opened, this cost has to be put into perspective against the cost of glider and sensor technology and the huge costs and human effort that goes into any deployment. 
+The use of reference materials in nutrient measurement represents an enormous step forwards in terms of reducing measurement uncertainty and improving data quality. 
+The authors anticipate (and hope) that the use of such materials will become as standard as it is in the field of carbonate system parameter measurement or trace metal analysis, where it is no longer possible to publish field data that has not been cross-referenced to a certified reference material.
+
+If at all possible, the performance of the sensor should be verified by measuring a CRM as a sample directly just before the deployment and immediately after recovery. 
+This is relatively straightforward for a lab-on-chip analyser, but unrealistic for the UV spectrometer devices since it must be immersed in a large volume of solution in order to get a measurement. 
+In this case we recommend the measurement of a suitable water sample. This sample might be collected from a CTD rosette or have been brought beforehand to the deployment. 
+If necessary it can be spiked with a concentrated nitrate standard to bring it well within the measurement range of the instrument. 
+A sample of this water should be taken and immediately analysed or frozen for later analysis together with a suitable CRM.
+
+For the relatively voluminous UV spectrometers a method for using the small volumina CRMs has to be developed.
+
+In the absence of CRM measurements, measurements from CTD samples collected as close as possible in space and time to the glider can be used to provide some reassurance as to the validity of the data obtained from the autonomous platform.
+This method can be problematic if there are gradients in nutrient concentration (e.g. Vincent et al., 2018) and since this effectively results in the comparison of two separate measurements of two samples that differ to an unknown degree, the measurement uncertainty information provided is greatly diminished. 
+
+In some cases where no cross-checks have been possible, it has sometimes been necessary to use values from historic databases to compare with the data obtained. Such an approach should be avoided if at all possible, since such datasets are often very limited in temporal and spatial coverage and provide no way to quantitatively verify a new dataset.
+
+
+
 
 ## Antifouling
 XXXX
