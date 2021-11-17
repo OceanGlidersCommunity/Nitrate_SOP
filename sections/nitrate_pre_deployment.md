@@ -79,5 +79,6 @@ If ever a TriOS OPUS is used on a glider, we would strongly recommend lamp refer
 Again, in theory there is no need to determine spectra from nitrate containing reference samples. They can however easily be collected when nitrate reference samples are available and they then can be used to confirm the linearity of the sensor response. 
 
 ### Lab-on-Chip Instruments
-
-XXXX
+For a LoC analyser it is recommended that the analyser makes multiple measurements (>10) of solutions with known nitrate concentrations that span the range expected during deployment. 
+For this, the sensor can be powered externally (e.g. using a  benchtop power supply). 
+The analytical cycle (blank-standard-sample sequence) can be tailored to for each deployment, therefore a platform simulation, which can be performed using the GUI, should be conducted using solutions of known concentrations as the sample to ensure that the analytical cycle produces expected results. 
