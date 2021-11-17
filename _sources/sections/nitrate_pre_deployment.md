@@ -22,8 +22,11 @@ A running self-registering instrument should be immersed into water samples with
 E.g. into distilled water (or low nutrient surface water) and, if available, into a sample from a deeper water mass which is known to contain nitrate. 
 The instruments have to be able to detect the difference and, if calibrated,  should give good values and, if not calibrated, should at least detect a difference of the correct order of magnitude.
 
+## General setup
+Before any measurement (UV & LoC) with a nitrate measuring instrument it is most important and strongly recommended that the instrument’s internal clock is properly set.
 
-### Lab-on-Chip Instruments
+In Slocum gliders the clock offset of Deep SUNAs can be recovered by comparing glider timestamps and Deep SUNA timestamps for exactly matching nitrate concentrations which are sent in real-time from the Deep SUNA to the glider.
+It is however much better to set the clock properly.
 
 ## Sensor configuration for deployment
 XXXX
