@@ -145,5 +145,8 @@ Bio-fouling and other influences are not included.
 #### Slocum
 - XXX
 
+Insert image: 
+Figure 1:  Deep SUNA on a G2 Slocum glider.
+
 #### SeaExplorer
 - XXX
