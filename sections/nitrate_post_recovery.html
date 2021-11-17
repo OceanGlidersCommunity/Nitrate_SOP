@@ -289,6 +289,18 @@ commentsRunWhenDOMLoaded(addUtterances);
   <a class="reference internal nav-link" href="#lab-calibration">
    7.3. Lab calibration
   </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#uv-spectrometers">
+     7.3.1. UV Spectrometers
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#lab-on-chip-instruments">
+     7.3.2. Lab-on-Chip Instruments
+    </a>
+   </li>
+  </ul>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#field-calibration">
@@ -319,7 +331,24 @@ commentsRunWhenDOMLoaded(addUtterances);
 </div>
 <div class="section" id="lab-calibration">
 <h2><span class="section-number">7.3. </span>Lab calibration<a class="headerlink" href="#lab-calibration" title="Permalink to this headline">¶</a></h2>
-<p>XXX</p>
+<div class="section" id="uv-spectrometers">
+<h3><span class="section-number">7.3.1. </span>UV Spectrometers<a class="headerlink" href="#uv-spectrometers" title="Permalink to this headline">¶</a></h3>
+<p>After recovery, two lamp reference calibrations are strongly recommended.</p>
+<p>Immediately after recovery, while the instrument is still wet, a clean water lamp reference calibration should be performed. This must be done before any cleaning of the instrument.</p>
+<p>The purpose of this calibration measurement is to record the lamp strength when any possible bio-fouling is still present.
+After that the instrument should be cleaned according to the manufacturer’s instructions and we recommend a second lamp reference to be measured.</p>
+<p>The difference between these two reference measurements should be a measure of the bio-fouling.</p>
+<p>It remains to be determined which of the two lamp references should be used for the post-processing. It should theoretically be the first (bio-fouled) one as this is the end point of the effective lamp changes (aging plus bio-fouling) during the deployment.</p>
+</div>
+<div class="section" id="lab-on-chip-instruments">
+<h3><span class="section-number">7.3.2. </span>Lab-on-Chip Instruments<a class="headerlink" href="#lab-on-chip-instruments" title="Permalink to this headline">¶</a></h3>
+<p>For the lab-on-chip analysers, sub samples of blank and standard solutions should ideally be analysed post deployment, this requires clean handling (i.e. follow GO-SHIP recommendations; Becker et al., 2020). In cases where the blank and standard solutions cannot be sub sampled (e.g. recovered by partners without such capability), it should be noted that blank and standard solutions have been shown to be stable for 12 months (they are preserved with chloroform). General recovery</p>
+<p>After the post-deployment lab calibration all data from the UV spectrometers should be downloaded and backed up. This also includes the reference spectra and lamp usage files which are accessible differently than data (see Deep SUNA user manual).</p>
+<p>The internal clock of the nitrate measuring instrument should be checked and any difference against GPS or a time server should be noted.</p>
+<p>It is recommended that the sensors are serviced periodically by ClearWater (with the frequency depending on use) and that fluidic channels should be cleaned after use, for example with weak (2%) decon 90 solution.</p>
+<p>For Deep SUNAs the lamp life time should be noted and, if necessary, a lamp replacement be organized (only possible at Sea-Bird).</p>
+<p>The raw data is stored on a flashcard on the LoC analyser and can be retrieved via USB. Visibly inspect the filter integrity, there has not been any reports of filter biofouling issues to date.</p>
+</div>
 </div>
 <div class="section" id="field-calibration">
 <h2><span class="section-number">7.4. </span>Field calibration<a class="headerlink" href="#field-calibration" title="Permalink to this headline">¶</a></h2>
