@@ -109,8 +109,8 @@ Bio-fouling and other influences are not included.
 |   |  Sample rate  |  Power |  Manufacturer Accuracy | Manufacturer Precision |  Manufacturer Detection limit |  Precision estimate |  Accuracy estimate (w. x-cali.) |
 |---|---|---|---|---|---|---|---|
 |   | Hz | W | µM NO3 | µM NO3 | µM NO3 | µM NO3 | µM NO3 |
-| Deep SUNA  | 1 | <=8 | 10% or >=2.0 (+0.3 / hr lamp) |   |   |   |   |
-| OPUS  | 1/3 | <=8 | 5% +0.7 |   |   |  |   |
+| Deep SUNA  | 1 | <=8 | 10% or >=2.0 (+0.3 / hr lamp) | 0.3 (2.4 SW sal) | 0.5 (2.0 SW sal) | 0.17 (4) | 0.5-1.0 (5) |
+| OPUS  | 1/3 | <=8 | 5% +0.7 | 0.36 (3) | 2.1 | 1.3 (4) | 1.0 (5)  |
 | LoC  | 0.0002 (7 min) | 1.5 | 3 % for concentration range 5.63 to 44.43 (1) | 4 % for concentration range 5.63 to 44.43 (1) | 0.025 | 0.14 (2) |   |
 
 (1) from estimates of combined uncertainty estimated via the analysis of certified reference materials using 7 analysers (Birchill et al., 2019).
