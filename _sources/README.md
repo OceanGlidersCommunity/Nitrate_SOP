@@ -1,5 +1,3 @@
-WORK IN PROGRESS 
-
 ![oceangliders](images/logo-ocean-gliders.png)
 
 # OceanGliders Nitrate SOP
