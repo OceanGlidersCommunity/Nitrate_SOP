@@ -53,8 +53,18 @@ This method can be problematic if there are gradients in nutrient concentration 
 
 In some cases where no cross-checks have been possible, it has sometimes been necessary to use values from historic databases to compare with the data obtained. Such an approach should be avoided if at all possible, since such datasets are often very limited in temporal and spatial coverage and provide no way to quantitatively verify a new dataset.
 
+## UV Spectrometeres
+### Deep SUNA
+Deuterium UV lamps as used in Sea-Bird Deep SUNA instruments suffer from relatively rapid aging. 
+With increasing age the output strength reduces and possibly shifts. 
+It appears that the changes are relatively linear over deployment length time scales and can be estimated by measuring the lamp spectra before and after deployment on a glider. 
+The software package delivered with Deep SUNA instruments (UCI, previously SUNACOM, available at https://www.seabird.com) allows for the determination of these lamp reference spectra and internal storage and use for subsequent internal nitrate concentration calculations. 
+At the same time these reference measurements should take care of any changes of the spectrometer sensitivity.
 
+We strongly recommend this lamp reference calibration before each deployment. Detailed instructions can be found in the instrument manual (Deep SUNA: https://www.seabird.com , enter ‘deep suna manual’ in the search field).
 
+Instead of a lamp reference calibration before a deployment, a lamp reference calibration directly after the previous deployment can possibly be used.
 
-## Antifouling
-XXXX
+In theory there is no need to determine absorption spectra from nitrate as they are a  material property. These spectra are given by the manufacturer and stored in the instruments. Nevertheless reference measurements can easily be made when nitrate reference samples are available (e.g. by using nitrate CRM). They can be used to check the manufacturer’s nitrate absorption spectra and can also be used to confirm the linearity of the sensor response. Deep SUNA will directly output nitrate concentrations when measuring reference samples. These concentrations should within the uncertainty given by the manufacturer agree with the known concentration in the reference sample.
+
+We recommend these reference measurements particularly when there are doubts on the instrument performance.
