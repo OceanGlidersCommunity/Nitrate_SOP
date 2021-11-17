@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>3. Sensors and integrations &#8212; Nitrate SOP</title>
+    <title>2. Sensors and integrations &#8212; Nitrate SOP</title>
     
   <link href="../_static/css/theme.css" rel="stylesheet">
   <link href="../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
@@ -87,8 +87,8 @@ commentsRunWhenDOMLoaded(addUtterances);
     <script async="async" src="../_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="4. Pre-deployment operations and calibrations" href="oxygen_pre_deployment.html" />
-    <link rel="prev" title="2. Introduction" href="oxygen_introduction.html" />
+    <link rel="next" title="3. Pre-deployment operations and calibrations" href="oxygen_pre_deployment.html" />
+    <link rel="prev" title="1. Authors, development process and contributions" href="authors_SOP_development_process.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -138,54 +138,49 @@ commentsRunWhenDOMLoaded(addUtterances);
    1. Authors, development process and contributions
   </a>
  </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="oxygen_introduction.html">
-   2. Introduction
-  </a>
- </li>
  <li class="toctree-l1 current active">
   <a class="current reference internal" href="#">
-   3. Sensors and integrations
+   2. Sensors and integrations
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="oxygen_pre_deployment.html">
-   4. Pre-deployment operations and calibrations
+   3. Pre-deployment operations and calibrations
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="oxygen_mission_execution.html">
-   5. Missions execution
+   4. Missions execution
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="oxygen_rtqc.html">
-   6. Required Metadata, Real Time Data Processing &amp; Quality Control
+   5. Required Metadata, Real Time Data Processing &amp; Quality Control
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="oxygen_post_recovery.html">
-   7. Post-recovery operations and calibrations
+   6. Post-recovery operations and calibrations
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="oxygen_dmqc.html">
-   8. Delayed Mode Quality Control
+   7. Delayed Mode Quality Control
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="data_sharing.html">
-   9. Data sharing
+   8. Data sharing
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="oxygen_references.html">
-   10. References
+   9. References
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="acknowledgement.html">
-   11. Acknowledgement
+   10. Acknowledgement
   </a>
  </li>
 </ul>
@@ -279,76 +274,76 @@ commentsRunWhenDOMLoaded(addUtterances);
                 <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#oxygen-sensors">
-   3.1. Oxygen sensors
+   2.1. Oxygen sensors
   </a>
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#aanderaa-optodes">
-     3.1.1. Aanderaa Optodes
+     2.1.1. Aanderaa Optodes
     </a>
     <ul class="nav section-nav flex-column">
      <li class="toc-h4 nav-item toc-entry">
       <a class="reference internal nav-link" href="#hardware-design-blue-or-black">
-       3.1.1.1. Hardware design: blue or black
+       2.1.1.1. Hardware design: blue or black
       </a>
      </li>
      <li class="toc-h4 nav-item toc-entry">
       <a class="reference internal nav-link" href="#foil-type-f-or-standard">
-       3.1.1.2. Foil type: F or standard
+       2.1.1.2. Foil type: F or standard
       </a>
      </li>
      <li class="toc-h4 nav-item toc-entry">
       <a class="reference internal nav-link" href="#calibration-equation-and-firmware-versions">
-       3.1.1.3. Calibration equation and firmware versions
+       2.1.1.3. Calibration equation and firmware versions
       </a>
      </li>
     </ul>
    </li>
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#rbr-coda-t-odo">
-     3.1.2. RBR coda T.ODO
+     2.1.2. RBR coda T.ODO
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#jfe-advantech-rinko">
-     3.1.3. JFE Advantech RINKO
+     2.1.3. JFE Advantech RINKO
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#clark-electrode-polarographic-sensor-sbe-43-sbe-43f-and-sbe-63">
-     3.1.4. Clark electrode polarographic sensor (SBE 43, SBE 43F and SBE 63)
+     2.1.4. Clark electrode polarographic sensor (SBE 43, SBE 43F and SBE 63)
     </a>
    </li>
   </ul>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#sensor-integration-with-gliders">
-   3.2. Sensor integration with gliders
+   2.2. Sensor integration with gliders
   </a>
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#mounting-location">
-     3.2.1. Mounting location
+     2.2.1. Mounting location
     </a>
     <ul class="nav section-nav flex-column">
      <li class="toc-h4 nav-item toc-entry">
       <a class="reference internal nav-link" href="#spray">
-       3.2.1.1. Spray
+       2.2.1.1. Spray
       </a>
      </li>
      <li class="toc-h4 nav-item toc-entry">
       <a class="reference internal nav-link" href="#seaglider">
-       3.2.1.2. Seaglider
+       2.2.1.2. Seaglider
       </a>
      </li>
      <li class="toc-h4 nav-item toc-entry">
       <a class="reference internal nav-link" href="#slocum">
-       3.2.1.3. Slocum
+       2.2.1.3. Slocum
       </a>
      </li>
      <li class="toc-h4 nav-item toc-entry">
       <a class="reference internal nav-link" href="#seaexplorer">
-       3.2.1.4. SeaExplorer
+       2.2.1.4. SeaExplorer
       </a>
      </li>
     </ul>
@@ -367,17 +362,17 @@ commentsRunWhenDOMLoaded(addUtterances);
               <div>
                 
   <div class="tex2jax_ignore mathjax_ignore section" id="sensors-and-integrations">
-<h1><span class="section-number">3. </span>Sensors and integrations<a class="headerlink" href="#sensors-and-integrations" title="Permalink to this headline">¶</a></h1>
+<h1><span class="section-number">2. </span>Sensors and integrations<a class="headerlink" href="#sensors-and-integrations" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="oxygen-sensors">
-<h2><span class="section-number">3.1. </span>Oxygen sensors<a class="headerlink" href="#oxygen-sensors" title="Permalink to this headline">¶</a></h2>
+<h2><span class="section-number">2.1. </span>Oxygen sensors<a class="headerlink" href="#oxygen-sensors" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="aanderaa-optodes">
-<h3><span class="section-number">3.1.1. </span>Aanderaa Optodes<a class="headerlink" href="#aanderaa-optodes" title="Permalink to this headline">¶</a></h3>
+<h3><span class="section-number">2.1.1. </span>Aanderaa Optodes<a class="headerlink" href="#aanderaa-optodes" title="Permalink to this headline">¶</a></h3>
 <p>Aanderaa optodes are the most widely used oxygen sensor on ocean gliders and a large body of work has now been dedicated to their characterisation (e.g. <span id="id1">[<a class="reference internal" href="oxygen_references.html#id7">Bittig <em>et al.</em>, 2018</a>]</span>).
 These sensors are based on the oxygen luminescence quenching of a platinum porphyrin complex (fluorescent indicator) that is immobilized in a sensing foil.
 These offer low power consumption, good long-term stability, low fouling sensitivity while not being sensitive to H2S or freezing.
-Aanderaa optodes have seen several important developments since they were introduced in 2002, with various hardware and firmware revisions which we outline below (shown in <a class="reference internal" href="#optodes"><span class="std std-numref">Fig. 3.1</span></a>).</p>
+Aanderaa optodes have seen several important developments since they were introduced in 2002, with various hardware and firmware revisions which we outline below (shown in <a class="reference internal" href="#optodes"><span class="std std-numref">Fig. 2.1</span></a>).</p>
 <div class="section" id="hardware-design-blue-or-black">
-<h4><span class="section-number">3.1.1.1. </span>Hardware design: blue or black<a class="headerlink" href="#hardware-design-blue-or-black" title="Permalink to this headline">¶</a></h4>
+<h4><span class="section-number">2.1.1.1. </span>Hardware design: blue or black<a class="headerlink" href="#hardware-design-blue-or-black" title="Permalink to this headline">¶</a></h4>
 <p>While mostly cosmetic, the colour of the optode is a useful short-hand for the two main optode designs.
 The 3835 and 4835 optodes both feature a black housing with the temperature sensor integrated into the base of the sensor near the connector.
 This results in a large thermal mass and increases the response time of the temperature sensor significantly.
@@ -389,7 +384,7 @@ Older optode versions (3830) have a titanium housing in the same form factor as 
 Some early Slocum gliders were delivered with optodes of type 5013, these are identical to the 3830.</p>
 </div>
 <div class="section" id="foil-type-f-or-standard">
-<h4><span class="section-number">3.1.1.2. </span>Foil type: F or standard<a class="headerlink" href="#foil-type-f-or-standard" title="Permalink to this headline">¶</a></h4>
+<h4><span class="section-number">2.1.1.2. </span>Foil type: F or standard<a class="headerlink" href="#foil-type-f-or-standard" title="Permalink to this headline">¶</a></h4>
 <p>Most optodes use the PreSens PSt3 foil (PreSens - Precision Sensing GmbH), these have as standard a black opaque protective layer protecting the pink sensing layer.
 For glider applications the “F” type foils are typically preferred as these remove the opaque layer which results in much faster diffusion across the foil, and therefore faster sensor response (<span class="math notranslate nohighlight">\(\tau\)</span> = 8 s compared to ~ 25 s <span id="id3">[<a class="reference internal" href="oxygen_references.html#id9">Bittig <em>et al.</em>, 2014</a>]</span>).
 However, removal of the protective layer makes the foil more susceptible to UV radiation, and is known to reduce the sensor stability, especially when exposed to strong sunlight.
@@ -398,7 +393,7 @@ It is recommended that older F-type instruments (with the pink foils) are upgrad
 Otherwise foils should typically not be replaced unless mechanically damaged (light intrusion) as older foils perform better, with less drift than new ones.</p>
 </div>
 <div class="section" id="calibration-equation-and-firmware-versions">
-<h4><span class="section-number">3.1.1.3. </span>Calibration equation and firmware versions<a class="headerlink" href="#calibration-equation-and-firmware-versions" title="Permalink to this headline">¶</a></h4>
+<h4><span class="section-number">2.1.1.3. </span>Calibration equation and firmware versions<a class="headerlink" href="#calibration-equation-and-firmware-versions" title="Permalink to this headline">¶</a></h4>
 <p>The way optode foils are initially calibrated by Aanderaa, and how the measured values are processed by the optode varies between different optode versions.
 The optode illuminates the sensing foil with both a red and blue LED.
 Since the red light does not produce fluorescence in the foil the phase measurements are obtained from the difference between the blue (P1) and the red (P2) excitation.</p>
@@ -428,12 +423,12 @@ The drift will decrease over time so that during the second year it is not likel
 After this it should be less than 0.5 % per year, unless the foil is mechanically damaged (Aanderaa).</p>
 <div class="figure align-default" id="optodes">
 <a class="bg-primary mb-1 reference internal image-reference" href="images/AaanderaasensorsAll1.png"><img alt="Aandera Optodes" class="bg-primary mb-1" src="images/AaanderaasensorsAll1.png" style="width: 400px;" /></a>
-<p class="caption"><span class="caption-number">Fig. 3.1 </span><span class="caption-text">Suit of smart optodes sensors. Oxygen sensors are indicated by red arrows.</span><a class="headerlink" href="#optodes" title="Permalink to this image">¶</a></p>
+<p class="caption"><span class="caption-number">Fig. 2.1 </span><span class="caption-text">Suit of smart optodes sensors. Oxygen sensors are indicated by red arrows.</span><a class="headerlink" href="#optodes" title="Permalink to this image">¶</a></p>
 </div>
 </div>
 </div>
 <div class="section" id="rbr-coda-t-odo">
-<h3><span class="section-number">3.1.2. </span>RBR coda T.ODO<a class="headerlink" href="#rbr-coda-t-odo" title="Permalink to this headline">¶</a></h3>
+<h3><span class="section-number">2.1.2. </span>RBR coda T.ODO<a class="headerlink" href="#rbr-coda-t-odo" title="Permalink to this headline">¶</a></h3>
 <p>The RBRcoda T.ODO uses the same foils and methods as the 4831 and 4831F so everything above specified for the 4831 will also apply to those instruments as well.
 RBR refers to the standard optode (~30 s <span class="math notranslate nohighlight">\(\tau\)</span>) foil as “slow” and the fast (~8 s) as the standard.
 They also use further foil design (~1 s response) which they call fast.
@@ -441,8 +436,8 @@ The RBR sensor has a smaller form factor than the Aandera optodes, but is overal
 This sensor has recently been implemented in gliders, and little is known about their performance.</p>
 </div>
 <div class="section" id="jfe-advantech-rinko">
-<h3><span class="section-number">3.1.3. </span>JFE Advantech RINKO<a class="headerlink" href="#jfe-advantech-rinko" title="Permalink to this headline">¶</a></h3>
-<p>AROD-FT sensor (RINKO JFE) is used for the SeaExplorer gliders (Alseamar) and for some Argo floats (small size and low power consumption) (see <a class="reference internal" href="#arodft"><span class="std std-numref">Fig. 3.2</span></a>).
+<h3><span class="section-number">2.1.3. </span>JFE Advantech RINKO<a class="headerlink" href="#jfe-advantech-rinko" title="Permalink to this headline">¶</a></h3>
+<p>AROD-FT sensor (RINKO JFE) is used for the SeaExplorer gliders (Alseamar) and for some Argo floats (small size and low power consumption) (see <a class="reference internal" href="#arodft"><span class="std std-numref">Fig. 2.2</span></a>).
 This sensor is based on the optical (phosphorescence) principle which is now widely known as a remarkably fast response oxygen sensor (below 1s) with a high accuracy of 2 <span class="math notranslate nohighlight">\(\mu\)</span>mol/kg.
 This sensor used a multi-points calibration (16 points with 4 temperatures and 4 DO concentrations).
 In this procedure, the DO reference standards are produced by saturing the primary mixtures with DO concentrations of approximately 4%, 10%, 17% and 25% respectively (certified by the National Metrology Institute of Japan).</p>
@@ -451,7 +446,7 @@ In this procedure, the DO reference standards are produced by saturing the prima
 -->
 <div class="figure align-default" id="arodft">
 <a class="bg-primary mb-1 reference internal image-reference" href="images/ARODFTSensor.jpg"><img alt="AROD-FT sensor" class="bg-primary mb-1" src="images/ARODFTSensor.jpg" style="width: 400px;" /></a>
-<p class="caption"><span class="caption-number">Fig. 3.2 </span><span class="caption-text">AROD-FT sensor mounted on a SeaExplorer glider (credit: ALSEAMAR)</span><a class="headerlink" href="#arodft" title="Permalink to this image">¶</a></p>
+<p class="caption"><span class="caption-number">Fig. 2.2 </span><span class="caption-text">AROD-FT sensor mounted on a SeaExplorer glider (credit: ALSEAMAR)</span><a class="headerlink" href="#arodft" title="Permalink to this image">¶</a></p>
 </div>
 <p>The DO concentration is calculated from the <span id="id6">[<a class="reference internal" href="oxygen_references.html#id18">Uchida H. and McTaggart, 2010</a>]</span> equation with 9 calibration coefficients.
 A second equation is used to take into account the pressure effect (linear equation with one calibration coefficient).
@@ -462,13 +457,13 @@ This is similar to procedures used on other optodes.</p>
 -->
 <div class="figure align-default" id="samba">
 <a class="bg-primary mb-1 reference internal image-reference" href="images/SAMBA.png"><img alt="Oxygen saturation from a Rinko AROD-FT on a SeaExplorer glider in the Bornholm Basin" class="bg-primary mb-1" src="images/SAMBA.png" style="width: 500px;" /></a>
-<p class="caption"><span class="caption-number">Fig. 3.3 </span><span class="caption-text">Oxygen saturation from a Rinko AROD-FT on a SeaExplorer glider in the Bornholm Basin (credit: Voice of the Ocean Foundation and University of Gothenburg).</span><a class="headerlink" href="#samba" title="Permalink to this image">¶</a></p>
+<p class="caption"><span class="caption-number">Fig. 2.3 </span><span class="caption-text">Oxygen saturation from a Rinko AROD-FT on a SeaExplorer glider in the Bornholm Basin (credit: Voice of the Ocean Foundation and University of Gothenburg).</span><a class="headerlink" href="#samba" title="Permalink to this image">¶</a></p>
 </div>
 <p>Recent deployments of a SeaExplorer glider equipped with an AROD-FT sensor have shown long-term stability (low drift over time) but with a significant offset observed during sections in the Ligurian Sea (on average 10-15 <span class="math notranslate nohighlight">\(\mu\)</span>mol/kg).
-Deployments in the Bornholm Basin have shown good agreement across a wide range of oxygen concentrations with a nearby BOOS monitoring station (see <a class="reference internal" href="#samba"><span class="std std-numref">Fig. 3.3</span></a>. This sensor was a recent acquisition and had little opportunity to drift in storage.</p>
+Deployments in the Bornholm Basin have shown good agreement across a wide range of oxygen concentrations with a nearby BOOS monitoring station (see <a class="reference internal" href="#samba"><span class="std std-numref">Fig. 2.3</span></a>. This sensor was a recent acquisition and had little opportunity to drift in storage.</p>
 </div>
 <div class="section" id="clark-electrode-polarographic-sensor-sbe-43-sbe-43f-and-sbe-63">
-<h3><span class="section-number">3.1.4. </span>Clark electrode polarographic sensor (SBE 43, SBE 43F and SBE 63)<a class="headerlink" href="#clark-electrode-polarographic-sensor-sbe-43-sbe-43f-and-sbe-63" title="Permalink to this headline">¶</a></h3>
+<h3><span class="section-number">2.1.4. </span>Clark electrode polarographic sensor (SBE 43, SBE 43F and SBE 63)<a class="headerlink" href="#clark-electrode-polarographic-sensor-sbe-43-sbe-43f-and-sbe-63" title="Permalink to this headline">¶</a></h3>
 <p>The SBE 43, SBE 43F and SBE 63 are individually calibrated with a calibration drift rates of less than 0.5% over 1000 h of operation.
 These sensors have been used in Seagliders and Spray and also in morrings and Argo floats.
 Sensors are designed for use in a CTD’s pumped flow path, providing optimal correlation with CTD measurements.
@@ -481,38 +476,38 @@ For this task, Winkler samples or a clean, calibrated reference sensor will be r
 </div>
 </div>
 <div class="section" id="sensor-integration-with-gliders">
-<h2><span class="section-number">3.2. </span>Sensor integration with gliders<a class="headerlink" href="#sensor-integration-with-gliders" title="Permalink to this headline">¶</a></h2>
+<h2><span class="section-number">2.2. </span>Sensor integration with gliders<a class="headerlink" href="#sensor-integration-with-gliders" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="mounting-location">
-<h3><span class="section-number">3.2.1. </span>Mounting location<a class="headerlink" href="#mounting-location" title="Permalink to this headline">¶</a></h3>
+<h3><span class="section-number">2.2.1. </span>Mounting location<a class="headerlink" href="#mounting-location" title="Permalink to this headline">¶</a></h3>
 <div class="section" id="spray">
-<h4><span class="section-number">3.2.1.1. </span>Spray<a class="headerlink" href="#spray" title="Permalink to this headline">¶</a></h4>
+<h4><span class="section-number">2.2.1.1. </span>Spray<a class="headerlink" href="#spray" title="Permalink to this headline">¶</a></h4>
 <ul class="simple">
 <li><p>input from expert needed</p></li>
 </ul>
 </div>
 <div class="section" id="seaglider">
-<h4><span class="section-number">3.2.1.2. </span>Seaglider<a class="headerlink" href="#seaglider" title="Permalink to this headline">¶</a></h4>
-<p>On Seagliders the oxygen sensor is normally mounted externally behind the CT sensor (see <a class="reference internal" href="#seagliders-standard"><span class="std std-numref">Fig. 3.4</span></a>. Given this exposed location it is important to mount the optode with the sensing foil facing away from incident light to avoid unnecessary UV exposure.</p>
+<h4><span class="section-number">2.2.1.2. </span>Seaglider<a class="headerlink" href="#seaglider" title="Permalink to this headline">¶</a></h4>
+<p>On Seagliders the oxygen sensor is normally mounted externally behind the CT sensor (see <a class="reference internal" href="#seagliders-standard"><span class="std std-numref">Fig. 2.4</span></a>. Given this exposed location it is important to mount the optode with the sensing foil facing away from incident light to avoid unnecessary UV exposure.</p>
 <!-- 
 ![UEA OGIVE seaglider with 4330F optode, together with NOC LoC spectrophotometric pH, unpumped SBE CT and Fluidion potentiometric pH sensor. \label{fig:seagliders_standard}](/images/OGIVE.png)
 -->
 <div class="figure align-default" id="seagliders-standard">
 <a class="bg-primary mb-1 reference internal image-reference" href="images/OGIVE.png"><img alt="Seaglider sensor integration" class="bg-primary mb-1" src="images/OGIVE.png" style="width: 400px;" /></a>
-<p class="caption"><span class="caption-number">Fig. 3.4 </span><span class="caption-text">UEA OGIVE seaglider with 4330F optode, together with NOC LoC spectrophotometric pH, unpumped SBE CT and Fluidion potentiometric pH sensor.</span><a class="headerlink" href="#seagliders-standard" title="Permalink to this image">¶</a></p>
+<p class="caption"><span class="caption-number">Fig. 2.4 </span><span class="caption-text">UEA OGIVE seaglider with 4330F optode, together with NOC LoC spectrophotometric pH, unpumped SBE CT and Fluidion potentiometric pH sensor.</span><a class="headerlink" href="#seagliders-standard" title="Permalink to this image">¶</a></p>
 </div>
 </div>
 <div class="section" id="slocum">
-<h4><span class="section-number">3.2.1.3. </span>Slocum<a class="headerlink" href="#slocum" title="Permalink to this headline">¶</a></h4>
-<p>On slocum gliders the oxygen optode is typically installed aft close to the fin (<a class="reference internal" href="#slocum-standard"><span class="std std-numref">Fig. 3.5</span></a>.</p>
+<h4><span class="section-number">2.2.1.3. </span>Slocum<a class="headerlink" href="#slocum" title="Permalink to this headline">¶</a></h4>
+<p>On slocum gliders the oxygen optode is typically installed aft close to the fin (<a class="reference internal" href="#slocum-standard"><span class="std std-numref">Fig. 2.5</span></a>.</p>
 <!--
 ![Standard Aanderaa optode 4831 mounting under the fin of the Slocum G2. \label{fig:slocum_standard}](/images/slocum.jpg)
 -->
 <div class="figure align-default" id="slocum-standard">
 <a class="bg-primary mb-1 reference internal image-reference" href="images/slocum.jpg"><img alt="Slocum sensor integration" class="bg-primary mb-1" src="images/slocum.jpg" style="width: 400px;" /></a>
-<p class="caption"><span class="caption-number">Fig. 3.5 </span><span class="caption-text">Standard Aanderaa optode 4831 mounting under the fin of the Slocum G2.</span><a class="headerlink" href="#slocum-standard" title="Permalink to this image">¶</a></p>
+<p class="caption"><span class="caption-number">Fig. 2.5 </span><span class="caption-text">Standard Aanderaa optode 4831 mounting under the fin of the Slocum G2.</span><a class="headerlink" href="#slocum-standard" title="Permalink to this image">¶</a></p>
 </div>
 <p>However this positioning is not ideal for oxygen measurements due to the optode being within a region of laminar flow <span id="id9">[<a class="reference internal" href="oxygen_references.html#id25">Moat <em>et al.</em>, 2016</a>]</span>, additionally the optode response time has been observed to be dependent on the sensor orientation relative to the direction of flow <span id="id10">[<a class="reference internal" href="oxygen_references.html#id9">Bittig <em>et al.</em>, 2014</a>]</span>.</p>
-<p>An alternative mounting of the Aanderaa optode in a more prominent location fore of the glider fin has been demonstrated as being much more suitable for measuring oxygen on gliders (<a class="reference internal" href="#slocum-alternative-mounting"><span class="std std-numref">Fig. 3.6</span></a>) <span id="id11">[<a class="reference internal" href="oxygen_references.html#id2">Nicholson and Feen, 2017</a>]</span>.
+<p>An alternative mounting of the Aanderaa optode in a more prominent location fore of the glider fin has been demonstrated as being much more suitable for measuring oxygen on gliders (<a class="reference internal" href="#slocum-alternative-mounting"><span class="std std-numref">Fig. 2.6</span></a>) <span id="id11">[<a class="reference internal" href="oxygen_references.html#id2">Nicholson and Feen, 2017</a>]</span>.
 This mounting location means that the sensor foil faces the flow directly and therefore the diffusive boundary layer thickness at the optode membrane is minimised, reducing the optode response time.
 Furthermore, this mounting location also means that in-situ in-air calibrations can be performed during deployment (similar to those done with Argo floats) which are beneficial when processing the DM oxygen data (see ‘in-air calibration’ section).</p>
 <!--
@@ -520,18 +515,18 @@ Furthermore, this mounting location also means that in-situ in-air calibrations 
 -->
 <div class="figure align-default" id="slocum-alternative-mounting">
 <a class="bg-primary mb-1 reference internal image-reference" href="images/slocum_better_location.jpg"><img alt="Slocum better O2 sensor location" class="bg-primary mb-1" src="images/slocum_better_location.jpg" style="width: 400px;" /></a>
-<p class="caption"><span class="caption-number">Fig. 3.6 </span><span class="caption-text">Slocum glider showing alternative mounting of an Aanderaa optode perpendicular to the fin.</span><a class="headerlink" href="#slocum-alternative-mounting" title="Permalink to this image">¶</a></p>
+<p class="caption"><span class="caption-number">Fig. 2.6 </span><span class="caption-text">Slocum glider showing alternative mounting of an Aanderaa optode perpendicular to the fin.</span><a class="headerlink" href="#slocum-alternative-mounting" title="Permalink to this image">¶</a></p>
 </div>
 </div>
 <div class="section" id="seaexplorer">
-<h4><span class="section-number">3.2.1.4. </span>SeaExplorer<a class="headerlink" href="#seaexplorer" title="Permalink to this headline">¶</a></h4>
-<p>On SeaExplorer gliders, all existing oxygen sensor integrations are installed in the forward wet payload section (the nose cone). External mounting is also feasible using external puck mounts on the dry payload, located approximately 1/3 of the way back, but is rare and generally only used for instrument trials. The Rinko AROD-FT is generally installed on the forward starboard connector, with the sensing foil and temperature probe 15 centimeters back from the tip of the nose and lightly sheltered to avoid damage when making contact with the nose. Both the foil and temperature probe are well exposed to flow. The new RBR Coda integration is also planned to present the foil and probe slightly set back from the tip of the nose, while remaining exposed to unmodified flow. The SBE43 is found only when accompanied with a Seabird pumped CT sensor; both of these sensors are placed in the nose where the RBR Legato CT sensor can be seen in <a class="reference internal" href="#rinko"><span class="std std-numref">Fig. 3.7</span></a>.</p>
+<h4><span class="section-number">2.2.1.4. </span>SeaExplorer<a class="headerlink" href="#seaexplorer" title="Permalink to this headline">¶</a></h4>
+<p>On SeaExplorer gliders, all existing oxygen sensor integrations are installed in the forward wet payload section (the nose cone). External mounting is also feasible using external puck mounts on the dry payload, located approximately 1/3 of the way back, but is rare and generally only used for instrument trials. The Rinko AROD-FT is generally installed on the forward starboard connector, with the sensing foil and temperature probe 15 centimeters back from the tip of the nose and lightly sheltered to avoid damage when making contact with the nose. Both the foil and temperature probe are well exposed to flow. The new RBR Coda integration is also planned to present the foil and probe slightly set back from the tip of the nose, while remaining exposed to unmodified flow. The SBE43 is found only when accompanied with a Seabird pumped CT sensor; both of these sensors are placed in the nose where the RBR Legato CT sensor can be seen in <a class="reference internal" href="#rinko"><span class="std std-numref">Fig. 2.7</span></a>.</p>
 <!--
 ![Rinko AROD-FT in the flooded nose cone payload bay of a SeaExplorer next to an RBR Legato sensor.](/images/Rinko.png)
 -->
 <div class="figure align-default" id="rinko">
 <a class="bg-primary mb-1 reference internal image-reference" href="images/Rinko.png"><img alt="Rinko" class="bg-primary mb-1" src="images/Rinko.png" style="width: 400px;" /></a>
-<p class="caption"><span class="caption-number">Fig. 3.7 </span><span class="caption-text">Rinko AROD-FT in the flooded nose cone payload bay of a SeaExplorer next to an RBR Legato sensor.</span><a class="headerlink" href="#rinko" title="Permalink to this image">¶</a></p>
+<p class="caption"><span class="caption-number">Fig. 2.7 </span><span class="caption-text">Rinko AROD-FT in the flooded nose cone payload bay of a SeaExplorer next to an RBR Legato sensor.</span><a class="headerlink" href="#rinko" title="Permalink to this image">¶</a></p>
 </div>
 </div>
 </div>
@@ -563,17 +558,17 @@ Furthermore, this mounting location also means that in-situ in-air calibrations 
         
             <!-- Previous / next buttons -->
 <div class='prev-next-area'> 
-    <a class='left-prev' id="prev-link" href="oxygen_introduction.html" title="previous page">
+    <a class='left-prev' id="prev-link" href="authors_SOP_development_process.html" title="previous page">
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
             <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title"><span class="section-number">2. </span>Introduction</p>
+            <p class="prev-next-title"><span class="section-number">1. </span>Authors, development process and contributions</p>
         </div>
     </a>
     <a class='right-next' id="next-link" href="oxygen_pre_deployment.html" title="next page">
     <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title"><span class="section-number">4. </span>Pre-deployment operations and calibrations</p>
+        <p class="prev-next-title"><span class="section-number">3. </span>Pre-deployment operations and calibrations</p>
     </div>
     <i class="fas fa-angle-right"></i>
     </a>
