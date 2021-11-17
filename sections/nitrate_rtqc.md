@@ -12,20 +12,30 @@ However it is currently (November 2021) not implemented and not planned to be im
 OPUS spectrometers can also derive nitrate concentrations in real time, but to the groups involved in writing this document no instrument with that capability was available.
 
 ## Real Time Quality Control (RTQC)
-XXX
+### UV Spectrometer
+Four real time quality control checks should be implemented to detect suspicious measurements:
+- valid range checks
+- spike/outlier detection 
+- comparison with climatological information 
+- sensor drift detection
 
-### Global range check
-XXX
+Real time quality control relies on knowledge of the typical nitrate concentration in the deployment region and on the, in most cases, slow spatial variation of the nitrate concentrations (eddies and fronts are often special cases with larger horizontal gradients). New profiles are typically compared with the previous ones to detect profiles or single values that stand out. Such data can be flagged as suspicious or even bad.
 
-### Outlier and spike check
-XXX
+For the different instruments their respective noise level has to be taken into account when creating an outlier check. Very rarely objects appear to get into the sampling volume and are usually there for only a few samples after which the measurements return to the previously measured concentrations. The result of this are spikes to higher concentrations (higher apparent absorption).
 
-### Stuck value test
-XXX
+A slow measurement drift is to be expected for Sea-Bird’s Deep SUNA because of lamp aging. This can not be corrected in situ as the reduction in lamp strength is not measured (see also below for the post-recovery calibration). A drift might also occur because of bio-fouling. Both lamp aging and bio-fouling drifts should lead to values increasing with deployment time. Small drifts are often difficult to detect as they might not stand out against other measurement variability. Prior knowledge, such as e.g. an expected nitrate depletion in the surface mixed layer, can potentially be used to detect a small drift. After recovery, renewed calibration and reference measurements may also be used to differentiate between lamp drift and bio-fouling.
 
-### Bad P/T/S QC spreading
-XXX 
+## Data submission (real time)
+It is recommended that real time data is submitted to GDACs for immediate redistribution of the data. 
+At the moment of writing (May 2021) it is unclear whether any GDACs process real time nitrate measurements, nevertheless we recommend implementing the submission process.
 
-### Effects of biofouling
-XXX
+### UV Spectrometers
+Deep SUNAs on Slocum gliders currently (May 2021) transfer to the gliders only nitrate concentrations based on optimized temperature and salinity values. 
+It should be possible to feed CTD data from the glider into Deep SUNAs to allow for more accurate calculations. 
+This should be particularly true for modern Slocum G3 gliders which use faster processors. 
+Alternatively raw spectra could be transmitted to data centres albeit at the cost of 30-40 times larger data sets with the consequence of higher costs and longer glider time spent at the sea surface. 
+In the future this might also be easier with faster and cheaper satellite transmission systems.
+Because of the high costs in time at surface and in money of satellite data transmission typically only a reduced data set is transmitted. 
+GEOMAR e.g. transmits only one measurement every 30 seconds or about 3-4 m. Raw spectra are not transmitted.
+
 
