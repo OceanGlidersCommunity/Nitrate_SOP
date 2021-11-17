@@ -74,8 +74,32 @@ Lab-on-Chip nitrate+nitrite analysers developed at the National Oceanography Cen
 Lab-on-Chip analysers developed at the National Oceanography Centre, and recently commercialized by ClearWater sensors have been successfully deployed on Seagliders to observe key seasonal transitions of biogeochemistry, such as spring bloom dynamics, in the Celtic Sea and North Sea (Vincent et al., 2017; Hull et al., 2021). 
 A variant of this sensor that measures phosphate has also been developed and deployed on a Seaglider (Birchill et al, in review).
 
+#### ClearWater (National Oceanography Centre, NOC) Lab-on-Chip analyser	
+The LoC analyser contains a three layer poly(methyl methacrylate) (PMMA) optofluidic chip with precision milled microchannels, mixers and optical components consisting of light emitting diodes and photodiodes, electronics, solenoid valves and syringe pumps mounted on the chip. 
+The chip forms the end cap of a dark watertight pressure compensated PVC housing, which is rated to 6000 dbar. The chip is fitted with a cadmium column for the reduction of nitrate to nitrite. 
+The system is automated using a 32 bit microcontroller-based electronics package with 18-bit analogue to digital inputs and can stream raw data (1 Hz) over USB, as well as store data on a 8 GB flash memory card. 
+Provided with the values of the on-board standards, the LoC analyser is capable of outputting processed data (µM NO2- + NO3-) over RS232 or RS485 interfaces (Beaton et al., 2012). 
+The analyser is capable of measuring concentrations ranging from 0.025 to 1000 µM NO3 due to the chip containing 3 measurement cells with differing path lengths. 
+Measurement frequency during glider operations is approximately every 7 minutes, this is preceded by a calibration period of approximately 21 minutes during which blank and standard measurements are made at the start of each dive.  
 
+## Instrument comparison and uncertainty numbers
 
+### UV Spectrometers
+The quality of the nitrate concentrations derived from UV spectrometer measurements depends on a number of conditions:
+- time since manufacturer maintenance/calibration (lamp aging)
+- time in the water (bio-fouling)
+- cross-calibration availability (via instrument-on-CTD or nearby water samples or other knowledge)
+- regularity of user calibrations (lamp aging and bio-fouling)
+
+The manufacturers give numbers for the accuracy and the precision of the concentrations delivered by the instruments. 
+They are however only applicable to instruments fresh in the water and with new manufacturer’s calibrations. 
+As soon as instruments are in the water bio-fouling will set in and is not accounted for by the manufacturer’s numbers. 
+Drift because of lamp aging is significant for Deuterium UV lamps and degrades the nominal accuracy very quickly. 
+The precision and detection limit also significantly depend on the availability of temperature and salinity information (see sections on processing).
+
+Note: To get optimal nitrate concentrations frequent cross-calibration against higher quality measurements from water samples is recommended.
+
+Cross-calibration can significantly reduce the overall uncertainty of the nitrate concentrations. Different cross-calibration approaches are possible. The best results will be obtained by attaching the instrument to the CTD and run calibration casts with high quality water sample measurements before and after the deployment. A similar quality should be possible with in-lab calibrations using known reference material before and after the deployment. If neither of these are possible, CTD casts with high quality water samples can be done near the glider and be used to evaluate and possibly correct the instrument concentrations. A priori knowledge of local concentrations can also be used to calibrate albeit at the cost of not being able to detect real deviations from the a priori knowledge. GEOMAR experiences suggest that the calibration coefficients (for a linear correction) are relatively stable between subsequent deployments.
 
 
 ## Sensor integration with gliders

@@ -301,37 +301,56 @@ commentsRunWhenDOMLoaded(addUtterances);
     <a class="reference internal nav-link" href="#lab-on-chip-loc-instruments">
      3.1.2. Lab-on-Chip (LOC) Instruments
     </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#clearwater-national-oceanography-centre-noc-lab-on-chip-analyser">
+       3.1.2.1. ClearWater (National Oceanography Centre, NOC) Lab-on-Chip analyser
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#instrument-comparison-and-uncertainty-numbers">
+   3.2. Instrument comparison and uncertainty numbers
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id1">
+     3.2.1. UV Spectrometers
+    </a>
    </li>
   </ul>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#sensor-integration-with-gliders">
-   3.2. Sensor integration with gliders
+   3.3. Sensor integration with gliders
   </a>
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#mounting-location">
-     3.2.1. Mounting location
+     3.3.1. Mounting location
     </a>
     <ul class="nav section-nav flex-column">
      <li class="toc-h4 nav-item toc-entry">
       <a class="reference internal nav-link" href="#spray">
-       3.2.1.1. Spray
+       3.3.1.1. Spray
       </a>
      </li>
      <li class="toc-h4 nav-item toc-entry">
       <a class="reference internal nav-link" href="#seaglider">
-       3.2.1.2. Seaglider
+       3.3.1.2. Seaglider
       </a>
      </li>
      <li class="toc-h4 nav-item toc-entry">
       <a class="reference internal nav-link" href="#slocum">
-       3.2.1.3. Slocum
+       3.3.1.3. Slocum
       </a>
      </li>
      <li class="toc-h4 nav-item toc-entry">
       <a class="reference internal nav-link" href="#seaexplorer">
-       3.2.1.4. SeaExplorer
+       3.3.1.4. SeaExplorer
       </a>
      </li>
     </ul>
@@ -417,32 +436,61 @@ The sampling volume has, however, a shape that allows for a better water exchang
 <p>Lab-on-Chip nitrate+nitrite analysers developed at the National Oceanography Centre, UK have been recently commercialized by ClearWater sensors, UK (<a class="reference external" href="https://www.clearwatersensors.com/nitrate-sensor/">https://www.clearwatersensors.com/nitrate-sensor/</a>).</p>
 <p>Lab-on-Chip analysers developed at the National Oceanography Centre, and recently commercialized by ClearWater sensors have been successfully deployed on Seagliders to observe key seasonal transitions of biogeochemistry, such as spring bloom dynamics, in the Celtic Sea and North Sea (Vincent et al., 2017; Hull et al., 2021).
 A variant of this sensor that measures phosphate has also been developed and deployed on a Seaglider (Birchill et al, in review).</p>
+<div class="section" id="clearwater-national-oceanography-centre-noc-lab-on-chip-analyser">
+<h4><span class="section-number">3.1.2.1. </span>ClearWater (National Oceanography Centre, NOC) Lab-on-Chip analyser<a class="headerlink" href="#clearwater-national-oceanography-centre-noc-lab-on-chip-analyser" title="Permalink to this headline">¶</a></h4>
+<p>The LoC analyser contains a three layer poly(methyl methacrylate) (PMMA) optofluidic chip with precision milled microchannels, mixers and optical components consisting of light emitting diodes and photodiodes, electronics, solenoid valves and syringe pumps mounted on the chip.
+The chip forms the end cap of a dark watertight pressure compensated PVC housing, which is rated to 6000 dbar. The chip is fitted with a cadmium column for the reduction of nitrate to nitrite.
+The system is automated using a 32 bit microcontroller-based electronics package with 18-bit analogue to digital inputs and can stream raw data (1 Hz) over USB, as well as store data on a 8 GB flash memory card.
+Provided with the values of the on-board standards, the LoC analyser is capable of outputting processed data (µM NO2- + NO3-) over RS232 or RS485 interfaces (Beaton et al., 2012).
+The analyser is capable of measuring concentrations ranging from 0.025 to 1000 µM NO3 due to the chip containing 3 measurement cells with differing path lengths.
+Measurement frequency during glider operations is approximately every 7 minutes, this is preceded by a calibration period of approximately 21 minutes during which blank and standard measurements are made at the start of each dive.</p>
+</div>
+</div>
+</div>
+<div class="section" id="instrument-comparison-and-uncertainty-numbers">
+<h2><span class="section-number">3.2. </span>Instrument comparison and uncertainty numbers<a class="headerlink" href="#instrument-comparison-and-uncertainty-numbers" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id1">
+<h3><span class="section-number">3.2.1. </span>UV Spectrometers<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h3>
+<p>The quality of the nitrate concentrations derived from UV spectrometer measurements depends on a number of conditions:</p>
+<ul class="simple">
+<li><p>time since manufacturer maintenance/calibration (lamp aging)</p></li>
+<li><p>time in the water (bio-fouling)</p></li>
+<li><p>cross-calibration availability (via instrument-on-CTD or nearby water samples or other knowledge)</p></li>
+<li><p>regularity of user calibrations (lamp aging and bio-fouling)</p></li>
+</ul>
+<p>The manufacturers give numbers for the accuracy and the precision of the concentrations delivered by the instruments.
+They are however only applicable to instruments fresh in the water and with new manufacturer’s calibrations.
+As soon as instruments are in the water bio-fouling will set in and is not accounted for by the manufacturer’s numbers.
+Drift because of lamp aging is significant for Deuterium UV lamps and degrades the nominal accuracy very quickly.
+The precision and detection limit also significantly depend on the availability of temperature and salinity information (see sections on processing).</p>
+<p>Note: To get optimal nitrate concentrations frequent cross-calibration against higher quality measurements from water samples is recommended.</p>
+<p>Cross-calibration can significantly reduce the overall uncertainty of the nitrate concentrations. Different cross-calibration approaches are possible. The best results will be obtained by attaching the instrument to the CTD and run calibration casts with high quality water sample measurements before and after the deployment. A similar quality should be possible with in-lab calibrations using known reference material before and after the deployment. If neither of these are possible, CTD casts with high quality water samples can be done near the glider and be used to evaluate and possibly correct the instrument concentrations. A priori knowledge of local concentrations can also be used to calibrate albeit at the cost of not being able to detect real deviations from the a priori knowledge. GEOMAR experiences suggest that the calibration coefficients (for a linear correction) are relatively stable between subsequent deployments.</p>
 </div>
 </div>
 <div class="section" id="sensor-integration-with-gliders">
-<h2><span class="section-number">3.2. </span>Sensor integration with gliders<a class="headerlink" href="#sensor-integration-with-gliders" title="Permalink to this headline">¶</a></h2>
+<h2><span class="section-number">3.3. </span>Sensor integration with gliders<a class="headerlink" href="#sensor-integration-with-gliders" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="mounting-location">
-<h3><span class="section-number">3.2.1. </span>Mounting location<a class="headerlink" href="#mounting-location" title="Permalink to this headline">¶</a></h3>
+<h3><span class="section-number">3.3.1. </span>Mounting location<a class="headerlink" href="#mounting-location" title="Permalink to this headline">¶</a></h3>
 <div class="section" id="spray">
-<h4><span class="section-number">3.2.1.1. </span>Spray<a class="headerlink" href="#spray" title="Permalink to this headline">¶</a></h4>
+<h4><span class="section-number">3.3.1.1. </span>Spray<a class="headerlink" href="#spray" title="Permalink to this headline">¶</a></h4>
 <ul class="simple">
 <li><p>XXX</p></li>
 </ul>
 </div>
 <div class="section" id="seaglider">
-<h4><span class="section-number">3.2.1.2. </span>Seaglider<a class="headerlink" href="#seaglider" title="Permalink to this headline">¶</a></h4>
+<h4><span class="section-number">3.3.1.2. </span>Seaglider<a class="headerlink" href="#seaglider" title="Permalink to this headline">¶</a></h4>
 <ul class="simple">
 <li><p>XXX</p></li>
 </ul>
 </div>
 <div class="section" id="slocum">
-<h4><span class="section-number">3.2.1.3. </span>Slocum<a class="headerlink" href="#slocum" title="Permalink to this headline">¶</a></h4>
+<h4><span class="section-number">3.3.1.3. </span>Slocum<a class="headerlink" href="#slocum" title="Permalink to this headline">¶</a></h4>
 <ul class="simple">
 <li><p>XXX</p></li>
 </ul>
 </div>
 <div class="section" id="seaexplorer">
-<h4><span class="section-number">3.2.1.4. </span>SeaExplorer<a class="headerlink" href="#seaexplorer" title="Permalink to this headline">¶</a></h4>
+<h4><span class="section-number">3.3.1.4. </span>SeaExplorer<a class="headerlink" href="#seaexplorer" title="Permalink to this headline">¶</a></h4>
 <ul class="simple">
 <li><p>XXX</p></li>
 </ul>
