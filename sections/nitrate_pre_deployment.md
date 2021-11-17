@@ -100,4 +100,6 @@ Pre-deployment field calibration is not required for the LoC analyser as the bla
 
 Performance of the Cu-Cd reduction column requires careful monitoring. For best results, the efficiency of conversion of nitrate to nitrite should be > 95% (Becker et al., 2019). Columns operating at lower efficiency can give reliable measurements, provided their performance does not vary with time, but this will result in erroneously high measured values for NO2+3 if the sample contains significant amounts of nitrite, which can occur near the nitracline in many ocean regions. It is thus essential that the performance and stability of the column should be evaluated in the laboratory prior to any deployment, and it is advisable that its performance be checked in the field immediately prior to and following the glider mission by measuring a pure nitrite standard of known concentration. Such a check can be invaluable in diagnosing faults after recovery of the sensor.
 
-
+## Data submission (pre-deployment)
+To ensure a smooth processing of real-time data by Global Data Assembly Centers (GDACs) it is important that glider operators contact their respective GDAC and prepare them for the data that will be collected. 
+This typically includes the collection of various Metadata for all sensors present on the glider as well as other deployment specific information.
