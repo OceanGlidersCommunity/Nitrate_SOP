@@ -61,10 +61,14 @@ For single non-averaged spectra the noise level of the OPUS is typically a facto
 This should make them suitable also for deep gliders. The OPUS is capable of making one measurement every 3 seconds (factory configuration is slower possibly because of internal averaging). 
 For a vertical platform speed of 0.1 m/s this results in a vertical resolution of 0.3 m.
 
+For the TriOS OPUS we are not aware of any anti-fouling option. 
+The sampling volume has, however, a shape that allows for a better water exchange.
 
+The specifications of the TriOS OPUS give a power consumption <= 8 W, presumably again at the fastest sampling rate. 
 
+We are not aware of any application of a TriOS OPUS on gliders, but once mounting solutions and data and power cables have been developed this should be possible.
 
-
+#### Lab-on-Chip (LOC) Intruments
 
 
 ## Sensor integration with gliders
