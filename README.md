@@ -1,3 +1,8 @@
+WORK IN PROGRESS 
+
+MIGRATION FROM GOOGLE DOC TO GITHUB IS HAPPENING NOW
+
+
 ![oceangliders](images/logo-ocean-gliders.png)
 
 # OceanGliders Nitrate SOP
