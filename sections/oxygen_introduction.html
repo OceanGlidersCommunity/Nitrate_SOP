@@ -270,6 +270,28 @@ commentsRunWhenDOMLoaded(addUtterances);
         <!-- Table of contents -->
         <div class="d-none d-md-block col-md-2 bd-toc show">
             
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#uv-spectrometry">
+   2.1. UV spectrometry
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#in-situ-colourimetric-analysis">
+   2.2.
+   <em>
+    In situ
+   </em>
+   colourimetric analysis
+  </a>
+ </li>
+</ul>
+
+            </nav>
         </div>
     </div>
 </div>
@@ -280,87 +302,33 @@ commentsRunWhenDOMLoaded(addUtterances);
                 
   <div class="tex2jax_ignore mathjax_ignore section" id="introduction">
 <h1><span class="section-number">2. </span>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline">¶</a></h1>
-<p>This standard operating procedure (SOP) document for dissolved oxygen (DO) aims to guide the user through the steps necessary to collect good quality dissolved oxygen data using ocean gliders for both real time and post deployment data streams.</p>
-<p><em>Table 1: List of the known sensor/glider combinations. We aim to cover all combinations in this document.</em></p>
-<table class="colwidths-auto table">
-<thead>
-<tr class="row-odd"><th class="head"><p>Sensor / Glider</p></th>
-<th class="head"><p>Slocum</p></th>
-<th class="head"><p>Autosub/ ALR (NOC)</p></th>
-<th class="head"><p>Seaglider</p></th>
-<th class="head"><p>Deepglider</p></th>
-<th class="head"><p>SeaExplorer</p></th>
-<th class="head"><p>Spray</p></th>
-<th class="head"><p>Information</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td><p>Aanderaa 3835, 4330, 4330F, 4831, 4831F and 5013 optodes</p></td>
-<td><p>X</p></td>
-<td><p></p></td>
-<td><p>X</p></td>
-<td><p>X</p></td>
-<td><p></p></td>
-<td><p></p></td>
-<td><p><a class="reference external" href="https://www.aanderaa.com/productsdetail.php?Oxygen-Optodes-2">Link</a></p></td>
-</tr>
-<tr class="row-odd"><td><p>RINKO-II</p></td>
-<td><p>X</p></td>
-<td><p></p></td>
-<td><p></p></td>
-<td><p></p></td>
-<td><p></p></td>
-<td><p></p></td>
-<td><p><a class="reference external" href="https://www.jfe-advantech.co.jp/eng/ocean/rinko/rinko22d.html">Link</a></p></td>
-</tr>
-<tr class="row-even"><td><p>RINKO- AROD FT</p></td>
-<td><p></p></td>
-<td><p></p></td>
-<td><p></p></td>
-<td><p></p></td>
-<td><p>X</p></td>
-<td><p></p></td>
-<td><p><a class="reference external" href="https://www.jfe-advantech.co.jp/eng/ocean/rinko/rinko-ft.html">Link</a></p></td>
-</tr>
-<tr class="row-odd"><td><p>SBE 43 and 43F</p></td>
-<td><p></p></td>
-<td><p>X</p></td>
-<td><p>X</p></td>
-<td><p></p></td>
-<td><p>X</p></td>
-<td><p></p></td>
-<td><p><a class="reference external" href="https://www.seabird.com/sbe-43-dissolved-oxygen-sensor-with-titanium-housing-mcbh-connector-0-5-mil-profiling-membrane-standard-43-plenum/product?id=54627923854">Link</a></p></td>
-</tr>
-<tr class="row-even"><td><p>SBE 63</p></td>
-<td><p></p></td>
-<td><p></p></td>
-<td><p></p></td>
-<td><p></p></td>
-<td><p></p></td>
-<td><p>X</p></td>
-<td><p><a class="reference external" href="https://www.seabird.com/oxygen-sensors/sbe-63-optical-dissolved-oxygen-sensor/family?productCategoryId=54627869933">Link</a></p></td>
-</tr>
-<tr class="row-odd"><td><p>RBRcoda T.ODO</p></td>
-<td><p></p></td>
-<td><p></p></td>
-<td><p></p></td>
-<td><p></p></td>
-<td><p>X</p></td>
-<td><p></p></td>
-<td><p><a class="reference external" href="https://rbr-global.com/products/sensors/rbrcoda-odo">Link</a></p></td>
-</tr>
-<tr class="row-even"><td><p>Contros Hydroflash (1)</p></td>
-<td><p></p></td>
-<td><p></p></td>
-<td><p>X</p></td>
-<td><p></p></td>
-<td><p></p></td>
-<td><p></p></td>
-<td><p><a class="reference external" href="https://www.kongsberg.com/globalassets/maritime/km-products/product-documents/hydroflash-accurate-fast-and-versatile-oxygen-optode/Download">Link</a></p></td>
-</tr>
-</tbody>
-</table>
-<p>(1)The advanced, optical sensor is based on the principle of fluorescence quenching. Contros are no longer in operation, the sensors cannot be calibrated so they are likely to become obsolete in the future.</p>
+<p>This standard operating procedure (SOP) document for dissolved nitrate (NO3) aims to guide the user through the steps necessary for the collection of good quality dissolved Nitrate concentrations using gliders for both real time and post deployment data streams.
+There are currently two methods available to conduct nitrate measurements using glider platforms: UV absorption spectrometers (e.g. Thomsen et al., 2019), and miniaturised in situ colourimetric analysers (e.g. Lab-on-Chip (LoC) instruments) (e.g. Vincent et al., 2018).</p>
+<div class="section" id="uv-spectrometry">
+<h2><span class="section-number">2.1. </span>UV spectrometry<a class="headerlink" href="#uv-spectrometry" title="Permalink to this headline">¶</a></h2>
+<p>That ultraviolet light is absorbed by Nitrate ions has been known since the 1950s (Bastian et al., 1957).
+More recently the development of miniaturized spectrometers led to instruments which could be deployed in situ to determine Nitrate concentrations in fresh- and seawater.
+Around 1998 a prototype instrument was developed at Southampton Oceanography Centre for use in seawater using only a limited number of spectral channels (Finch et al., 1998).
+Another instrument was developed at Monterey Bay Aquarium Research Institute (MBARI, Johnson and Coletti, 2002) based on a miniaturized spectrometer measuring UV intensity at a larger number of wavelengths. This has since become commercially available as ISUS and  SUNA.
+Other comparable instruments have been developed by various companies and institutions with the emphasis on freshwater monitoring (e.g. NitraLED by YSI, USA or spectro::lyser by s::can Messtechnik, Austria).
+All these instruments determine the attenuation (absorption, reflection and scattering) of ultraviolet (UV) light in seawater, which for the range of wavelengths from about 200 to 250 nm is strongly influenced by the concentration of nitrogen in the water.
+In oxic seawater nearly all dissolved nitrogen is found in the form of Nitrate so that the measurements usually allow an estimation of the concentration of dissolved Nitrate.
+In places with low oxygen concentrations this assumption might be violated and UV light might be absorbed by other nitrogen containing species such as e.g. Nitrite.
+In the UV wavelength range in question attenuation takes place not only by Nitrate but also by the absorption by Bromide (one of the essential ions of seawater), Bisulfide (H2S), humic acid and Nitrite (NO2) as well as by the scattering by particles in the seawater (Johnson and Coletti, 2002).
+Temperature and pressure additionally influence the attenuation (Sakamoto  et al., 2009; Sakamoto et al., 2017).
+The attenuation processes have different spectral characteristics in the UV wavelength range allowing their effects to be distinguished to some degree.
+This enables UV spectrometers to determine the concentrations of multiple chemical species at the same time.
+The spectral attenuation characteristics for the different chemical species are well known or can easily be determined in the lab with reference samples, while the temperature and pressure dependencies have been derived from lab and in situ data.
+The known dependencies of the species that are not of interest are used to correct the observed spectra.
+E.g. the presence of bromide (from independent salinity information) is corrected for in regular processing.
+Similarly the effects of temperature and pressure (again from independent information) are removed from the spectra.
+The possible presence of nitrite and bisulfide is usually ignored as in most cases their concentrations are small, though in cases with high enough concentrations they can possibly be distinguished from Nitrate (Meyer et al., 2018).
+After correcting the observed spectra the concentration of Nitrate can be estimated.
+In cases when the salinity and temperature of the sample is unknown (e.g. in the real time data on a glider) these two parameters can be estimated from the observed spectra using an iterative approach albeit at a reduced accuracy of the Nitrate value.</p>
+</div>
+<div class="section" id="in-situ-colourimetric-analysis">
+<h2><span class="section-number">2.2. </span><em>In situ</em> colourimetric analysis<a class="headerlink" href="#in-situ-colourimetric-analysis" title="Permalink to this headline">¶</a></h2>
+</div>
 </div>
 
     <script type="text/x-thebe-config">
