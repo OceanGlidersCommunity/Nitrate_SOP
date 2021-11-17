@@ -108,7 +108,7 @@ Bio-fouling and other influences are not included.
 
 |  |  Sample rate  |  Power |  Manufacturer Accuracy | Manufacturer Precision |  Manufacturer Detection limit |  Precision estimate |  Accuracy estimate (w. x-calibr.) |
 |  | Hz | W | µM NO3 | µM NO3 | µM NO3 | µM NO3 | µM NO3 |
-| Deep SUNA  |   |   |   |   |   |   |  |
+| Deep SUNA  |   |   |   |   |   |   |   |
 | OPUS  |   |   |   |   |   |  |   |
 | LoC  |   |   |   |   |   |   |   |
 
