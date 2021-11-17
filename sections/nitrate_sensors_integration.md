@@ -106,8 +106,9 @@ Please note that it is not known how exactly the manufacturer’s values are det
 Typically they are valid for recently manufactured and calibrated instruments. 
 Bio-fouling and other influences are not included.
 
-|  |  Sample rate  |  Power |  Manufacturer Accuracy | Manufacturer Precision |  Manufacturer Detection limit |  Precision estimate |  Accuracy estimate (w. x-calibr.) |
-|  | Hz | W | µM NO3 | µM NO3 | µM NO3 | µM NO3 | µM NO3 |
+|   |  Sample rate  |  Power |  Manufacturer Accuracy | Manufacturer Precision |  Manufacturer Detection limit |  Precision estimate |  Accuracy estimate (w. x-calibr.) |
+|    |   |   |   |   |   |   |   |
+|   | Hz | W | µM NO3 | µM NO3 | µM NO3 | µM NO3 | µM NO3 |
 | Deep SUNA  | 1 |   |   |   |   |   |   |
 | OPUS  | 1/3 |   |   |   |   |  |   |
 | LoC  | 0.0002 (7 min) |   |   |   |   |   |   |
