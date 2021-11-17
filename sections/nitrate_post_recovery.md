@@ -5,9 +5,6 @@ At first users should report that their mission is over to support(at)oceanobs.o
 ## Biofouling assessment
 Pictures should be taken for biofuiling assessment. 
 
-## Sensor storage
-XXX
-
 ## Post-deployment lab calibration
 ### UV Spectrometers
 After recovery, two lamp reference calibrations are strongly recommended.
@@ -33,7 +30,6 @@ It is recommended that the sensors are serviced periodically by ClearWater (with
 For Deep SUNAs the lamp life time should be noted and, if necessary, a lamp replacement be organized (only possible at Sea-Bird). 
 
 The raw data is stored on a flashcard on the LoC analyser and can be retrieved via USB. Visibly inspect the filter integrity, there has not been any reports of filter biofouling issues to date. 
-
 
 ## Post-deployment field calibration
 ### UV Spectrometers
