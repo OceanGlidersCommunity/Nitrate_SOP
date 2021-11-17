@@ -1,0 +1,462 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>1. Authors, development process and contributions &#8212; Nitrate SOP</title>
+    
+  <link href="../_static/css/theme.css" rel="stylesheet">
+  <link href="../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="../_static/js/index.be7d3bbb2ef33a8344ce.js">
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/togglebutton.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script kind="utterances">
+
+    var commentsRunWhenDOMLoaded = cb => {
+    if (document.readyState != 'loading') {
+        cb()
+    } else if (document.addEventListener) {
+        document.addEventListener('DOMContentLoaded', cb)
+    } else {
+        document.attachEvent('onreadystatechange', function() {
+        if (document.readyState == 'complete') cb()
+        })
+    }
+}
+
+var addUtterances = () => {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src = "https://utteranc.es/client.js";
+    script.async = "async";
+
+    script.setAttribute("repo", "OceanGlidersCommunity/Nitrate_SOP");
+    script.setAttribute("issue-term", "pathname");
+    script.setAttribute("theme", "github-light");
+    script.setAttribute("label", "💬 comment");
+    script.setAttribute("crossorigin", "anonymous");
+
+    sections = document.querySelectorAll("div.section");
+    if (sections !== null) {
+        section = sections[sections.length-1];
+        section.appendChild(script);
+    }
+}
+commentsRunWhenDOMLoaded(addUtterances);
+</script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
+    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
+    <script>
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="2. Introduction" href="oxygen_introduction.html" />
+    <link rel="prev" title="OceanGliders Nitrate SOP" href="../README.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../index.html">
+      
+      
+      
+      <h1 class="site-logo" id="site-title">Nitrate SOP</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../README.html">
+   OceanGliders Nitrate SOP
+  </a>
+ </li>
+</ul>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   1. Authors, development process and contributions
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="oxygen_introduction.html">
+   2. Introduction
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="oxygen_sensors_integration.html">
+   3. Sensors and integrations
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="oxygen_pre_deployment.html">
+   4. Pre-deployment operations and calibrations
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="oxygen_mission_execution.html">
+   5. Missions execution
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="oxygen_rtqc.html">
+   6. Required Metadata, Real Time Data Processing &amp; Quality Control
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="oxygen_post_recovery.html">
+   7. Post-recovery operations and calibrations
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="oxygen_dmqc.html">
+   8. Delayed Mode Quality Control
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="data_sharing.html">
+   9. Data sharing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="oxygen_references.html">
+   10. References
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="acknowledgement.html">
+   11. Acknowledgement
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../_sources/sections/authors_SOP_development_process.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.md</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://github.com/OceanGlidersCommunity/Nitrate_SOP"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Source repository"><i
+                    class="fab fa-github"></i>repository</button></a>
+        <a class="issues-button"
+            href="https://github.com/OceanGlidersCommunity/Nitrate_SOP/issues/new?title=Issue%20on%20page%20%2Fsections/authors_SOP_development_process.html&body=Your%20issue%20content%20here."><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
+        <a class="edit-button" href="https://github.com/OceanGlidersCommunity/Nitrate_SOP/edit/main/sections/authors_SOP_development_process.md"><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Edit this page"><i class="fas fa-pencil-alt"></i>suggest edit</button></a>
+    </div>
+</div>
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#authors">
+   1.1. Authors
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#sop-development-process">
+   1.2. SOP development process
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#contributions">
+   1.3. Contributions
+  </a>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <div class="tex2jax_ignore mathjax_ignore section" id="authors-development-process-and-contributions">
+<h1><span class="section-number">1. </span>Authors, development process and contributions<a class="headerlink" href="#authors-development-process-and-contributions" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="authors">
+<h2><span class="section-number">1.1. </span>Authors<a class="headerlink" href="#authors" title="Permalink to this headline">¶</a></h2>
+<ol class="simple">
+<li><p><a class="reference external" href="https://github.com/patricialg">Patricia López-García</a>, <em>Ocean Technology and Engineering Group, National Oceanography Centre, Southampton, UK</em></p></li>
+<li><p><a class="reference external" href="https://github.com/tomhull">Tom Hull</a>, <em>Centre for Environment Fisheries and Aquaculture Science, Lowestoft, UK</em></p></li>
+<li><p><a class="reference external" href="https://github.com/soerenthomsen">Soeren Thomsen</a>, <em>LOCEAN, ISPL, Sorbonne University, Paris, France</em></p></li>
+<li><p><a class="reference external" href="https://github.com/hahn-johannes">Johannes Hahn</a>, <em>Federal Maritime and Hydrographic Agency (BSH), Hamburg, Germany</em></p></li>
+<li><p><a class="reference external" href="https://github.com/bastienqueste">Bastien Y. Queste</a>, <em>Department of Marine Science, University of Gothenburg, Gothenburg, Sweden</em></p></li>
+<li><p><a class="reference external" href="https://github.com/gkrahmann">Gerd Krahmann</a>, <em>GEOMAR Helmholtz Centre for Ocean Research Kiel, Germany</em></p></li>
+<li><p><a class="reference external" href="https://github.com/charlotte-aj-williams">Charlotte Williams</a>, <em>Marine Physics and Ocean Climate Group. National Oceanography Centre, Liverpool, UK</em></p></li>
+<li><p>Mun Woo, <em>IMOS Ocean Gliders, UWA Oceans Institute and Oceans Graduate School, The University of Western Australia, Perth, Australia</em></p></li>
+<li><p>Charitha Pattiaratchi, <em>IMOS Ocean Gliders, UWA Oceans Institute and Oceans Graduate School, The University of Western Australia, Perth, Australia</em></p></li>
+<li><p><a class="reference external" href="https://github.com/laurcopp">Laurent Coppola</a>, <em>Sorbonne Université, CNRS, Laboratoire d’Océanographie de Villefranche (LOV), 06230 Villefranche-sur-Mer, France</em></p></li>
+<li><p>Tania Morales, <em>Plataforma Oceánica de Canarias (PLOCAN), Canary Islands, Spain</em></p></li>
+<li><p><a class="reference external" href="https://github.com/vracape">Virginie Racapé</a>, <em>Institut Universitaire Européen de la mer CNRS-UMS 3113, IFREMER-coriolis, Plouzané France</em></p></li>
+<li><p><a class="reference external" href="https://github.com/cgourcuf">Claire Gourcuff</a>, <em>Euro-Argo ERIC, Brest, France</em></p></li>
+<li><p>John Allen, <em>SOCIB, Palma de Mallorca, Spain</em></p></li>
+<li><p><a class="reference external" href="https://github.com/ealou">Eva Alou-Font</a>, <em>SOCIB, Palma de Mallorca, Spain</em></p></li>
+<li><p><a class="reference external" href="https://github.com/nizaroka">Nikolaos D. Zarokanellos</a>, <em>SOCIB, Palma de Mallorca, Spain</em></p></li>
+<li><p><a class="reference external" href="https://github.com/vturpin">Victor Turpin</a>, <em>OceanOps, Brest, France</em></p></li>
+<li><p><a class="reference external" href="https://github.com/catsch">Catherine Schmechtig</a>, <em>CNRS, Sorbonne Université, Osu Ecce Terra, Paris, France</em></p></li>
+<li><p><a class="reference external" href="https://github.com/ptestor">Pierre Testor</a>, <em>CNRS-Sorbonne Universités (UPMC Univ. Pierre et Marie Curie, Paris 06)-CNRS-IRD-MNHN, UMR 7159, Laboratoire d’Océanographie et de Climatologie (LOCEAN), Institut Pierre Simon Laplace (IPSL), Observatoire Ecce Terra, Paris, France</em></p></li>
+<li><p><a class="reference external" href="https://github.com/jbusecke">Julius Busecke</a>, <em>Columbia University/Lamont-Doherty Earth Observatory, New York, USA</em></p></li>
+<li><p><a class="reference external" href="https://github.com/evibourma">Evi Bourma</a>, <em>Hellenic Centre for Marine Research (HCMR)/Institute of Oceanography, Athens, Greece</em></p></li>
+<li><p><a class="reference external" href="https://github.com/richardsc">Clark Richards</a>, <em>Fisheries and Oceans Canada, Bedford Institute of Oceanography, Halifax, Canada</em></p></li>
+<li><p><a class="reference external" href="https://github.com/s-pearce">Stuart Pearce</a>, <em>Ocean Observatories Initiative, Endurance Array, Oregon State University, Oregon, USA</em></p></li>
+</ol>
+</div>
+<div class="section" id="sop-development-process">
+<h2><span class="section-number">1.2. </span>SOP development process<a class="headerlink" href="#sop-development-process" title="Permalink to this headline">¶</a></h2>
+<ol class="simple">
+<li><p>Initial SOP was drafted by <a class="reference external" href="https://github.com/patricialg">Patricia López-García</a>, <a class="reference external" href="https://github.com/tomhull">Tom Hull</a>, <a class="reference external" href="https://github.com/soerenthomsen">Soeren Thomsen</a> and <a class="reference external" href="https://github.com/hahn-johannes">Johannes Hahn</a>.</p></li>
+<li><p>Two expert sessions during OceanGliders Best Practice Workshop, May 11 - 25 2021.
+Additional authors joined: <a class="reference external" href="https://github.com/bastienqueste">Bastien Y. Queste</a>, <a class="reference external" href="https://github.com/gkrahmann">Gerd Krahmann</a>, <a class="reference external" href="https://github.com/charlotte-aj-williams">Charlotte Williams</a>, Mun Woo, Charitha Pattiaratchi, <a class="reference external" href="https://github.com/laurcopp">Laurent Coppola</a>, Tania Morales, <a class="reference external" href="https://github.com/vracape">Virginie Racape</a>, <a class="reference external" href="https://github.com/cgourcuf">Claire Gourcuff</a>, John Allen, Eva Alou, <a class="reference external" href="https://github.com/nizaroka">Nikolaos D. Zarokanellos</a></p></li>
+<li><p>First community and user feedback was provided during the OceanGliders Best Practice Workshop, May 11 - 25 2021 by attendees.</p></li>
+<li><p>SOP moved to this repository by: <a class="reference external" href="https://github.com/patricialg">Patricia López-García</a>, <a class="reference external" href="https://github.com/tomhull">Tom Hull</a>, <a class="reference external" href="https://github.com/soerenthomsen">Soeren Thomsen</a> and <a class="reference external" href="https://github.com/jbusecke">Julius Busecke</a> in September 2021.</p></li>
+<li><p>Additional authors joined on GitHub prior to the community review: <a class="reference external" href="https://github.com/vturpin">Victor Turpin</a>, <a class="reference external" href="https://github.com/catsch">Catherine Schmechtig</a>, <a class="reference external" href="https://github.com/ptestor">Pierre Testor</a>, <a class="reference external" href="https://github.com/jbusecke">Julius Busecke</a>.</p></li>
+<li><p>At the moment: 4 months community review on GitHub until 31 January 2022.</p></li>
+<li><p>Additional authors joined on GitHub during the community review: <a class="reference external" href="https://github.com/evibourma">Evi Bourma</a>, <a class="reference external" href="https://github.com/richardsc">Clark Richards</a>, <a class="reference external" href="https://github.com/s-pearce">Stuart Pearce</a></p></li>
+</ol>
+</div>
+<div class="section" id="contributions">
+<h2><span class="section-number">1.3. </span>Contributions<a class="headerlink" href="#contributions" title="Permalink to this headline">¶</a></h2>
+<p><a class="reference external" href="https://github.com/patricialg">Patricia López-García</a> drafted the initial document collating information from several SOPs, sensor manuals and articles.
+Main contribution to: Introduction section (producing Table 1 from information gathered from glider users and completing information for Clark electrodes sensors SBE 43/63), Pre-deployment operations and calibrations section (subsections Storage and cleaning and Pre-deployment calibrations), Post-recovery operations and calibrations section.
+She added some images to the document.
+She co-chaired two oxygen expert sessions during the OceanGliders Best Practice workshop in May 2021.
+She implemented discussions and comments from expert sessions.
+She reviewed and edited all parts of the SOP. She helps to maintain the SOP on GitHub.</p>
+<p><a class="reference external" href="https://github.com/tomhull">Tom Hull</a> drafted the initial document.
+He wrote the introduction such as the detailed description of the different Aanderaa optodes/foil types.
+He implemented discussions and comments from the expert sessions.
+Drafted and revised the Delayed Mode Quality Control section.
+He co-chaired one oxygen expert session during the OceanGliders Best Practice workshop in May 2021.
+He reviewed and edited all parts of the SOP.
+He helps to maintain the SOP on GitHub.</p>
+<p><a class="reference external" href="https://github.com/soerenthomsen">Soeren Thomsen</a> initiated the development of the oxygen SOP in February 2021.
+Drafted the initial document.
+Coordinated the whole development process including organising multiple meetings, e.g. two expert sessions during the OceanGliders Best Practice Workshop.
+He gave specific content input on the two point 0 / 100 % and Oxygen Minimum Zone calibration procedure.
+He reviewed and edited all parts of the SOP.
+He helps to maintain the SOP on GitHub.</p>
+<p><a class="reference external" href="https://github.com/hahn-johannes">Johannes Hahn</a> drafted the initial document.
+He gave specific content input on the sections pre-deployment, operations and calibrations such as key parts like the multipoint calibration section where he provided specific values related to sensor and foil accuracy and specifications.
+He further provided images related to CTD calibration procedures.
+He joined the two expert sessions during the OceanGliders Best Practice Workshop in May 2021.</p>
+<p><a class="reference external" href="https://github.com/bastienqueste">Bastien Y. Queste</a> co-wrote the JFE Advantech RINKO and seaglider section of the introduction.
+He provided multiple images such as the seaglider example deployment in the Bornholm Basin.
+Joined the two expert sessions during the OceanGliders Best Practice Workshop in May 2021.
+He provided detailed feedback on the delayed mode quality control section.</p>
+<p><a class="reference external" href="https://github.com/gkrahmann">Gerd Krahmann</a> provided input to the Real Time Data Processing and Quality Control section.
+He provided examples of biofouling including the effect on the oxygen data.
+He revised the Delayed Mode Quality Control Section and provided example images of the GEOMAR time delay correction methods.
+He joined the two expert sessions during the OceanGliders Best Practice Workshop in May 2021.</p>
+<p><a class="reference external" href="https://github.com/charlotte-aj-williams">Charlotte Williams</a> wrote section 3.3.1.3. on Slocum sensor integration and mounting.
+She joined the two expert sessions during the OceanGliders Best Practice Workshop in May 2021.</p>
+<p>Mun Woo gave specific content input to the Delayed Mode Quality Control Section.
+Joined the two expert sessions during the OceanGliders Best Practice Workshop in May 2021.</p>
+<p>Charitha Pattiaratchi gave specific content input to the Delayed Mode Quality Control Section. Joined the two expert sessions during the OceanGliders Best Practice Workshop in May 2021.</p>
+<p><a class="reference external" href="https://github.com/laurcopp">Laurent Coppola</a> gave specific content input on the sections pre-deployment, operations and calibrations such as key parts like the multipoint calibration section where he provided specific values related to sensor and foil accuracy and specifications.
+He co-wrote the JFE Advantech RINKO section of the introduction.
+He co-chaired one oxygen expert session during the OceanGliders Best Practice workshop.</p>
+<p>Tania Morales contributed to the content of sections pre-deployment, operations and calibrations including images for the coastal deployment at PLOCAN.</p>
+<p><a class="reference external" href="https://github.com/vracape">Virginie Racapé</a> co-wrote the Real Time Quality Control section.</p>
+<p><a class="reference external" href="https://github.com/cgourcuf">Claire Gourcuff</a> co-wrote the Real Time Quality Control section.</p>
+<p>John Allen provided feedback to the overall document.</p>
+<p><a class="reference external" href="https://github.com/ealou">Eva Alou-Font</a> provided feedback to the overall document.</p>
+<p><a class="reference external" href="https://github.com/nizaroka">Nikolaos D. Zarokanellos</a> provided feedback to the overall document.</p>
+<p><a class="reference external" href="https://github.com/vturpin">Victor Turpin</a> wrote the parts related to the OceanGliders data management.</p>
+<p><a class="reference external" href="https://github.com/catsch">Catherine Schmechtig</a> co-wrote the Real Time Quality Control section.</p>
+<p><a class="reference external" href="https://github.com/ptestor">Pierre Testor</a> wrote the proposals for funding the OceanGliders best practice coordination activities.
+He reviewed the overall document and provided feedback on the overall document.</p>
+<p><a class="reference external" href="https://github.com/jbusecke">Julius Busecke</a> supported the moving to GitHub and jupyter books. He helped to better facilitate the community review i.e. by implementing the commenting function via utterances-bot.</p>
+<p><a class="reference external" href="https://github.com/evibourma">Evi Bourma</a> provided input to the SBE43 sensor section.</p>
+<p><a class="reference external" href="https://github.com/richardsc">Clark Richards</a> provided input to the SBE43 sensor section.</p>
+<p><a class="reference external" href="https://github.com/s-pearce">Stuart Pearce</a> provided input to the Aanderaa optode section related to MK2 equation, SVU/Multipoint-calibration and firmwares.</p>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./sections"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+        
+            <!-- Previous / next buttons -->
+<div class='prev-next-area'> 
+    <a class='left-prev' id="prev-link" href="../README.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">OceanGliders Nitrate SOP</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="oxygen_introduction.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title"><span class="section-number">2. </span>Introduction</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+        
+        </div>
+    </div>
+    <footer class="footer">
+    <div class="container">
+      <p>
+        
+          By The Jupyter Book community<br/>
+        
+            &copy; Copyright 2021.<br/>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+
+  </body>
+</html>
