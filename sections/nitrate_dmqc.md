@@ -37,3 +37,10 @@ For the lab-on-chip analyser there are a number of post processing steps to be c
 
 It is important to note that LoC sample intake takes approximately 15-20 seconds, the precise duration, and hence vertical distance over which the sample is collected, can be calculated for each sample using raw data accessed on glider recovery. This is important when the glider is passing through strong nutrient gradients and for accurately reporting the  sample measurement depth. In dynamic regions, such as shelf seas, it is expected that there will be significant temporal and spatial variation of nutrient concentrations. Not every glider dive will include NO3 measurements, therefore it is helpful to occasionally conduct NO3 analysis on subsequent dives. By minimising natural spatial and temporal variability this allows for an assessment of LoC analyser field precision by comparing samples measured at similar points in the water column. 
 
+## Delayed Mode Quality Control (DMQC)
+### UV Spectrometers
+Delayed mode quality control for UV spectrometers is comparable to that of real time quality control. See the chapter on RTQC.
+
+The detection limit of SUNA measurements is 0.3 uM which has to be considered when observing oligotrophic regions. Typical issues occur near the surface due to interférence with sunlight and highly turbid regions. 
+
+Based on longitude, latitude, pressure, temperature, salinity and oxygen Argo floats users estimate the DM for nitrate with CANYON B  (https://doi.org/10.3389/fmars.2018.00328. , https://doi.org/10.1002/2017JC012838). This should be done at depth where nitrate values are not so variable. to in situ data as the SUNA is a sensor that drifts in time.
