@@ -82,3 +82,22 @@ Again, in theory there is no need to determine spectra from nitrate containing r
 For a LoC analyser it is recommended that the analyser makes multiple measurements (>10) of solutions with known nitrate concentrations that span the range expected during deployment. 
 For this, the sensor can be powered externally (e.g. using a  benchtop power supply). 
 The analytical cycle (blank-standard-sample sequence) can be tailored to for each deployment, therefore a platform simulation, which can be performed using the GUI, should be conducted using solutions of known concentrations as the sample to ensure that the analytical cycle produces expected results. 
+
+## Pre-deployment field calibration
+### UV Spectrometers
+If possible, we recommend any nitrate sensing UV spectrometer to be attached to the CTD and run through a CTD cast with several bottle stops. 
+
+The bottle stops have to be long enough (a few minutes) for the instrument to measure several spectra. During the bottle stops water samples for high accuracy nitrate concentration measurements have to be taken and later measured according to GO-SHIP recommendations (Becker et al., 2020). Depths with significant gradients in nitrate concentrations should be avoided for these stops.
+
+This type of field calibration requires an external power source for the spectrometer. This can be a dedicated battery pack or a special cable connecting the instrument to one of the CTD’s connectors (GEOMAR has followed this second way for both Deep SUNA and TriOS OPUS instruments).
+
+Note that Deep SUNAs have to be reconfigured for such a calibration cast and that the configuration has to be reverted back to the glider-specific configuration thereafter.
+
+### Lab-on-Chip Instruments
+Pre-deployment field calibration is not required for the LoC analyser as the blank and standard solutions are assessed during the lab calibration. However, when deploying a LoC-glider platform it is ideal to manually collect samples, following GO-SHIP protocols (Becker et al., 2020), in order for a field validation. Experience shows that after a period of dormancy the first dive may not produce reliable data as the chip ‘equilibrates’, this is typical of many flow analysis instruments. Initially conducting simultaneous dives with LoC measurements to generate a robust comparison is advisable. 
+
+#### Cadmium column checks
+
+Performance of the Cu-Cd reduction column requires careful monitoring. For best results, the efficiency of conversion of nitrate to nitrite should be > 95% (Becker et al., 2019). Columns operating at lower efficiency can give reliable measurements, provided their performance does not vary with time, but this will result in erroneously high measured values for NO2+3 if the sample contains significant amounts of nitrite, which can occur near the nitracline in many ocean regions. It is thus essential that the performance and stability of the column should be evaluated in the laboratory prior to any deployment, and it is advisable that its performance be checked in the field immediately prior to and following the glider mission by measuring a pure nitrite standard of known concentration. Such a check can be invaluable in diagnosing faults after recovery of the sensor.
+
+
