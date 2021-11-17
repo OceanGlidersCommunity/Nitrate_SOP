@@ -109,9 +109,13 @@ Bio-fouling and other influences are not included.
 |   |  Sample rate  |  Power |  Manufacturer Accuracy | Manufacturer Precision |  Manufacturer Detection limit |  Precision estimate |  Accuracy estimate (w. x-cali.) |
 |---|---|---|---|---|---|---|---|
 |   | Hz | W | µM NO3 | µM NO3 | µM NO3 | µM NO3 | µM NO3 |
-| Deep SUNA  | 1 | <=8 |   |   |   |   |   |
-| OPUS  | 1/3 | <=8 |   |   |   |  |   |
-| LoC  | 0.0002 (7 min) | 1.5 |   |   |   |   |   |
+| Deep SUNA  | 1 | <=8 | 10% or >=2.0 (+0.3 / hr lamp) |   |   |   |   |
+| OPUS  | 1/3 | <=8 | 5% +0.7 |   |   |  |   |
+| LoC  | 0.0002 (7 min) | 1.5 | 3 % for concentration range 5.63 to 44.43 (1) (Birchill et al., 2019) | 4 % for concentration range 5.63 to 44.43 (1) (Birchill et al., 2019) |   |   |   |
+
+(1) from estimates of combined uncertainty estimated via the analysis of certified reference materials using 7 analysers (Birchill et al., 2019).
+(2) 
+(3) 
 
 ## Sensor integration with gliders
 
