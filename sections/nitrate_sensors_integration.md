@@ -51,6 +51,19 @@ For comparison, a Slocum glider with only a CTD diving at full speed uses on ave
 
 Deep SUNAs are commercially available and have mounting solutions and data and power transfer cables have been developed for at least Slocum and SeaExplorer gliders.
 
+#### TriOS OPUS
+TriOS (Germany) developed an instrument comparable to the Deep SUNA but decided on a couple of design choices differently. 
+In principle the OPUS measures the same information based also on a 256 channel spectrometer. 
+However, the OPUS’ lamp is a Xenon flash lamp that has a much longer life cycle (typically >10<sup>9</sup> flashes) than Deuterium lamps (900 h). 
+The spectral characteristics of Xenon flash lamps are however less ideal. 
+They exhibit line-like spectral peaks in the range in which Nitrate absorbs which might make the analysis of the spectra prone to higher uncertainties possibly because of small shifts in the spectra. 
+For single non-averaged spectra the noise level of the OPUS is typically a factor 3 to 8 higher than that of a Deep SUNA. TriOS OPUS are available with a titanium housing with a 6000 dbar pressure rating. 
+This should make them suitable also for deep gliders. The OPUS is capable of making one measurement every 3 seconds (factory configuration is slower possibly because of internal averaging). 
+For a vertical platform speed of 0.1 m/s this results in a vertical resolution of 0.3 m.
+
+
+
+
 
 
 
