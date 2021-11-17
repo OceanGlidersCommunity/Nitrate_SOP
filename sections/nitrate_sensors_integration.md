@@ -101,7 +101,7 @@ Note: To get optimal nitrate concentrations frequent cross-calibration against h
 
 Cross-calibration can significantly reduce the overall uncertainty of the nitrate concentrations. Different cross-calibration approaches are possible. The best results will be obtained by attaching the instrument to the CTD and run calibration casts with high quality water sample measurements before and after the deployment. A similar quality should be possible with in-lab calibrations using known reference material before and after the deployment. If neither of these are possible, CTD casts with high quality water samples can be done near the glider and be used to evaluate and possibly correct the instrument concentrations. A priori knowledge of local concentrations can also be used to calibrate albeit at the cost of not being able to detect real deviations from the a priori knowledge. GEOMAR experiences suggest that the calibration coefficients (for a linear correction) are relatively stable between subsequent deployments.
 
-Table 1: Some specifications for the different instruments. 
+*Table 1: Some specifications for the different instruments.* 
 Please note that it is not known how exactly the manufacturer’s values are determined and whether the same terminology is used. 
 Typically they are valid for recently manufactured and calibrated instruments. 
 Bio-fouling and other influences are not included.
