@@ -16,7 +16,7 @@ Please read our [Code of Conduct](https://github.com/OceanGlidersCommunity/OG-fo
 Constructive feedback by anyone is welcome. We encourage both experts and new gliders users who want to start observing nitrate to feedback on the document. For example: Experts are welcome to critically assess the specific methods and uncertainty ranges outlined in the SOP. New users can help to improve the SOP by providing a feedback from the user perspective. 
 
 ### How to contribute
-See contributer guideline [here](https://github.com/OceanGlidersCommunity/Oxygen_SOP/blob/main/CONTRIBUTING.md)
+See contributer guideline [here](https://github.com/OceanGlidersCommunity/Nitrate_SOP/blob/main/CONTRIBUTING.md)
 
 ## Next steps
 1) 4 months community review on GitHub starting in December 2021 until March 2022
