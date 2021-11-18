@@ -13,7 +13,7 @@
 1) Initial SOP was drafted by [Gerd Krahmann](https://github.com/gkrahmann), Christian Begler and [Soeren Thomsen](https://github.com/soerenthomsen) in April 2021.
 
 2) During OceanGliders Best Practice Workshop, May 11 - 25 2021 one expert session was held and
-additional authors joined: Antony Birchill, Alexander Beaton, [Matthey Patey](https://github.com/mpatey)
+additional authors joined: Antony Birchill, Alexander Beaton, [Matthew Patey](https://github.com/mpatey)
 
 3) First community and user feedback was provided during the OceanGliders Best Practice Workshop, May 11 - 25 2021 by attendees. 
 
@@ -33,7 +33,7 @@ Christian Begler wrote parts of the SUNA sections.
 Antony Birchill wrote parts of the LoC sections.
 He reviewed and edited all parts of the SOP. 
 
-[Matthey Patey](https://github.com/mpatey) wrote parts of the LoC sections. 
+[Matthew Patey](https://github.com/mpatey) wrote parts of the LoC sections. 
 He co-chaired the expert session during the OceanGliders Best Practice Workshop, May 11 - 25 2021.
 He reviewed and edited all parts of the SOP. 
 
