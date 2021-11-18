@@ -17,7 +17,7 @@ additional authors joined: Antony Birchill, Alexander Beaton, [Matthey Patey]()
 
 3) First community and user feedback was provided during the OceanGliders Best Practice Workshop, May 11 - 25 2021 by attendees. 
 
-4) SOP moved to this repository by: Soeren Thomsen](https://github.com/soerenthomsen) and [Gerd Krahmann](https://github.com/gkrahmann) in November 2021. 
+4) SOP moved to this repository by: [Soeren Thomsen](https://github.com/soerenthomsen) and [Gerd Krahmann](https://github.com/gkrahmann) in November 2021. 
 
 5) Additional authors joined on GitHub prior to the community review: XXX
 
