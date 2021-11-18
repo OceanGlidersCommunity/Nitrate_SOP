@@ -30,14 +30,14 @@ additional authors joined: Antony Birchill, Alexander Beaton, [Matthey Patey]()
 
 Christian Begler wrote parts of the SUNA sections.
 
-Antony Birchill wrote parts of the LOC sections.
+Antony Birchill wrote parts of the LoC sections.
 He reviewed and edited all parts of the SOP. 
 
-Matthew Patey wrote parts of the LOC sections. 
+Matthew Patey wrote parts of the LoC sections. 
 He co-chaired the expert session during the OceanGliders Best Practice Workshop, May 11 - 25 2021.
 He reviewed and edited all parts of the SOP. 
 
-Alexander Beaton wrote parts of the LOC sections.
+Alexander Beaton wrote parts of the LoC sections.
 He reviewed and edited all parts of the SOP. 
 
 [Soeren Thomsen](https://github.com/soerenthomsen) initiated the development of the nitrate SOP in March 2021. 
