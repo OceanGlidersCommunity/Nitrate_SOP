@@ -4,7 +4,7 @@
   1. [Gerd Krahmann](https://github.com/gkrahmann), *GEOMAR Helmholtz Centre for Ocean Research Kiel, Germany* 
   2. Christian Begler, *GEOMAR Helmholtz Centre for Ocean Research Kiel, Germany* 
   3. Antony Birchill, *School of Geography, Earth and Environment Sciences, University of Plymouth, UK*
-  4. Matthew Patey, *National Oceanography Centre, Southampton, UK*
+  4. [Matthew Patey](https://github.com/mpatey), *National Oceanography Centre, Southampton, UK*
   5. Alexander Beaton, *National Oceanography Centre, Southampton, UK*
   6. [Soeren Thomsen](https://github.com/soerenthomsen), *LOCEAN, ISPL, Sorbonne University, Paris, France*
  
@@ -13,7 +13,7 @@
 1) Initial SOP was drafted by [Gerd Krahmann](https://github.com/gkrahmann), Christian Begler and [Soeren Thomsen](https://github.com/soerenthomsen) in April 2021.
 
 2) During OceanGliders Best Practice Workshop, May 11 - 25 2021 one expert session was held and
-additional authors joined: Antony Birchill, Alexander Beaton, [Matthey Patey]()
+additional authors joined: Antony Birchill, Alexander Beaton, [Matthey Patey](https://github.com/mpatey)
 
 3) First community and user feedback was provided during the OceanGliders Best Practice Workshop, May 11 - 25 2021 by attendees. 
 
@@ -33,7 +33,7 @@ Christian Begler wrote parts of the SUNA sections.
 Antony Birchill wrote parts of the LoC sections.
 He reviewed and edited all parts of the SOP. 
 
-Matthew Patey wrote parts of the LoC sections. 
+[Matthey Patey](https://github.com/mpatey) wrote parts of the LoC sections. 
 He co-chaired the expert session during the OceanGliders Best Practice Workshop, May 11 - 25 2021.
 He reviewed and edited all parts of the SOP. 
 
