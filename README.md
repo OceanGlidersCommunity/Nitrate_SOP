@@ -11,7 +11,7 @@ The community review is planned to start in December 2021.
 Please read our [Code of Conduct](https://github.com/OceanGlidersCommunity/OG-format-user-manual/pull/23) to ensure you follow the community rules.
 
 ### Who is invited to review?
-Constructive feedback by anyone is welcome. We encourage both experts and new gliders users who want to start observing nitrate to feedback on the document. For example: Experts are welcome to critically assess the specific methods and uncertainty ranges outlined in the SOP. New users can help to improve the SOP by providing a feedback from the user perspective. Please [let us know that you use the SOP](https://github.com/OceanGlidersCommunity/Nitrate_SOP/discussions).
+Constructive feedback by anyone is welcome. We encourage both experts and new gliders users who want to start observing nitrate to feedback on the document. For example: Experts are welcome to critically assess the specific methods and uncertainty ranges outlined in the SOP. New users can help to improve the SOP by providing a feedback from the user perspective. Please [let us know that you use the SOP](https://github.com/OceanGlidersCommunity/Nitrate_SOP/discussions/45).
 
 ### How to contribute
 See contributer guideline [here](https://github.com/OceanGlidersCommunity/Nitrate_SOP/blob/main/CONTRIBUTING.md)
