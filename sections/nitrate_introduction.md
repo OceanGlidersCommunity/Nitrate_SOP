@@ -15,7 +15,7 @@ All these instruments determine the attenuation (absorption, reflection and scat
 In oxic seawater nearly all dissolved nitrogen is found in the form of Nitrate so that the measurements usually allow an estimation of the concentration of dissolved Nitrate. 
 In places with low oxygen concentrations this assumption might be violated and UV light might be absorbed by other nitrogen containing species such as e.g. Nitrite.
 
-In the UV wavelength range in question attenuation takes place not only by Nitrate but also by the absorption by Bromide (one of the essential ions of seawater), Bisulfide (H2S), humic acid and Nitrite (NO2) as well as by the scattering by particles in the seawater (Johnson and Coletti, 2002). 
+In the UV wavelength range in question attenuation takes place not only by Nitrate but also by the absorption by Bromide (one of the essential ions of seawater), Bisulfide (H2S), humic acid and Nitrite (NO<sub>2</sub>) as well as by the scattering by particles in the seawater (Johnson and Coletti, 2002). 
 Temperature and pressure additionally influence the attenuation (Sakamoto  et al., 2009; Sakamoto et al., 2017).
 
 The attenuation processes have different spectral characteristics in the UV wavelength range allowing their effects to be distinguished to some degree. 
