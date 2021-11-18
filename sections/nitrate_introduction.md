@@ -15,7 +15,7 @@ All these instruments determine the attenuation (absorption, reflection and scat
 In oxic seawater nearly all dissolved nitrogen is found in the form of Nitrate so that the measurements usually allow an estimation of the concentration of dissolved Nitrate. 
 In places with low oxygen concentrations this assumption might be violated and UV light might be absorbed by other nitrogen containing species such as e.g. Nitrite.
 
-In the UV wavelength range in question attenuation takes place not only by Nitrate but also by the absorption by Bromide (one of the essential ions of seawater), Bisulfide (H2S), humic acid and Nitrite (NO<sub>2</sub>) as well as by the scattering by particles in the seawater (Johnson and Coletti, 2002). 
+In the UV wavelength range in question attenuation takes place not only by Nitrate but also by the absorption by Bromide (one of the essential ions of seawater), Bisulfide (H<sub>2</sub>S), humic acid and Nitrite (NO<sub>2</sub>) as well as by the scattering by particles in the seawater (Johnson and Coletti, 2002). 
 Temperature and pressure additionally influence the attenuation (Sakamoto  et al., 2009; Sakamoto et al., 2017).
 
 The attenuation processes have different spectral characteristics in the UV wavelength range allowing their effects to be distinguished to some degree. 
@@ -33,10 +33,10 @@ In cases when the salinity and temperature of the sample is unknown (e.g. in the
 The ‘Griess assay’, first described in 1858, is a spectrophotometric technique used to measure nitrite in solution via formation of a pink-red azo dye. The chemistry is well described in the literature (Griess, 1858).
 Quantification is achieved by relating the absorption of light by the azo dye to the concentration nitrite using the ‘Beer-Lambert-Bouguer’ law:
 
-A=log10(Io/I)=elc
+A = log<sub>10</sub>(I<sub>0</sub>/I) = elc
 
-where A is absorbance, I0 is incident intensity, I is the transmitted intensity, e is the molar absorption coefficient, l is path length and c is concentration. 
-In the case of the ‘Griess assay’, the addition of a chemical reduction step (e.g. a copperized cadmium column) allows for the measurement of the NO2+NO3 concentration. 
+where A is absorbance, I<sub>0</sub> is incident intensity, I is the transmitted intensity, e is the molar absorption coefficient, l is path length and c is concentration. 
+In the case of the ‘Griess assay’, the addition of a chemical reduction step (e.g. a copperized cadmium column) allows for the measurement of the NO<sub>2</sub>+NO<sub>3</sub> concentration. 
 This approach is widely used in oceanographic studies and incorporation into gas segmented flow manifolds allows for high sample throughput and the accuracy and precision required for all but the most oligotrophic regions of the ocean (Becker et al., 2020). 
 
 Automated in situ analysers utilizing the Griess assay were first reported in the 1980s (Johnson et al., 1989). 
