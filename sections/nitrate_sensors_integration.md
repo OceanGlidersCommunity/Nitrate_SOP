@@ -23,7 +23,7 @@ The SUNA was further developed into the Deep SUNA which was optimized for the us
 All these instruments share the same basic configuration with a Deuterium UV lamp and a 256 channel UV spectrometer covering the wavelengths from 190 to 370 nm. 
 Their internal processor is capable of not only storing the measured spectra but also of converting the data in real time into estimates of the Nitrate concentration.
 
-Deep SUNA have so far been attached to Teledyne Webb Research Slocum and ALSEAMAR SeaExplorer gliders.
+Deep SUNA have so far been attached to Teledyne Webb Research Slocum (see Figure {ref}`slocum_suna`) and ALSEAMAR SeaExplorer gliders.
 
 The Deep SUNA is capable of one measurement per second. 
 Older Slocum gliders (G1 and G2) are however not able to handle more than one measurement every 4 seconds (possibly 2 seconds). 
@@ -166,10 +166,12 @@ It is recommended that simulation dives are performed with the sensor and actual
 - XXX
 
 #### Slocum
-- XXX
 
-Insert image: 
-Figure 1:  Deep SUNA on a G2 Slocum glider.
+:::{figure-md} slocum_suna
+<img src="/images/slocum_g2_with_suna.jpg" alt="Slocum G2 with SUNA" class="bg-primary mb-1" width="600px">
+
+**Figure 1:** A Teledyne Webb Research Slocum G2 glider with a Deep SUNA attached on top of it.
+:::
 
 #### SeaExplorer
 - XXX
