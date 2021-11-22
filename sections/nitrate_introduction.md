@@ -40,6 +40,6 @@ In the case of the ‘Griess assay’, the addition of a chemical reduction step
 This approach is widely used in oceanographic studies and incorporation into gas segmented flow manifolds allows for high sample throughput and the accuracy and precision required for all but the most oligotrophic regions of the ocean (Becker et al., 2020). 
 
 Automated in situ analysers utilizing the Griess assay were first reported in the 1980s (Johnson et al., 1989). 
-Over the past decade, Lab-on-Chip microfluidic technology has allowed miniaturization of this approach into analysers small enough to be installed on autonomous platforms such as Seagliders (Beaton et al., 2012; Vincent et al., 2018). 
+Over the past decade, Lab-on-Chip microfluidic technology has allowed miniaturization of this approach into analysers small enough to be installed on autonomous platforms such as Seagliders ({cite}`Beaton2012` ; Vincent et al., 2018). 
 Relative to UV sensors, LoC analysers offer increased sensitivity and analytical figures of merit comparable to standard benchtop techniques (Birchill et al., 2019), but require the use of chemical reagents and waste which must be stored on board the glider, and have a reduced sampling frequency due to the time required for chemical analysis and flushing.
 
