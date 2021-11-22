@@ -25,12 +25,6 @@ Their internal processor is capable of not only storing the measured spectra but
 
 Deep SUNA have so far been attached to Teledyne Webb Research Slocum (see Figure {ref}`slocum_suna`) and ALSEAMAR SeaExplorer gliders.
 
-:::{figure-md} slocum_suna
-<img src="/images/slocum_g2_with_suna.jpg" alt="Slocum G2 with SUNA" class="bg-primary mb-1" width="600px">
-
-**Figure 1:** A Teledyne Webb Research Slocum G2 glider with a SUNA attached on top of it.
-:::
-
 The Deep SUNA is capable of one measurement per second. 
 Older Slocum gliders (G1 and G2) are however not able to handle more than one measurement every 4 seconds (possibly 2 seconds). 
 Typical use on a glider is thus with a reduced sampling rate of one measurement every 5.5 seconds (GEOMAR). 
@@ -172,10 +166,12 @@ It is recommended that simulation dives are performed with the sensor and actual
 - XXX
 
 #### Slocum
-- XXX
 
-Insert image: 
-Figure 1:  Deep SUNA on a G2 Slocum glider.
+:::{figure-md} slocum_suna
+<img src="/images/slocum_g2_with_suna.jpg" alt="Slocum G2 with SUNA" class="bg-primary mb-1" width="600px">
+
+**Figure 1:** A Teledyne Webb Research Slocum G2 glider with a Deep SUNA attached on top of it.
+:::
 
 #### SeaExplorer
 - XXX
