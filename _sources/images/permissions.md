@@ -9,3 +9,4 @@
 - `logo.png`- OceanGliders
 - `logo_v02_1_contour.png` - OceanGliders
 - `logo-ocean-gliders.png` - OceanGliders
+- `slocum_g2_with_suna.jpg` - Gerd Krahmann
