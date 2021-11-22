@@ -53,7 +53,7 @@ This method can be problematic if there are gradients in nutrient concentration 
 
 In some cases where no cross-checks have been possible, it has sometimes been necessary to use values from historic databases to compare with the data obtained. Such an approach should be avoided if at all possible, since such datasets are often very limited in temporal and spatial coverage and provide no way to quantitatively verify a new dataset.
 
-## UV Spectrometeres
+## UV Spectrometers
 ### Deep SUNA
 Deuterium UV lamps as used in Sea-Bird Deep SUNA instruments suffer from relatively rapid aging. 
 With increasing age the output strength reduces and possibly shifts. 
@@ -98,7 +98,7 @@ Pre-deployment field calibration is not required for the LoC analyser as the bla
 
 #### Cadmium column checks
 
-Performance of the Cu-Cd reduction column requires careful monitoring. For best results, the efficiency of conversion of nitrate to nitrite should be > 95% (Becker et al., 2019). Columns operating at lower efficiency can give reliable measurements, provided their performance does not vary with time, but this will result in erroneously high measured values for NO2+3 if the sample contains significant amounts of nitrite, which can occur near the nitracline in many ocean regions. It is thus essential that the performance and stability of the column should be evaluated in the laboratory prior to any deployment, and it is advisable that its performance be checked in the field immediately prior to and following the glider mission by measuring a pure nitrite standard of known concentration. Such a check can be invaluable in diagnosing faults after recovery of the sensor.
+Performance of the Cu-Cd reduction column requires careful monitoring. For best results, the efficiency of conversion of nitrate to nitrite should be > 95% (Becker et al., 2019). Columns operating at lower efficiency can give reliable measurements, provided their performance does not vary with time, but this will result in erroneously high measured values for NO<sub>2</sub>+NO<sub>3</sub> if the sample contains significant amounts of nitrite, which can occur near the nitracline in many ocean regions. It is thus essential that the performance and stability of the column should be evaluated in the laboratory prior to any deployment, and it is advisable that its performance be checked in the field immediately prior to and following the glider mission by measuring a pure nitrite standard of known concentration. Such a check can be invaluable in diagnosing faults after recovery of the sensor.
 
 ## Data submission (pre-deployment)
 To ensure a smooth processing of real-time data by Global Data Assembly Centers (GDACs) it is important that glider operators contact their respective GDAC and prepare them for the data that will be collected. 
