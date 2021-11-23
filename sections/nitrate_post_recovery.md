@@ -19,7 +19,7 @@ The difference between these two reference measurements should be a measure of t
 It remains to be determined which of the two lamp references should be used for the post-processing. It should theoretically be the first (bio-fouled) one as this is the end point of the effective lamp changes (aging plus bio-fouling) during the deployment.
 
 ### Lab-on-Chip Instruments
-For the lab-on-chip analysers, sub samples of blank and standard solutions should ideally be analysed post deployment, this requires clean handling (i.e. follow GO-SHIP recommendations; Becker et al., 2020). In cases where the blank and standard solutions cannot be sub sampled (e.g. recovered by partners without such capability), it should be noted that blank and standard solutions have been shown to be stable for 12 months (they are preserved with chloroform). General recovery
+For the lab-on-chip analysers, sub samples of blank and standard solutions should ideally be analysed post deployment, this requires clean handling (i.e. follow GO-SHIP recommendations; {cite}`Becker2019`). In cases where the blank and standard solutions cannot be sub sampled (e.g. recovered by partners without such capability), it should be noted that blank and standard solutions have been shown to be stable for 12 months (they are preserved with chloroform). General recovery
 
 After the post-deployment lab calibration all data from the UV spectrometers should be downloaded and backed up. This also includes the reference spectra and lamp usage files which are accessible differently than data (see Deep SUNA user manual).
 
