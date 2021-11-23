@@ -4,7 +4,7 @@
 
 ### UV Spectrometers
 To our knowledge there are currently at least two different instruments for UV spectroscopy Nitrate measurements in seawater, one manufactured by Sea-Bird Scientific (USA) called Deep SUNA and one by TriOS (Germany) called OPUS. 
-A similar instrument has been developed in China {cite}`zhu2021` but is not yet commercially available.
+A similar instrument has been developed in China {cite}`Zhu2021` but is not yet commercially available.
 Deep SUNAs have been specially developed for use on gliders and Argo floats and have been in use now for several years with good experiences. 
 OPUS instruments have been tested on floats within the Euro-Argo project (https://www.euro-argo.eu/) but not yet on gliders. 
 Both instruments have a 10 mm sample path length in common as this appears to be optimal for the used light sources and spectral sensors and the Nitrate concentrations expected in seawater.
@@ -12,13 +12,13 @@ Apart from these instruments there exists a larger number of submersible Nitrate
 Whether these could be modified for use in seawater and on gliders is not known.
 
 #### Sea-Bird Scientific Deep SUNA
-These instruments are based on the original development by {cite}`johnson2002` from MBARI. 
+These instruments are based on the original development by {cite}`Johnson2002` from MBARI. 
 The original was intended for use in underwater moorings and thus had a more voluminous housing to accommodate batteries. 
 The MBARI-ISUS was commercialized by Satlantic under the same name (Satlantic-ISUS). 
 Satlantic was in 2011 acquired by Sea-Bird Scientific which continues to produce the instruments. 
 Satlantic modified the design of the ISUS which used a mirror together with a light source and a spectrometer next to each other to that of the SUNA which has a light source and a spectrometer on opposing sides of the sample volume. 
 This modified instrument relied on external power and thus was able to have a much more lightweight and streamlined design. 
-The SUNA was further developed into the Deep SUNA which was optimized for the use on autonomous vehicles like gliders or floats with a pressure rating of 2000 dbar and a large internal memory (see also {cite}`johnson2018`).
+The SUNA was further developed into the Deep SUNA which was optimized for the use on autonomous vehicles like gliders or floats with a pressure rating of 2000 dbar and a large internal memory (see also {cite}`Johnson2018`).
 
 All these instruments share the same basic configuration with a Deuterium UV lamp and a 256 channel UV spectrometer covering the wavelengths from 190 to 370 nm. 
 Their internal processor is capable of not only storing the measured spectra but also of converting the data in real time into estimates of the Nitrate concentration.
@@ -71,14 +71,14 @@ We are not aware of any application of a TriOS OPUS on gliders, but once mountin
 ### Lab-on-Chip (LoC) Instruments
 Lab-on-Chip nitrate+nitrite analysers developed at the National Oceanography Centre, UK have been recently commercialized by ClearWater sensors, UK (https://www.clearwatersensors.com/nitrate-sensor/).
 
-Lab-on-Chip analysers developed at the National Oceanography Centre, and recently commercialized by ClearWater sensors have been successfully deployed on Seagliders to observe key seasonal transitions of biogeochemistry, such as spring bloom dynamics, in the Celtic Sea and North Sea (Vincent et al., 2017; Hull et al., 2021). 
+Lab-on-Chip analysers developed at the National Oceanography Centre, and recently commercialized by ClearWater sensors have been successfully deployed on Seagliders to observe key seasonal transitions of biogeochemistry, such as spring bloom dynamics, in the Celtic Sea and North Sea {cite}`Vincent2018`, {cite}`Hull2021`. 
 A variant of this sensor that measures phosphate has also been developed and deployed on a Seaglider (Birchill et al, in review).
 
 #### ClearWater (National Oceanography Centre, NOC) Lab-on-Chip analyser	
 The LoC analyser contains a three layer poly(methyl methacrylate) (PMMA) optofluidic chip with precision milled microchannels, mixers and optical components consisting of light emitting diodes and photodiodes, electronics, solenoid valves and syringe pumps mounted on the chip. 
 The chip forms the end cap of a dark watertight pressure compensated PVC housing, which is rated to 6000 dbar. The chip is fitted with a cadmium column for the reduction of nitrate to nitrite. 
 The system is automated using a 32 bit microcontroller-based electronics package with 18-bit analogue to digital inputs and can stream raw data (1 Hz) over USB, as well as store data on a 8 GB flash memory card. 
-Provided with the values of the on-board standards, the LoC analyser is capable of outputting processed data (µM NO2- + NO3-) over RS232 or RS485 interfaces (Beaton et al., 2012). 
+Provided with the values of the on-board standards, the LoC analyser is capable of outputting processed data (µM NO<sub>2-</sub> + NO<sub>3-</sub>) over RS232 or RS485 interfaces {cite}`Beaton2012`. 
 The analyser is capable of measuring concentrations ranging from 0.025 to 1000 µM NO3 due to the chip containing 3 measurement cells with differing path lengths. 
 Measurement frequency during glider operations is approximately every 7 minutes, this is preceded by a calibration period of approximately 21 minutes during which blank and standard measurements are made at the start of each dive.  
 
@@ -114,9 +114,9 @@ Bio-fouling and other influences are not included.
 | OPUS  | 1/3 | <=8 | 5% +0.7 | 0.36 (3) | 2.1 | 1.3 (4) | 1.0 (5)  |
 | LoC  | 0.0002 (7 min) | 1.5 | 3 % for concentration range 5.63 to 44.43 (1) | 4 % for concentration range 5.63 to 44.43 (1) | 0.025 | 0.14 (2) |   |
 
-(1) from estimates of combined uncertainty estimated via the analysis of certified reference materials using 7 analysers (Birchill et al., 2019).
+(1) from estimates of combined uncertainty estimated via the analysis of certified reference materials using 7 analysers {cite}`Birchill2019`.
 
-(2) not a standard mode of operation for the LoC analyser, values are from a CTD trial deployment (Vincent et al., 2017). 
+(2) not a standard mode of operation for the LoC analyser, values are from a CTD trial deployment {cite}`Vincent2018`. 
 
 (3) It is unclear whether the OPUS’ accuracy and precision values given by the manufacturer use internal averaging of several spectra. The typical noise on CTDs was determined using single non-averaged spectra.
 
