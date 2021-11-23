@@ -2,7 +2,7 @@
 
 ## Delayed Mode Processing 
 ### UV Spectrometers
-The processing of UV attenuance spectra to obtain nitrate concentrations has been fully described in Sakamoto et al. (2009, 2017) and Johnson et al. (2018). 
+The processing of UV attenuance spectra to obtain nitrate concentrations has been fully described in ({cite}`sakamoto2009` ; {cite}`sakamoto2017` ; {cite}`johnson2018`). 
 In delayed mode  temperature and salinity can be used to remove the effects of Bromide on the observed spectra. 
 For an additional correction pressure data can be fed into the calculations. 
 Matlab code has been published for Deep SUNA processing (https://github.com/SOCCOM-BGCArgo), but can be adapted to other spectrometers. 
