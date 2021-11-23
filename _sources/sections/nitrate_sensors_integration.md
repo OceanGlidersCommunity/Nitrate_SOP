@@ -170,7 +170,7 @@ It is recommended that simulation dives are performed with the sensor and actual
 :::{figure-md} slocum_suna
 <img src="/images/slocum_g2_with_suna.jpg" alt="Slocum G2 with SUNA" class="bg-primary mb-1" width="600px">
 
-**Figure 1:** A Teledyne Webb Research Slocum G2 glider with a Deep SUNA attached on top of it.
+A Teledyne Webb Research Slocum G2 glider with a Deep SUNA attached on top of it.
 :::
 
 #### SeaExplorer
