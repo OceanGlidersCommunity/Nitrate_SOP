@@ -4,7 +4,7 @@ This standard operating procedure (SOP) document for dissolved nitrate (NO<sub>3
 There are currently two methods available to conduct nitrate measurements using glider platforms: UV absorption spectrometers (e.g. Thomsen et al., 2019), and miniaturised in situ colourimetric analysers (e.g. Lab-on-Chip (LoC) instruments) (e.g. {cite}`Vincent2018`).
 
 ## UV spectrometry
-That ultraviolet light is absorbed by Nitrate ions has been known since the 1950s {Cite}`Bastian1957`. 
+That ultraviolet light is absorbed by Nitrate ions has been known since the 1950s {cite}`Bastian1957`. 
 More recently the development of miniaturized spectrometers led to instruments which could be deployed in situ to determine Nitrate concentrations in fresh- and seawater.
 
 Around 1998 a prototype instrument was developed at Southampton Oceanography Centre for use in seawater using only a limited number of spectral channels {cite}`Finch1998`. 
