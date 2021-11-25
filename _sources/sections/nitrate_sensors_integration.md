@@ -4,7 +4,7 @@
 
 ### UV Spectrometers
 To our knowledge there are currently at least two different instruments for UV spectroscopy Nitrate measurements in seawater, one manufactured by Sea-Bird Scientific (USA) called Deep SUNA and one by TriOS (Germany) called OPUS. 
-A similar instrument has been developed in China {cite}`zhu2021` but is not yet commercially available.
+A similar instrument has been developed in China {cite}`Zhu2021` but is not yet commercially available.
 Deep SUNAs have been specially developed for use on gliders and Argo floats and have been in use now for several years with good experiences. 
 OPUS instruments have been tested on floats within the Euro-Argo project (https://www.euro-argo.eu/) but not yet on gliders. 
 Both instruments have a 10 mm sample path length in common as this appears to be optimal for the used light sources and spectral sensors and the Nitrate concentrations expected in seawater.
@@ -12,13 +12,13 @@ Apart from these instruments there exists a larger number of submersible Nitrate
 Whether these could be modified for use in seawater and on gliders is not known.
 
 #### Sea-Bird Scientific Deep SUNA
-These instruments are based on the original development by {cite}`johnson2002` from MBARI. 
+These instruments are based on the original development by {cite}`Johnson2002` from MBARI. 
 The original was intended for use in underwater moorings and thus had a more voluminous housing to accommodate batteries. 
 The MBARI-ISUS was commercialized by Satlantic under the same name (Satlantic-ISUS). 
 Satlantic was in 2011 acquired by Sea-Bird Scientific which continues to produce the instruments. 
 Satlantic modified the design of the ISUS which used a mirror together with a light source and a spectrometer next to each other to that of the SUNA which has a light source and a spectrometer on opposing sides of the sample volume. 
 This modified instrument relied on external power and thus was able to have a much more lightweight and streamlined design. 
-The SUNA was further developed into the Deep SUNA which was optimized for the use on autonomous vehicles like gliders or floats with a pressure rating of 2000 dbar and a large internal memory (see also {cite}`johnson2018`).
+The SUNA was further developed into the Deep SUNA which was optimized for the use on autonomous vehicles like gliders or floats with a pressure rating of 2000 dbar and a large internal memory (see also {cite}`Johnson2018`).
 
 All these instruments share the same basic configuration with a Deuterium UV lamp and a 256 channel UV spectrometer covering the wavelengths from 190 to 370 nm. 
 Their internal processor is capable of not only storing the measured spectra but also of converting the data in real time into estimates of the Nitrate concentration.
