@@ -16,8 +16,8 @@ We recommend as many nearby CTD casts with water samples for high accuracy lab b
 The water sample based concentrations can be used to cross-check the concentrations from the UV spectrometers. If no spectrometer-on-CTD calibration casts or lab calibrations are available the water sample data can also be used to determine correction factors and offsets albeit at a higher uncertainty.
 
 ## Lab-on-Chip instruments
-The relatively slow sampling frequency of the LoC analyser means that following ‘standard’ dive flight paths results in a small number of samples in shallow waters (e.g. 4-5 in 150 m water column; {cite}`vincent2018`). 
-In such circumstances a ‘loiter’ profile is preferred, allowing a greater number of NO<sub>3</sub> measurements (e.g. 10 in 150 m water column; {cite}`vincen2018`). 
+The relatively slow sampling frequency of the LoC analyser means that following ‘standard’ dive flight paths results in a small number of samples in shallow waters (e.g. 4-5 in 150 m water column; {cite}`Vincent2018`). 
+In such circumstances a ‘loiter’ profile is preferred, allowing a greater number of NO<sub>3</sub> measurements (e.g. 10 in 150 m water column; {cite}`Vincent2018`). 
 Using a glider with an unpumped CTD package operating in loiter mode can result in slow and variable flow through the conductivity cell and result in suboptimal conductivity measurements when passing through temperature gradients.
 Therefore, when using unpumped CT the loiter dive must be paired with a standard profile and the CT values extrapolated to the loiter. 
 Pumped CTD packages should ideally be used to overcome this issue. 
