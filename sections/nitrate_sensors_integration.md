@@ -71,15 +71,15 @@ We are not aware of any application of a TriOS OPUS on gliders, but once mountin
 ### Lab-on-Chip (LoC) Instruments
 Lab-on-Chip nitrate+nitrite analysers developed at the National Oceanography Centre, UK have been recently commercialized by ClearWater sensors, UK (https://www.clearwatersensors.com/nitrate-sensor/).
 
-Lab-on-Chip analysers developed at the National Oceanography Centre, and recently commercialized by ClearWater sensors have been successfully deployed on Seagliders to observe key seasonal transitions of biogeochemistry, such as spring bloom dynamics, in the Celtic Sea and North Sea (Vincent et al., 2017; Hull et al., 2021). 
+Lab-on-Chip analysers developed at the National Oceanography Centre, and recently commercialized by ClearWater sensors have been successfully deployed on Seagliders to observe key seasonal transitions of biogeochemistry, such as spring bloom dynamics, in the Celtic Sea and North Sea {cite}`Vincent2018`, {cite}`Hull2021`. 
 A variant of this sensor that measures phosphate has also been developed and deployed on a Seaglider (Birchill et al, in review).
 
 #### ClearWater (National Oceanography Centre, NOC) Lab-on-Chip analyser	
 The LoC analyser contains a three layer poly(methyl methacrylate) (PMMA) optofluidic chip with precision milled microchannels, mixers and optical components consisting of light emitting diodes and photodiodes, electronics, solenoid valves and syringe pumps mounted on the chip. 
 The chip forms the end cap of a dark watertight pressure compensated PVC housing, which is rated to 6000 dbar. The chip is fitted with a cadmium column for the reduction of nitrate to nitrite. 
 The system is automated using a 32 bit microcontroller-based electronics package with 18-bit analogue to digital inputs and can stream raw data (1 Hz) over USB, as well as store data on a 8 GB flash memory card. 
-Provided with the values of the on-board standards, the LoC analyser is capable of outputting processed data (µM NO2- + NO3-) over RS232 or RS485 interfaces (Beaton et al., 2012). 
-The analyser is capable of measuring concentrations ranging from 0.025 to 1000 µM NO3 due to the chip containing 3 measurement cells with differing path lengths. 
+Provided with the values of the on-board standards, the LoC analyser is capable of outputting processed data (µM NO<sub>2-</sub> + NO<sub>3-</sub>) over RS232 or RS485 interfaces {cite}`Beaton2012`. 
+The analyser is capable of measuring concentrations ranging from 0.025 to 1000 µM NO<sub>3</sub> due to the chip containing 3 measurement cells with differing path lengths. 
 Measurement frequency during glider operations is approximately every 7 minutes, this is preceded by a calibration period of approximately 21 minutes during which blank and standard measurements are made at the start of each dive.  
 
 ## Instrument comparison and uncertainty numbers
@@ -109,14 +109,14 @@ Bio-fouling and other influences are not included.
 
 |   |  Sample rate  |  Power |  Manufacturer Accuracy | Manufacturer Precision |  Manufacturer Detection limit |  Precision estimate |  Accuracy estimate (w. x-cali.) |
 |---|---|---|---|---|---|---|---|
-|   | Hz | W | µM NO3 | µM NO3 | µM NO3 | µM NO3 | µM NO3 |
+|   | Hz | W | µM NO<sub>3</sub> | µM NO<sub>3</sub> | µM NO<sub>3</sub> | µM NO<sub>3</sub> | µM NO<sub>3</sub> |
 | Deep SUNA  | 1 | <=8 | 10% or >=2.0 (+0.3 / hr lamp) | 0.3 (2.4 SW sal) | 0.5 (2.0 SW sal) | 0.17 (4) | 0.5-1.0 (5) |
 | OPUS  | 1/3 | <=8 | 5% +0.7 | 0.36 (3) | 2.1 | 1.3 (4) | 1.0 (5)  |
 | LoC  | 0.0002 (7 min) | 1.5 | 3 % for concentration range 5.63 to 44.43 (1) | 4 % for concentration range 5.63 to 44.43 (1) | 0.025 | 0.14 (2) |   |
 
-(1) from estimates of combined uncertainty estimated via the analysis of certified reference materials using 7 analysers (Birchill et al., 2019).
+(1) from estimates of combined uncertainty estimated via the analysis of certified reference materials using 7 analysers {cite}`Birchill2019`.
 
-(2) not a standard mode of operation for the LoC analyser, values are from a CTD trial deployment (Vincent et al., 2017). 
+(2) not a standard mode of operation for the LoC analyser, values are from a CTD trial deployment {cite}`Vincent2018`. 
 
 (3) It is unclear whether the OPUS’ accuracy and precision values given by the manufacturer use internal averaging of several spectra. The typical noise on CTDs was determined using single non-averaged spectra.
 
