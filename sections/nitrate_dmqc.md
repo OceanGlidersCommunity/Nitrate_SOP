@@ -41,6 +41,6 @@ It is important to note that LoC sample intake takes approximately 15-20 seconds
 ### UV Spectrometers
 Delayed mode quality control for UV spectrometers is comparable to that of real time quality control. See the chapter on RTQC.
 
-The detection limit of SUNA measurements is 0.3 uM which has to be considered when observing oligotrophic regions. Typical issues occur near the surface due to interférence with sunlight and highly turbid regions. 
+The detection limit of SUNA measurements is 0.3 µM which has to be considered when observing oligotrophic regions. Typical issues occur near the surface due to interférence with sunlight and highly turbid regions. 
 
 Based on longitude, latitude, pressure, temperature, salinity and oxygen Argo floats users estimate the delayed mode values for nitrate with CANYON B  (https://doi.org/10.3389/fmars.2018.00328. , https://doi.org/10.1002/2017JC012838). This approach can similarly be followed for glider based data and should be based on data at depth where nitrate values are not so variable.
