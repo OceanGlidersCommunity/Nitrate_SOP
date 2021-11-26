@@ -10,7 +10,7 @@
  
 ## SOP development process
 
-1) Initial SOP was drafted by [Gerd Krahmann](https://github.com/gkrahmann), Christian Begler and [Soeren Thomsen](https://github.com/soerenthomsen) in April 2021.
+1) Initial SOP was drafted by [Gerd Krahmann](https://github.com/gkrahmann), Christian Begler and [Soeren Thomsen](https://github.com/soerenthomsen) in April 2021. 
 
 2) During OceanGliders Best Practice Workshop, May 11 - 25 2021 one expert session was held and
 additional authors joined: Antony Birchill, Alexander Beaton, [Matthew Patey](https://github.com/mpatey)
@@ -26,7 +26,7 @@ additional authors joined: Antony Birchill, Alexander Beaton, [Matthew Patey](ht
 7) Additional authors joined on GitHub during the community review: XXX
 
 ## Contributions 
-[Gerd Krahmann](https://github.com/gkrahmann) initiated the development of the nitrate SOP in March 2021. He wrote the SUNA sections. He co-chaired the expert session during the OceanGliders Best Practice Workshop, May 11 - 25 2021.
+[Gerd Krahmann](https://github.com/gkrahmann) initiated the development of the nitrate SOP in March 2021. He wrote the SUNA sections. He co-chaired the expert session during the OceanGliders Best Practice Workshop, May 11 - 25 2021. He helps to maintain the SOP on GitHub.
 
 Christian Begler wrote parts of the SUNA sections.
 
