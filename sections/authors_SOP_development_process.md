@@ -1,10 +1,10 @@
 # Authors, development process and contributions
 
 ## Authors
-  1. [Gerd Krahmann](https://github.com/gkrahmann), *GEOMAR Helmholtz Centre for Ocean Research Kiel, Germany* 
+  1. [Gerd Krahmann](https://github.com/gkrahmann), *GEOMAR Helmholtz Centre for Ocean Research Kiel, Germany,* [0000-0003-0944-8795](https://orcid.org/0000-0003-0944-8795) 
   2. Christian Begler, *GEOMAR Helmholtz Centre for Ocean Research Kiel, Germany* 
   3. Antony Birchill, *School of Geography, Earth and Environment Sciences, University of Plymouth, UK*
-  4. [Matthew Patey](https://github.com/mpatey), *National Oceanography Centre, Southampton, UK*
+  4. [Matthew Patey](https://github.com/mpatey), *National Oceanography Centre, Southampton, UK,* [0000-0001-8677-2818](https://orcid.org/0000-0001-8677-2818)
   5. Alexander Beaton, *National Oceanography Centre, Southampton, UK*
   6. [Soeren Thomsen](https://github.com/soerenthomsen), *LOCEAN, ISPL, Sorbonne University, Paris, France,* [0000-0002-0598-8340](https://orcid.org/0000-0002-0598-8340)
  
