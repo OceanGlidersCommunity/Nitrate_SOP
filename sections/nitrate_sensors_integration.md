@@ -78,7 +78,7 @@ A variant of this sensor that measures phosphate has also been developed and dep
 The LoC analyser contains a three layer poly(methyl methacrylate) (PMMA) optofluidic chip with precision milled microchannels, mixers and optical components consisting of light emitting diodes and photodiodes, electronics, solenoid valves and syringe pumps mounted on the chip. 
 The chip forms the end cap of a dark watertight pressure compensated PVC housing, which is rated to 6000 dbar. The chip is fitted with a cadmium column for the reduction of nitrate to nitrite. 
 The system is automated using a 32 bit microcontroller-based electronics package with 18-bit analogue to digital inputs and can stream raw data (1 Hz) over USB, as well as store data on a 8 GB flash memory card. 
-Provided with the values of the on-board standards, the LoC analyser is capable of outputting processed data (µM NO<sub>2-</sub> + NO<sub>3-</sub>) over RS232 or RS485 interfaces {cite}`Beaton2012`. 
+Provided with the values of the on-board standards, the LoC analyser is capable of outputting processed data (µM NO<sub>2</sub><sup>-</sup> + NO<sub>3</sub><sup>-</sup>) over RS232 or RS485 interfaces {cite}`Beaton2012`. 
 The analyser is capable of measuring concentrations ranging from 0.025 to 1000 µM NO<sub>3</sub> due to the chip containing 3 measurement cells with differing path lengths. 
 Measurement frequency during glider operations is approximately every 7 minutes, this is preceded by a calibration period of approximately 21 minutes during which blank and standard measurements are made at the start of each dive.  
 
