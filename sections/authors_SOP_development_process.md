@@ -6,7 +6,7 @@
   3. Antony Birchill, *School of Geography, Earth and Environment Sciences, University of Plymouth, UK*
   4. [Matthew Patey](https://github.com/mpatey), *National Oceanography Centre, Southampton, UK*
   5. Alexander Beaton, *National Oceanography Centre, Southampton, UK*
-  6. [Soeren Thomsen](https://github.com/soerenthomsen), *LOCEAN, ISPL, Sorbonne University, Paris, France*
+  6. [Soeren Thomsen](https://github.com/soerenthomsen), *LOCEAN, ISPL, Sorbonne University, Paris, France,* [0000-0002-0598-8340](https://orcid.org/0000-0002-0598-8340)
  
 ## SOP development process
 
