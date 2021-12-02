@@ -1,6 +1,8 @@
 # Introduction
 
-This standard operating procedure (SOP) document for dissolved nitrate (NO<sub>3</sub>) aims to guide glider users through the steps necessary for the collection of good quality dissolved Nitrate concentrations using gliders for both real time and post deployment data streams. It concentrates on glider specific questions and tasks. Additional in depth information on standard operating procedures for in situ nutrients measurements can be found in {cite}`Daniel2020`.
+This standard operating procedure (SOP) document for dissolved nitrate (NO<sub>3</sub>) aims to guide glider users through the steps necessary for the collection of good quality dissolved Nitrate concentrations using gliders for both real time and post deployment data streams. 
+It concentrates on glider specific questions and tasks. 
+Additional in depth information on standard operating procedures for in situ nutrients measurements can be found in {cite}`Daniel2020`.
 
 There are currently two methods available to conduct nitrate measurements using glider platforms: UV absorption spectrometers (e.g. {cite}`Thomsen2019`), and miniaturised in situ colourimetric analysers (e.g. Lab-on-Chip (LoC) instruments) (e.g. {cite}`Vincent2018`).
 
