@@ -7,6 +7,8 @@
   4. [Matthew Patey](https://github.com/mpatey), *National Oceanography Centre, Southampton, UK,* [0000-0001-8677-2818](https://orcid.org/0000-0001-8677-2818)
   5. Alexander Beaton, *National Oceanography Centre, Southampton, UK* [0000-0002-0206-7466](https://orcid.org/0000-0002-0206-7466)
   6. [Soeren Thomsen](https://github.com/soerenthomsen), *LOCEAN, ISPL, Sorbonne University, Paris, France,* [0000-0002-0598-8340](https://orcid.org/0000-0002-0598-8340)
+  7. [Daisuke Hasegawa](https://github.com/daisuke-hasegawa), *Japan Fisheries Research and Education Agency (FRA), Shiogama, Japan,* [0000-0002-8685-7042](https://orcid.org/0000-0002-8685-7042)
+
  
 ## SOP development process
 
