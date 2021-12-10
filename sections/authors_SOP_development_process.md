@@ -8,6 +8,7 @@
   5. Alexander Beaton, *National Oceanography Centre, Southampton, UK* [0000-0002-0206-7466](https://orcid.org/0000-0002-0206-7466)
   6. [Soeren Thomsen](https://github.com/soerenthomsen), *LOCEAN, ISPL, Sorbonne University, Paris, France,* [0000-0002-0598-8340](https://orcid.org/0000-0002-0598-8340)
   7. [Daisuke Hasegawa](https://github.com/daisuke-hasegawa), *Japan Fisheries Research and Education Agency (FRA), Shiogama, Japan,* [0000-0002-8685-7042](https://orcid.org/0000-0002-8685-7042)
+  8. [Takahiro Tanaka](https://github.com/Tanaka7800), *Japan Fisheries Research and Education Agency (FRA), Shiogama, Japan,* [0000-0001-8406-5183](https://orcid.org/0000-0001-8406-5183)
 
  
 ## SOP development process
@@ -21,7 +22,7 @@ additional authors joined: Antony Birchill, Alexander Beaton, [Matthew Patey](ht
 
 4) SOP moved to this repository by: [Soeren Thomsen](https://github.com/soerenthomsen) and [Gerd Krahmann](https://github.com/gkrahmann) in November 2021. 
 
-5) Additional authors joined on GitHub prior to the community review: [Daisuke Hasegawa](https://github.com/daisuke-hasegawa)
+5) Additional authors joined on GitHub prior to the community review: [Daisuke Hasegawa](https://github.com/daisuke-hasegawa) and [Takahiro Tanaka](https://github.com/Tanaka7800).
 
 6) 4 months community review on GitHub until 31 March 2022.
 
@@ -48,4 +49,6 @@ Coordinated the whole development process including organising multiple meetings
 He reviewed and edited all parts of the SOP. 
 He helps to maintain the SOP on GitHub.
 
-[Daisuke Hasegawa](https://github.com/daisuke-hasegawa) provided feedback to the overall SOP and specific input inlcuding an image about the SUNA SeaExplorer integration. 
+[Daisuke Hasegawa](https://github.com/daisuke-hasegawa) provided feedback to the overall SOP and specific input including an image about the SUNA SeaExplorer integration. 
+
+[Takahiro Tanaka](https://github.com/Tanaka7800) provided feedback to the overall SOP and specific input about the SUNA SeaExplorer integration. 
