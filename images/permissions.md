@@ -9,4 +9,6 @@
 - `logo.png`- OceanGliders
 - `logo_v02_1_contour.png` - OceanGliders
 - `logo-ocean-gliders.png` - OceanGliders
+- `SeaExplorer_with_suna_mr_arrow.jpg` - Daisuke Hasegawa
 - `slocum_g2_with_suna.jpg` - Gerd Krahmann
+- 
