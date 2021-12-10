@@ -48,3 +48,4 @@ Coordinated the whole development process including organising multiple meetings
 He reviewed and edited all parts of the SOP. 
 He helps to maintain the SOP on GitHub.
 
+[Daisuke Hasegawa](https://github.com/daisuke-hasegawa) provided feedback to the overall SOP and specific input inlcuding an image about the SUNA SeaExplorer integration. 
