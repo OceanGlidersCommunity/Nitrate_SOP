@@ -6,6 +6,8 @@ This [GitHub repository](https://github.com/OceanGlidersCommunity/Nitrate_SOP) i
 
 Read the SOP [here](https://oceangliderscommunity.github.io/Nitrate_SOP/sections/authors_SOP_development_process.html). 
 
+Everyone is welcome to join the SOP at any time.
+
 ## Community review
 The community review is planned to start in December 2021.
 
