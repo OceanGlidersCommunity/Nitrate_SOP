@@ -174,9 +174,12 @@ A Teledyne Webb Research Slocum G2 glider with a Deep SUNA attached on top of it
 :::
 
 #### SeaExplorer
-:::{figure-md} slocum_suna
+:::{figure-md} seaexplorer_suna_mr
 <img src="/images/SeaExplorer_with_suna_mr_arrow.jpg" alt="SeaExplorer X2 with SUNA" class="bg-primary mb-1" width="600px">
 
 An ALSEAMAR SeaExplorer X2 with a Deep SUNA attached on the side of the sensor payload section. The sensor attached on the glider nose is a turbulence sensor (MicroRider-1000G by Rockland Scientific). This glider is capable observing the vertical turbulent nitrate flux by combination use of the nitrate and the turbulence sensors.
 
+:::{figure-md} seaexplorer_suna
+<img src="/images/seaexplorer_with_suna_configuration_2a.jpg" alt="SeaExplorer X2 with SUNA" class="bg-primary mb-1" width="600px">
 
+An ALSEAMAR SeaExplorer X2 with a Deep SUNA in a different configuration with the Deep SUNA attached to the top of the glider.
