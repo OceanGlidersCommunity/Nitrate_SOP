@@ -75,7 +75,7 @@ var addUtterances = () => {
 commentsRunWhenDOMLoaded(addUtterances);
 </script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
-    <script src="../_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
+    <script src="../_static/sphinx-book-theme.d59cb220de22ca1c485ebbdc042f0030.js"></script>
     <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
     <script>
         const thebe_selector = ".thebe"
@@ -232,7 +232,7 @@ commentsRunWhenDOMLoaded(addUtterances);
                 data-placement="left">.md</button></a>
         <!-- Download PDF via print -->
         <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
-            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+                onclick="printPdf(this)" data-toggle="tooltip" data-placement="left">.pdf</button>
     </div>
 </div>
 
@@ -268,7 +268,7 @@ commentsRunWhenDOMLoaded(addUtterances);
         </div>
 
         <!-- Table of contents -->
-        <div class="d-none d-md-block col-md-2 bd-toc show">
+        <div class="d-none d-md-block col-md-2 bd-toc show noprint">
             
             <div class="tocsection onthispage pt-5 pb-3">
                 <i class="fas fa-list"></i> Contents
@@ -310,7 +310,130 @@ commentsRunWhenDOMLoaded(addUtterances);
         </div>
     </div>
 </div>
-    <div id="main-content" class="row">
+    <!-- Table of contents that is only displayed when printing the page -->
+    <div id="jb-print-docs-body" class="onlyprint">
+        <h1>Delayed Mode Processing and Quality Control</h1>
+        <!-- Table of contents -->
+        <div id="print-main-content" class="row">
+            <div class="col-12 col-md-12 pl-md-5 pr-md-5">
+            <div id="jb-print-toc">
+                
+                <div>
+                    <h2> Contents </h2>
+                </div>
+                <nav aria-label="Page">
+                    <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#delayed-mode-processing">
+   8.1. Delayed Mode Processing
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#uv-spectrometers">
+     8.1.1. UV Spectrometers
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#lab-on-chip-instruments">
+     8.1.2. Lab-on-Chip Instruments
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#delayed-mode-quality-control-dmqc">
+   8.2. Delayed Mode Quality Control (DMQC)
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id4">
+     8.2.1. UV Spectrometers
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+                </nav>
+            </div>
+            
+              <div>
+                
+  <div class="tex2jax_ignore mathjax_ignore section" id="delayed-mode-processing-and-quality-control">
+<h1><span class="section-number">8. </span>Delayed Mode Processing and Quality Control<a class="headerlink" href="#delayed-mode-processing-and-quality-control" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="delayed-mode-processing">
+<h2><span class="section-number">8.1. </span>Delayed Mode Processing<a class="headerlink" href="#delayed-mode-processing" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="uv-spectrometers">
+<h3><span class="section-number">8.1.1. </span>UV Spectrometers<a class="headerlink" href="#uv-spectrometers" title="Permalink to this headline">¶</a></h3>
+<p>The processing of UV attenuance spectra to obtain nitrate concentrations has been fully described in <span id="id1">[<a class="reference internal" href="nitrate_references.html#id15">Sakamoto <em>et al.</em>, 2009</a>]</span>, <span id="id2">[<a class="reference internal" href="nitrate_references.html#id16">Sakamoto <em>et al.</em>, 2017</a>]</span>, <span id="id3">[<a class="reference internal" href="nitrate_references.html#id12">Johnson <em>et al.</em>, 2018</a>]</span>.
+In delayed mode  temperature and salinity can be used to remove the effects of Bromide on the observed spectra.
+For an additional correction pressure data can be fed into the calculations.
+Matlab code has been published for Deep SUNA processing (<a class="reference external" href="https://github.com/SOCCOM-BGCArgo">https://github.com/SOCCOM-BGCArgo</a>), but can be adapted to other spectrometers.
+Recently (2020) a modified temperature dependency of the Bromide correction has been developed (<a class="reference external" href="https://argo.ucsd.edu/wp-content/uploads/sites/361/2021/04/BGC_meeting_ADMT2020_Minutes.pdf">https://argo.ucsd.edu/wp-content/uploads/sites/361/2021/04/BGC_meeting_ADMT2020_Minutes.pdf</a>).
+Another code version is available at <a class="reference external" href="https://github.com/oceanobservatories/ion-functions/blob/master/ion_functions/data/nit_functions.py">https://github.com/oceanobservatories/ion-functions/blob/master/ion_functions/data/nit_functions.py</a>.</p>
+<p>Reference lamp spectra taken before and after the deployment can now be used to remove the effects of lamp aging on the attenuance spectra.
+Nitrate concentrations should be calculated for both pre- and post-deployment lamp reference spectra.
+A linear blend of the two concentrations gives probably the optimal nitrate concentration estimate.
+Depending on the strength of the bio-fouling the linear blend calculation should probably be based on either lamp use time (no or weak bio-fouling) or deployment time (strong bio-fouling).</p>
+<p>A cross-calibration of the resulting nitrate concentrations is strongly recommended.</p>
+<p>Reprocessed nitrate concentrations typically differ from higher quality water sample based measurements by a few % (see also Table 1).
+The differences are linear with the concentrations and can be corrected by applying an offset and a slope factor.
+GEOMAR has found that for Deep SUNAs the remaining differences after the correction are typically between 0.5 and 1 µM, significantly better than the &gt;= 2 µM given for uncorrected concentrations.
+Without such a correction the differences can be significantly larger (see Table 1).
+Cross-calibration is also possible between Deep SUNA-glider profiles and nearby CTD water sample profiles.
+Preferably close in time and space (acceptable practice).
+As a last resort SUNA values can be cross-calibrated against open ocean climatological values which are typically close to 0 umol/kg near the surface and relatively stable below 500 m depth (tropical Atlantic).
+Calibrations using data from the nutricline will be rather uncertain and one might have to resort to using only the near surface values to determine an offset (and no slope).</p>
+</div>
+<div class="section" id="lab-on-chip-instruments">
+<h3><span class="section-number">8.1.2. </span>Lab-on-Chip Instruments<a class="headerlink" href="#lab-on-chip-instruments" title="Permalink to this headline">¶</a></h3>
+<p>For the lab-on-chip analyser there are a number of post processing steps to be conducted:</p>
+<ol class="simple">
+<li><p>Check the consistency of blank and standard absorbance values to identify any calibrations that are clear outliers. Data from such calibrations can either be omitted from further analysis, or an alternative calibration could be applied e.g. deployment average calibration values or values from preceding or subsequent dives.</p></li>
+<li><p>Screen sample concentrations for extreme values, the definition of extreme values depends on sampling region and prior knowledge. The sensors have an optional optical correction feature which allows for inherent optical differences between the sample and standard to be accounted for, particularly in estuarine environments. This feature was occasionally shown to make data reduce data quality (e.g. produce extreme negative concentrations) during glider deployments. If large amounts of noise are seen in the data it may be worth investigating whether this feature has introduced any artefacts.</p></li>
+<li><p>Flag any values that are below the Limit of Detection (LoD). There is no current consensus on how to treat concentrations &lt; LoD. For plotting purposes data can be replaced with LoD/2.</p></li>
+<li><p>Compare the data product to climatological data and if available grab samples collected at beginning and end of deployment.</p></li>
+</ol>
+<p>It is important to note that LoC sample intake takes approximately 15-20 seconds, the precise duration, and hence vertical distance over which the sample is collected, can be calculated for each sample using raw data accessed on glider recovery. This is important when the glider is passing through strong nutrient gradients and for accurately reporting the  sample measurement depth. In dynamic regions, such as shelf seas, it is expected that there will be significant temporal and spatial variation of nutrient concentrations. Not every glider dive will include NO<sub>3</sub> measurements, therefore it is helpful to occasionally conduct NO<sub>3</sub> analysis on subsequent dives. By minimising natural spatial and temporal variability this allows for an assessment of LoC analyser field precision by comparing samples measured at similar points in the water column.</p>
+</div>
+</div>
+<div class="section" id="delayed-mode-quality-control-dmqc">
+<h2><span class="section-number">8.2. </span>Delayed Mode Quality Control (DMQC)<a class="headerlink" href="#delayed-mode-quality-control-dmqc" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id4">
+<h3><span class="section-number">8.2.1. </span>UV Spectrometers<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h3>
+<p>Delayed mode quality control for UV spectrometers is comparable to that of real time quality control. See the chapter on RTQC.</p>
+<p>The detection limit of SUNA measurements is 0.3 µM which has to be considered when observing oligotrophic regions. Typical issues occur near the surface due to interférence with sunlight and highly turbid regions.</p>
+<p>Based on longitude, latitude, pressure, temperature, salinity and oxygen Argo floats users estimate the delayed mode values for nitrate with CANYON B  (<a class="reference external" href="https://doi.org/10.3389/fmars.2018.00328">https://doi.org/10.3389/fmars.2018.00328</a>. , <a class="reference external" href="https://doi.org/10.1002/2017JC012838">https://doi.org/10.1002/2017JC012838</a>). This approach can similarly be followed for glider based data and should be based on data at depth where nitrate values are not so variable.</p>
+</div>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./sections"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+            </div>
+        </div>
+    </div>
+    <div id="main-content" class="row noprint">
         <div class="col-12 col-md-9 pl-md-3 pr-md-0">
         
               <div>
@@ -408,15 +531,13 @@ Calibrations using data from the nutricline will be rather uncertain and one mig
         </div>
     </div>
     <footer class="footer">
-    <div class="container">
-      <p>
-        
-          By The Jupyter Book community<br/>
-        
-            &copy; Copyright 2021.<br/>
-      </p>
-    </div>
-  </footer>
+  <p>
+    
+      By The Jupyter Book community<br/>
+    
+        &copy; Copyright 2021.<br/>
+  </p>
+</footer>
 </main>
 
 

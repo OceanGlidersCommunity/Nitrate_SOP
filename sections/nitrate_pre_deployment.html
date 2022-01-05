@@ -75,7 +75,7 @@ var addUtterances = () => {
 commentsRunWhenDOMLoaded(addUtterances);
 </script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
-    <script src="../_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
+    <script src="../_static/sphinx-book-theme.d59cb220de22ca1c485ebbdc042f0030.js"></script>
     <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
     <script>
         const thebe_selector = ".thebe"
@@ -232,7 +232,7 @@ commentsRunWhenDOMLoaded(addUtterances);
                 data-placement="left">.md</button></a>
         <!-- Download PDF via print -->
         <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
-            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+                onclick="printPdf(this)" data-toggle="tooltip" data-placement="left">.pdf</button>
     </div>
 </div>
 
@@ -268,7 +268,7 @@ commentsRunWhenDOMLoaded(addUtterances);
         </div>
 
         <!-- Table of contents -->
-        <div class="d-none d-md-block col-md-2 bd-toc show">
+        <div class="d-none d-md-block col-md-2 bd-toc show noprint">
             
             <div class="tocsection onthispage pt-5 pb-3">
                 <i class="fas fa-list"></i> Contents
@@ -378,7 +378,258 @@ commentsRunWhenDOMLoaded(addUtterances);
         </div>
     </div>
 </div>
-    <div id="main-content" class="row">
+    <!-- Table of contents that is only displayed when printing the page -->
+    <div id="jb-print-docs-body" class="onlyprint">
+        <h1>Pre-deployment operations and calibrations</h1>
+        <!-- Table of contents -->
+        <div id="print-main-content" class="row">
+            <div class="col-12 col-md-12 pl-md-5 pr-md-5">
+            <div id="jb-print-toc">
+                
+                <div>
+                    <h2> Contents </h2>
+                </div>
+                <nav aria-label="Page">
+                    <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#storage-and-maintenance">
+   4.1. Storage and Maintenance
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#uv-spectrometers">
+     4.1.1. UV Spectrometers
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#lab-on-chip-instruments">
+     4.1.2. Lab-on-Chip Instruments
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#generic-function-test">
+   4.2. Generic function test
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id1">
+     4.2.1. UV Spectrometers
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#general-setup">
+   4.3. General setup
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#pre-deployment-lab-calibrations">
+   4.4. Pre-deployment lab calibrations
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#data-traceability">
+     4.4.1. Data traceability
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id3">
+   4.5. UV Spectrometers
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#deep-suna">
+     4.5.1. Deep SUNA
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#trios-opus">
+     4.5.2. TriOS OPUS
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id4">
+     4.5.3. Lab-on-Chip Instruments
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#pre-deployment-field-calibration">
+   4.6. Pre-deployment field calibration
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id5">
+     4.6.1. UV Spectrometers
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id7">
+     4.6.2. Lab-on-Chip Instruments
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#cadmium-column-checks">
+       4.6.2.1. Cadmium column checks
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#data-submission-pre-deployment">
+   4.7. Data submission (pre-deployment)
+  </a>
+ </li>
+</ul>
+
+                </nav>
+            </div>
+            
+              <div>
+                
+  <div class="tex2jax_ignore mathjax_ignore section" id="pre-deployment-operations-and-calibrations">
+<h1><span class="section-number">4. </span>Pre-deployment operations and calibrations<a class="headerlink" href="#pre-deployment-operations-and-calibrations" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="storage-and-maintenance">
+<h2><span class="section-number">4.1. </span>Storage and Maintenance<a class="headerlink" href="#storage-and-maintenance" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="uv-spectrometers">
+<h3><span class="section-number">4.1.1. </span>UV Spectrometers<a class="headerlink" href="#uv-spectrometers" title="Permalink to this headline">¶</a></h3>
+<p>The described UV sensors have no special storage needs apart from that typical for high sensitivity optical instruments. Follow the manufacturer’s instructions in the instrument manuals.</p>
+<p>Regular monitoring of the UV lamp usage is important for Deep SUNA instruments.
+The advertised lifetime of 900 h translates to more than 5 weeks of continuous operation at the fastest sampling rate of 1 Hz or nearly 30 weeks of operation at a reduced sampling rate of 5.5 seconds.
+At GEOMAR one Deep SUNA was in use for 7 two to three week long deployments before a lamp replacement and servicing was initiated.</p>
+</div>
+<div class="section" id="lab-on-chip-instruments">
+<h3><span class="section-number">4.1.2. </span>Lab-on-Chip Instruments<a class="headerlink" href="#lab-on-chip-instruments" title="Permalink to this headline">¶</a></h3>
+<p>Similarly, the LoC analysers have limited storage requirements (room temperature, clean and dry is sufficient).
+Reagents have also been shown to be remarkably stable, year long deployments have been conducted in the marine environment and replacement reagents can be purchased.
+For long term storage (several weeks and more), it is recommended to remove the cadmium reduction tube (accessible outside the housing) and store as per manufacturer instructions (so that it cannot dry out and risk becoming blocked).</p>
+</div>
+</div>
+<div class="section" id="generic-function-test">
+<h2><span class="section-number">4.2. </span>Generic function test<a class="headerlink" href="#generic-function-test" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id1">
+<h3><span class="section-number">4.2.1. </span>UV Spectrometers<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h3>
+<p>Before deployment a full function test of the UV spectrometer in the lab is recommended.</p>
+<p>A running self-registering instrument should be immersed into water samples with different nitrate concentrations.
+E.g. into distilled water (or low nutrient surface water) and, if available, into a sample from a deeper water mass which is known to contain nitrate.
+The instruments have to be able to detect the difference and, if calibrated,  should give good values and, if not calibrated, should at least detect a difference of the correct order of magnitude.</p>
+</div>
+</div>
+<div class="section" id="general-setup">
+<h2><span class="section-number">4.3. </span>General setup<a class="headerlink" href="#general-setup" title="Permalink to this headline">¶</a></h2>
+<p>Before any measurement (UV &amp; LoC) with a nitrate measuring instrument it is most important and strongly recommended that the instrument’s internal clock is properly set.</p>
+<p>In Slocum gliders the clock offset of Deep SUNAs can be recovered by comparing glider timestamps and Deep SUNA timestamps for exactly matching nitrate concentrations which are sent in real-time from the Deep SUNA to the glider.
+It is however much better to set the clock properly.</p>
+</div>
+<div class="section" id="pre-deployment-lab-calibrations">
+<h2><span class="section-number">4.4. </span>Pre-deployment lab calibrations<a class="headerlink" href="#pre-deployment-lab-calibrations" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="data-traceability">
+<h3><span class="section-number">4.4.1. </span>Data traceability<a class="headerlink" href="#data-traceability" title="Permalink to this headline">¶</a></h3>
+<p>Cross-checking a measurement against a reference material with a certified value has become the most important test of the accuracy of a device or procedure for many environmental measurements.
+Certified reference materials (CRMs) for nutrient analysis have only recently become available due to the poor stability of solutions of dissolved nutrients.
+However materials are now available from the National Research Council of Canada (<a class="reference external" href="https://doi.org/10.4224/crm.2014.moos-3">https://doi.org/10.4224/crm.2014.moos-3</a>) and KANSO in Japan (<a class="reference external" href="http://www.kanso.co.jp/eng/production/">http://www.kanso.co.jp/eng/production/</a>).</p>
+<p>SCOR working group 147 (<a class="reference external" href="https://scor-int.org/group/147/">https://scor-int.org/group/147/</a>) recommends the use of certified reference materials for every set of field measurements and has collaborated with the Japan Agency for Marine-Earth Science and Technology (JAMSTEC) to make KANSO nutrient CRMs more widely available to purchase by the community (<a class="reference external" href="http://www.jamstec.go.jp/scor/background.html">http://www.jamstec.go.jp/scor/background.html</a>).</p>
+<p>While the cost of these materials is not insignificant, and their stability is poor once opened, this cost has to be put into perspective against the cost of glider and sensor technology and the huge costs and human effort that goes into any deployment.
+The use of reference materials in nutrient measurement represents an enormous step forwards in terms of reducing measurement uncertainty and improving data quality.
+The authors anticipate (and hope) that the use of such materials will become as standard as it is in the field of carbonate system parameter measurement or trace metal analysis, where it is no longer possible to publish field data that has not been cross-referenced to a certified reference material.</p>
+<p>If at all possible, the performance of the sensor should be verified by measuring a CRM as a sample directly just before the deployment and immediately after recovery.
+This is relatively straightforward for a lab-on-chip analyser, but unrealistic for the UV spectrometer devices since it must be immersed in a large volume of solution in order to get a measurement.
+In this case we recommend the measurement of a suitable water sample. This sample might be collected from a CTD rosette or have been brought beforehand to the deployment.
+If necessary it can be spiked with a concentrated nitrate standard to bring it well within the measurement range of the instrument.
+A sample of this water should be taken and immediately analysed or frozen for later analysis together with a suitable CRM.</p>
+<p>For the relatively voluminous UV spectrometers a method for using the small volumina CRMs has to be developed.</p>
+<p>In the absence of CRM measurements, measurements from CTD samples collected as close as possible in space and time to the glider can be used to provide some reassurance as to the validity of the data obtained from the autonomous platform.
+This method can be problematic if there are gradients in nutrient concentration (e.g. <span id="id2">[<a class="reference internal" href="nitrate_references.html#id18">Vincent <em>et al.</em>, 2018</a>]</span>) and since this effectively results in the comparison of two separate measurements of two samples that differ to an unknown degree, the measurement uncertainty information provided is greatly diminished.</p>
+<p>In some cases where no cross-checks have been possible, it has sometimes been necessary to use values from historic databases to compare with the data obtained. Such an approach should be avoided if at all possible, since such datasets are often very limited in temporal and spatial coverage and provide no way to quantitatively verify a new dataset.</p>
+</div>
+</div>
+<div class="section" id="id3">
+<h2><span class="section-number">4.5. </span>UV Spectrometers<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="deep-suna">
+<h3><span class="section-number">4.5.1. </span>Deep SUNA<a class="headerlink" href="#deep-suna" title="Permalink to this headline">¶</a></h3>
+<p>Deuterium UV lamps as used in Sea-Bird Deep SUNA instruments suffer from relatively rapid aging.
+With increasing age the output strength reduces and possibly shifts.
+It appears that the changes are relatively linear over deployment length time scales and can be estimated by measuring the lamp spectra before and after deployment on a glider.
+The software package delivered with Deep SUNA instruments (UCI, previously SUNACOM, available at <a class="reference external" href="https://www.seabird.com">https://www.seabird.com</a>) allows for the determination of these lamp reference spectra and internal storage and use for subsequent internal nitrate concentration calculations.
+At the same time these reference measurements should take care of any changes of the spectrometer sensitivity.</p>
+<p>We strongly recommend this lamp reference calibration before each deployment. Detailed instructions can be found in the instrument manual (Deep SUNA: <a class="reference external" href="https://www.seabird.com">https://www.seabird.com</a> , enter ‘deep suna manual’ in the search field).</p>
+<p>Instead of a lamp reference calibration before a deployment, a lamp reference calibration directly after the previous deployment can possibly be used.</p>
+<p>In theory there is no need to determine absorption spectra from nitrate as they are a  material property. These spectra are given by the manufacturer and stored in the instruments. Nevertheless reference measurements can easily be made when nitrate reference samples are available (e.g. by using nitrate CRM). They can be used to check the manufacturer’s nitrate absorption spectra and can also be used to confirm the linearity of the sensor response. Deep SUNA will directly output nitrate concentrations when measuring reference samples. These concentrations should within the uncertainty given by the manufacturer agree with the known concentration in the reference sample.</p>
+<p>We recommend these reference measurements particularly when there are doubts on the instrument performance.</p>
+</div>
+<div class="section" id="trios-opus">
+<h3><span class="section-number">4.5.2. </span>TriOS OPUS<a class="headerlink" href="#trios-opus" title="Permalink to this headline">¶</a></h3>
+<p>Xenon UV flash lamps as used in TriOS OPUS instruments should suffer much less from aging. The before-and-after deployment lamp reference measurements should thus not be as important as for instruments with Deuterium lamps. However, in one instrument we (GEOMAR) have found possible changes in lamp intensity or spectrometer sensitivity which we were able to correct for by measuring the lamp reference spectra before and after a deployment (the OPUS was used on a CTD not on a glider).</p>
+<p>While Deuterium UV lamps have a very stable output with little noise, the Xenon flash lamps of the TriOS OPUS result in considerable noise from one measurement to the next. To obtain a reliable reference lamp spectrum, a larger number of measured spectra (&gt;10) should be averaged.</p>
+<p>If ever a TriOS OPUS is used on a glider, we would strongly recommend lamp reference calibrations before each deployment.</p>
+<p>Again, in theory there is no need to determine spectra from nitrate containing reference samples. They can however easily be collected when nitrate reference samples are available and they then can be used to confirm the linearity of the sensor response.</p>
+</div>
+<div class="section" id="id4">
+<h3><span class="section-number">4.5.3. </span>Lab-on-Chip Instruments<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h3>
+<p>For a LoC analyser it is recommended that the analyser makes multiple measurements (&gt;10) of solutions with known nitrate concentrations that span the range expected during deployment.
+For this, the sensor can be powered externally (e.g. using a  benchtop power supply).
+The analytical cycle (blank-standard-sample sequence) can be tailored to for each deployment, therefore a platform simulation, which can be performed using the GUI, should be conducted using solutions of known concentrations as the sample to ensure that the analytical cycle produces expected results.</p>
+</div>
+</div>
+<div class="section" id="pre-deployment-field-calibration">
+<h2><span class="section-number">4.6. </span>Pre-deployment field calibration<a class="headerlink" href="#pre-deployment-field-calibration" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id5">
+<h3><span class="section-number">4.6.1. </span>UV Spectrometers<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h3>
+<p>If possible, we recommend any nitrate sensing UV spectrometer to be attached to the CTD and run through a CTD cast with several bottle stops.</p>
+<p>The bottle stops have to be long enough (a few minutes) for the instrument to measure several spectra. During the bottle stops water samples for high accuracy nitrate concentration measurements have to be taken and later measured according to GO-SHIP recommendations <span id="id6">[<a class="reference internal" href="nitrate_references.html#id4">Becker <em>et al.</em>, 2020</a>]</span>. Depths with significant gradients in nitrate concentrations should be avoided for these stops.</p>
+<p>This type of field calibration requires an external power source for the spectrometer. This can be a dedicated battery pack or a special cable connecting the instrument to one of the CTD’s connectors (GEOMAR has followed this second way for both Deep SUNA and TriOS OPUS instruments).</p>
+<p>Note that Deep SUNAs have to be reconfigured for such a calibration cast and that the configuration has to be reverted back to the glider-specific configuration thereafter.</p>
+</div>
+<div class="section" id="id7">
+<h3><span class="section-number">4.6.2. </span>Lab-on-Chip Instruments<a class="headerlink" href="#id7" title="Permalink to this headline">¶</a></h3>
+<p>Pre-deployment field calibration is not required for the LoC analyser as the blank and standard solutions are assessed during the lab calibration. However, when deploying a LoC-glider platform it is ideal to manually collect samples, following GO-SHIP protocols <span id="id8">[<a class="reference internal" href="nitrate_references.html#id4">Becker <em>et al.</em>, 2020</a>]</span>, in order for a field validation. Experience shows that after a period of dormancy the first dive may not produce reliable data as the chip ‘equilibrates’, this is typical of many flow analysis instruments. Initially conducting simultaneous dives with LoC measurements to generate a robust comparison is advisable.</p>
+<div class="section" id="cadmium-column-checks">
+<h4><span class="section-number">4.6.2.1. </span>Cadmium column checks<a class="headerlink" href="#cadmium-column-checks" title="Permalink to this headline">¶</a></h4>
+<p>Performance of the Cu-Cd reduction column requires careful monitoring. For best results, the efficiency of conversion of nitrate to nitrite should be &gt; 95% <span id="id9">[<a class="reference internal" href="nitrate_references.html#id4">Becker <em>et al.</em>, 2020</a>]</span>. Columns operating at lower efficiency can give reliable measurements, provided their performance does not vary with time, but this will result in erroneously high measured values for NO<sub>2</sub>+NO<sub>3</sub> if the sample contains significant amounts of nitrite, which can occur near the nitracline in many ocean regions. It is thus essential that the performance and stability of the column should be evaluated in the laboratory prior to any deployment, and it is advisable that its performance be checked in the field immediately prior to and following the glider mission by measuring a pure nitrite standard of known concentration. Such a check can be invaluable in diagnosing faults after recovery of the sensor.</p>
+</div>
+</div>
+</div>
+<div class="section" id="data-submission-pre-deployment">
+<h2><span class="section-number">4.7. </span>Data submission (pre-deployment)<a class="headerlink" href="#data-submission-pre-deployment" title="Permalink to this headline">¶</a></h2>
+<p>To ensure a smooth processing of real-time data by Global Data Assembly Centers (GDACs) it is important that glider operators contact their respective GDAC and prepare them for the data that will be collected.
+This typically includes the collection of various Metadata for all sensors present on the glider as well as other deployment specific information.</p>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./sections"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+            </div>
+        </div>
+    </div>
+    <div id="main-content" class="row noprint">
         <div class="col-12 col-md-9 pl-md-3 pr-md-0">
         
               <div>
@@ -536,15 +787,13 @@ This typically includes the collection of various Metadata for all sensors prese
         </div>
     </div>
     <footer class="footer">
-    <div class="container">
-      <p>
-        
-          By The Jupyter Book community<br/>
-        
-            &copy; Copyright 2021.<br/>
-      </p>
-    </div>
-  </footer>
+  <p>
+    
+      By The Jupyter Book community<br/>
+    
+        &copy; Copyright 2021.<br/>
+  </p>
+</footer>
 </main>
 
 

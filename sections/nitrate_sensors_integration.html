@@ -75,7 +75,7 @@ var addUtterances = () => {
 commentsRunWhenDOMLoaded(addUtterances);
 </script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
-    <script src="../_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
+    <script src="../_static/sphinx-book-theme.d59cb220de22ca1c485ebbdc042f0030.js"></script>
     <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
     <script>
         const thebe_selector = ".thebe"
@@ -232,7 +232,7 @@ commentsRunWhenDOMLoaded(addUtterances);
                 data-placement="left">.md</button></a>
         <!-- Download PDF via print -->
         <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
-            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+                onclick="printPdf(this)" data-toggle="tooltip" data-placement="left">.pdf</button>
     </div>
 </div>
 
@@ -268,7 +268,7 @@ commentsRunWhenDOMLoaded(addUtterances);
         </div>
 
         <!-- Table of contents -->
-        <div class="d-none d-md-block col-md-2 bd-toc show">
+        <div class="d-none d-md-block col-md-2 bd-toc show noprint">
             
             <div class="tocsection onthispage pt-5 pb-3">
                 <i class="fas fa-list"></i> Contents
@@ -373,7 +373,399 @@ commentsRunWhenDOMLoaded(addUtterances);
         </div>
     </div>
 </div>
-    <div id="main-content" class="row">
+    <!-- Table of contents that is only displayed when printing the page -->
+    <div id="jb-print-docs-body" class="onlyprint">
+        <h1>Sensors and integrations</h1>
+        <!-- Table of contents -->
+        <div id="print-main-content" class="row">
+            <div class="col-12 col-md-12 pl-md-5 pr-md-5">
+            <div id="jb-print-toc">
+                
+                <div>
+                    <h2> Contents </h2>
+                </div>
+                <nav aria-label="Page">
+                    <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#nitrate-sensors">
+   3.1. Nitrate sensors
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#uv-spectrometers">
+     3.1.1. UV Spectrometers
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#sea-bird-scientific-deep-suna">
+       3.1.1.1. Sea-Bird Scientific Deep SUNA
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#trios-opus">
+       3.1.1.2. TriOS OPUS
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#lab-on-chip-loc-instruments">
+     3.1.2. Lab-on-Chip (LoC) Instruments
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#clearwater-national-oceanography-centre-noc-lab-on-chip-analyser">
+       3.1.2.1. ClearWater (National Oceanography Centre, NOC) Lab-on-Chip analyser
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#instrument-comparison-and-uncertainty-numbers">
+   3.2. Instrument comparison and uncertainty numbers
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id7">
+     3.2.1. UV Spectrometers
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#sensor-integration-with-gliders">
+   3.3. Sensor integration with gliders
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id11">
+     3.3.1. UV Spectrometers
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#lab-on-chip-instruments">
+     3.3.2. Lab-on-Chip Instruments
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#mounting-location">
+     3.3.3. Mounting location
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#spray">
+       3.3.3.1. Spray
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#seaglider">
+       3.3.3.2. Seaglider
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#slocum">
+       3.3.3.3. Slocum
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#seaexplorer">
+       3.3.3.4. SeaExplorer
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+                </nav>
+            </div>
+            
+              <div>
+                
+  <div class="tex2jax_ignore mathjax_ignore section" id="sensors-and-integrations">
+<h1><span class="section-number">3. </span>Sensors and integrations<a class="headerlink" href="#sensors-and-integrations" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="nitrate-sensors">
+<h2><span class="section-number">3.1. </span>Nitrate sensors<a class="headerlink" href="#nitrate-sensors" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="uv-spectrometers">
+<h3><span class="section-number">3.1.1. </span>UV Spectrometers<a class="headerlink" href="#uv-spectrometers" title="Permalink to this headline">¶</a></h3>
+<p>To our knowledge there are currently at least two different instruments for UV spectroscopy Nitrate measurements in seawater, one manufactured by Sea-Bird Scientific (USA) called Deep SUNA and one by TriOS (Germany) called OPUS.
+A similar instrument has been developed in China <span id="id1">[<a class="reference internal" href="nitrate_references.html#id19">Zhu <em>et al.</em>, 2021</a>]</span> but is not yet commercially available.
+Deep SUNAs have been specially developed for use on gliders and Argo floats and have been in use now for several years with good experiences.
+OPUS instruments have been tested on floats within the Euro-Argo project (<a class="reference external" href="https://www.euro-argo.eu/">https://www.euro-argo.eu/</a>) but not yet on gliders.
+Both instruments have a 10 mm sample path length in common as this appears to be optimal for the used light sources and spectral sensors and the Nitrate concentrations expected in seawater.
+Apart from these instruments there exists a larger number of submersible Nitrate sensors that are optimized for use in freshwater lakes and rivers or for monitoring wastewater (e.g. by YSI, see <a class="reference external" href="https://www.ysi.com/parameters/nitrate">https://www.ysi.com/parameters/nitrate</a>; by Xylem, see <a class="reference external" href="https://www.xylemanalytics.com/en/products/listing-wtw-process-all">https://www.xylemanalytics.com/en/products/listing-wtw-process-all</a>).
+Whether these could be modified for use in seawater and on gliders is not known.</p>
+<div class="section" id="sea-bird-scientific-deep-suna">
+<h4><span class="section-number">3.1.1.1. </span>Sea-Bird Scientific Deep SUNA<a class="headerlink" href="#sea-bird-scientific-deep-suna" title="Permalink to this headline">¶</a></h4>
+<p>These instruments are based on the original development by <span id="id2">[<a class="reference internal" href="nitrate_references.html#id11">Johnson and Coletti, 2002</a>]</span> from MBARI.
+The original was intended for use in underwater moorings and thus had a more voluminous housing to accommodate batteries.
+The MBARI-ISUS was commercialized by Satlantic under the same name (Satlantic-ISUS).
+Satlantic was in 2011 acquired by Sea-Bird Scientific which continues to produce the instruments.
+Satlantic modified the design of the ISUS which used a mirror together with a light source and a spectrometer next to each other to that of the SUNA which has a light source and a spectrometer on opposing sides of the sample volume.
+This modified instrument relied on external power and thus was able to have a much more lightweight and streamlined design.
+The SUNA was further developed into the Deep SUNA which was optimized for the use on autonomous vehicles like gliders or floats with a pressure rating of 2000 dbar and a large internal memory (see also <span id="id3">[<a class="reference internal" href="nitrate_references.html#id12">Johnson <em>et al.</em>, 2018</a>]</span>).</p>
+<p>All these instruments share the same basic configuration with a Deuterium UV lamp and a 256 channel UV spectrometer covering the wavelengths from 190 to 370 nm.
+Their internal processor is capable of not only storing the measured spectra but also of converting the data in real time into estimates of the Nitrate concentration.</p>
+<p>Deep SUNA have so far been attached to Teledyne Webb Research Slocum (see Figure <span class="xref std std-ref">slocum_suna</span>) and ALSEAMAR SeaExplorer gliders.</p>
+<p>The Deep SUNA is capable of one measurement per second.
+Older Slocum gliders (G1 and G2) are however not able to handle more than one measurement every 4 seconds (possibly 2 seconds).
+Typical use on a glider is thus with a reduced sampling rate of one measurement every 5.5 seconds (GEOMAR).
+This also significantly reduces the high power consumption while still delivering one measurement per meter depth for fast diving gliders.</p>
+<p>The latest version of G3 Slocum gliders should be capable of sampling and recording Deep SUNA data at 1 Hz, but this has to our knowledge not been tested.</p>
+<p>Deep SUNA raw data and internally computed Nitrate concentrations are transferred to Slocum gliders via a serial connection. Raw data is in the ‘reduced spectra’ format containing only a limited wavelength range. The full raw data is recorded in the Deep SUNA itself.</p>
+<p>Deep SUNA sensors are available with three different anti-fouling options:</p>
+<ul class="simple">
+<li><p>none</p></li>
+<li><p>a copper guard around the sampling volume</p></li>
+<li><p>a mechanical wiper</p></li>
+</ul>
+<p>The mounting of Deep SUNA sensors on top of gliders and along the main axis of the glider is probably not optimal as the sampling volume of the Deep SUNA is perpendicular to the glider’s movement.
+At GEOMAR no anti-fouling option has been used so that the water exchange to and from the sample volume is not further decreased.</p>
+<p>The nominal energy consumption for a Deep-SUNA given by the manufacturer is 7.5 W.
+We have to assume that this is the maximum power consumption for the fastest possible sampling rate.
+This has to be taken into account for mission planning.
+With a reduced sampling rate of 1 measurement every 5.5 seconds the power consumption is about 1.4 W.
+This is still significantly higher than the power consumption of the CTD or Aanderaa optodes but comparable to that of Microrider microstructure sensors.
+For comparison, a Slocum glider with only a CTD diving at full speed uses on average a total of around 5 W.</p>
+<p>Deep SUNAs are commercially available and have mounting solutions and data and power transfer cables have been developed for at least Slocum and SeaExplorer gliders.</p>
+</div>
+<div class="section" id="trios-opus">
+<h4><span class="section-number">3.1.1.2. </span>TriOS OPUS<a class="headerlink" href="#trios-opus" title="Permalink to this headline">¶</a></h4>
+<p>TriOS (Germany) developed an instrument comparable to the Deep SUNA but decided on a couple of design choices differently.
+In principle the OPUS measures the same information based also on a 256 channel spectrometer.
+However, the OPUS’ lamp is a Xenon flash lamp that has a much longer life cycle (typically &gt;10<sup>9</sup> flashes) than Deuterium lamps (900 h).
+The spectral characteristics of Xenon flash lamps are however less ideal.
+They exhibit line-like spectral peaks in the range in which Nitrate absorbs which might make the analysis of the spectra prone to higher uncertainties possibly because of small shifts in the spectra.
+For single non-averaged spectra the noise level of the OPUS is typically a factor 3 to 8 higher than that of a Deep SUNA. TriOS OPUS are available with a titanium housing with a 6000 dbar pressure rating.
+This should make them suitable also for deep gliders. The OPUS is capable of making one measurement every 3 seconds (factory configuration is slower possibly because of internal averaging).
+For a vertical platform speed of 0.1 m/s this results in a vertical resolution of 0.3 m.</p>
+<p>For the TriOS OPUS we are not aware of any anti-fouling option.
+The sampling volume has, however, a shape that allows for a better water exchange.</p>
+<p>The specifications of the TriOS OPUS give a power consumption &lt;= 8 W, presumably again at the fastest sampling rate.</p>
+<p>We are not aware of any application of a TriOS OPUS on gliders, but once mounting solutions and data and power cables have been developed this should be possible.</p>
+</div>
+</div>
+<div class="section" id="lab-on-chip-loc-instruments">
+<h3><span class="section-number">3.1.2. </span>Lab-on-Chip (LoC) Instruments<a class="headerlink" href="#lab-on-chip-loc-instruments" title="Permalink to this headline">¶</a></h3>
+<p>Lab-on-Chip nitrate+nitrite analysers developed at the National Oceanography Centre, UK have been recently commercialized by ClearWater sensors, UK (<a class="reference external" href="https://www.clearwatersensors.com/nitrate-sensor/">https://www.clearwatersensors.com/nitrate-sensor/</a>).</p>
+<p>Lab-on-Chip analysers developed at the National Oceanography Centre, and recently commercialized by ClearWater sensors have been successfully deployed on Seagliders to observe key seasonal transitions of biogeochemistry, such as spring bloom dynamics, in the Celtic Sea and North Sea <span id="id4">[<a class="reference internal" href="nitrate_references.html#id18">Vincent <em>et al.</em>, 2018</a>]</span>, <span id="id5">[<a class="reference internal" href="nitrate_references.html#id9">Hull <em>et al.</em>, 2021</a>]</span>.
+A variant of this sensor that measures phosphate has also been developed and deployed on a Seaglider (Birchill et al, in review).</p>
+<div class="section" id="clearwater-national-oceanography-centre-noc-lab-on-chip-analyser">
+<h4><span class="section-number">3.1.2.1. </span>ClearWater (National Oceanography Centre, NOC) Lab-on-Chip analyser<a class="headerlink" href="#clearwater-national-oceanography-centre-noc-lab-on-chip-analyser" title="Permalink to this headline">¶</a></h4>
+<p>The LoC analyser contains a three layer poly(methyl methacrylate) (PMMA) optofluidic chip with precision milled microchannels, mixers and optical components consisting of light emitting diodes and photodiodes, electronics, solenoid valves and syringe pumps mounted on the chip.
+The chip forms the end cap of a dark watertight pressure compensated PVC housing, which is rated to 6000 dbar. The chip is fitted with a cadmium column for the reduction of nitrate to nitrite.
+The system is automated using a 32 bit microcontroller-based electronics package with 18-bit analogue to digital inputs and can stream raw data (1 Hz) over USB, as well as store data on a 8 GB flash memory card.
+Provided with the values of the on-board standards, the LoC analyser is capable of outputting processed data (µM NO<sub>2-</sub><sup>-</sup> + NO<sub>3-</sub><sup>-</sup>) over RS232 or RS485 interfaces <span id="id6">[<a class="reference internal" href="nitrate_references.html#id3">Beaton <em>et al.</em>, 2012</a>]</span>.
+The analyser is capable of measuring concentrations ranging from 0.025 to 1000 µM NO<sub>3</sub><sup>-</sup> due to the chip containing 3 measurement cells with differing path lengths.
+Measurement frequency during glider operations is approximately every 7 minutes, this is preceded by a calibration period of approximately 21 minutes during which blank and standard measurements are made at the start of each dive.</p>
+</div>
+</div>
+</div>
+<div class="section" id="instrument-comparison-and-uncertainty-numbers">
+<h2><span class="section-number">3.2. </span>Instrument comparison and uncertainty numbers<a class="headerlink" href="#instrument-comparison-and-uncertainty-numbers" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id7">
+<h3><span class="section-number">3.2.1. </span>UV Spectrometers<a class="headerlink" href="#id7" title="Permalink to this headline">¶</a></h3>
+<p>The quality of the nitrate concentrations derived from UV spectrometer measurements depends on a number of conditions:</p>
+<ul class="simple">
+<li><p>time since manufacturer maintenance/calibration (lamp aging)</p></li>
+<li><p>time in the water (bio-fouling)</p></li>
+<li><p>cross-calibration availability (via instrument-on-CTD or nearby water samples or other knowledge)</p></li>
+<li><p>regularity of user calibrations (lamp aging and bio-fouling)</p></li>
+</ul>
+<p>The manufacturers give numbers for the accuracy and the precision of the concentrations delivered by the instruments.
+They are however only applicable to instruments fresh in the water and with new manufacturer’s calibrations.
+As soon as instruments are in the water bio-fouling will set in and is not accounted for by the manufacturer’s numbers.
+Drift because of lamp aging is significant for Deuterium UV lamps and degrades the nominal accuracy very quickly.
+The precision and detection limit also significantly depend on the availability of temperature and salinity information (see sections on processing).</p>
+<p>Note: To get optimal nitrate concentrations frequent cross-calibration against higher quality measurements from water samples is recommended.</p>
+<p>Cross-calibration can significantly reduce the overall uncertainty of the nitrate concentrations. Different cross-calibration approaches are possible. The best results will be obtained by attaching the instrument to the CTD and run calibration casts with high quality water sample measurements before and after the deployment. A similar quality should be possible with in-lab calibrations using known reference material before and after the deployment. If neither of these are possible, CTD casts with high quality water samples can be done near the glider and be used to evaluate and possibly correct the instrument concentrations. A priori knowledge of local concentrations can also be used to calibrate albeit at the cost of not being able to detect real deviations from the a priori knowledge. Experiences suggest that the calibration coefficients (for a linear correction) are relatively stable between subsequent deployments <span id="id8">[<a class="reference internal" href="nitrate_references.html#id13">Krahmann <em>et al.</em>, 2021</a>]</span>.</p>
+<p><em>Table 1: Some specifications for the different instruments.</em></p>
+<p>Please note that it is not known how exactly the manufacturer’s values are determined and whether the same terminology is used.
+Typically they are valid for recently manufactured and calibrated instruments.
+Bio-fouling and other influences are not included.</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="head"><p></p></th>
+<th class="head"><p>Sample rate</p></th>
+<th class="head"><p>Power</p></th>
+<th class="head"><p>Manufacturer Accuracy</p></th>
+<th class="head"><p>Manufacturer Precision</p></th>
+<th class="head"><p>Manufacturer Detection limit</p></th>
+<th class="head"><p>Precision estimate</p></th>
+<th class="head"><p>Accuracy estimate (w. x-cali.)</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p></p></td>
+<td><p>Hz</p></td>
+<td><p>W</p></td>
+<td><p>µM NO<sub>3</sub></p></td>
+<td><p>µM NO<sub>3</sub><sup>-</sup></p></td>
+<td><p>µM NO<sub>3</sub><sup>-</sup></p></td>
+<td><p>µM NO<sub>3</sub><sup>-</sup></p></td>
+<td><p>µM NO<sub>3</sub><sup>-</sup></p></td>
+</tr>
+<tr class="row-odd"><td><p>Deep SUNA</p></td>
+<td><p>1</p></td>
+<td><p>&lt;=8</p></td>
+<td><p>10% or &gt;=2.0 (+0.3 / hr lamp)</p></td>
+<td><p>0.3 (2.4 SW sal)</p></td>
+<td><p>0.5 (2.0 SW sal)</p></td>
+<td><p>0.17 (4)</p></td>
+<td><p>0.5-1.0 (5)</p></td>
+</tr>
+<tr class="row-even"><td><p>OPUS</p></td>
+<td><p>1/3</p></td>
+<td><p>&lt;=8</p></td>
+<td><p>5% +0.7</p></td>
+<td><p>0.36 (3)</p></td>
+<td><p>2.1</p></td>
+<td><p>1.3 (4)</p></td>
+<td><p>1.0 (5)</p></td>
+</tr>
+<tr class="row-odd"><td><p>LoC</p></td>
+<td><p>0.0002 (7 min)</p></td>
+<td><p>1.5</p></td>
+<td><p>3 % for concentration range 5.63 to 44.43 (1)</p></td>
+<td><p>4 % for concentration range 5.63 to 44.43 (1)</p></td>
+<td><p>0.025</p></td>
+<td><p>0.14 (2)</p></td>
+<td><p></p></td>
+</tr>
+</tbody>
+</table>
+<p>(1) from estimates of combined uncertainty estimated via the analysis of certified reference materials using 7 analysers <span id="id9">[<a class="reference internal" href="nitrate_references.html#id5">Birchill <em>et al.</em>, 2019</a>]</span>.</p>
+<p>(2) not a standard mode of operation for the LoC analyser, values are from a CTD trial deployment <span id="id10">[<a class="reference internal" href="nitrate_references.html#id18">Vincent <em>et al.</em>, 2018</a>]</span>.</p>
+<p>(3) It is unclear whether the OPUS’ accuracy and precision values given by the manufacturer use internal averaging of several spectra. The typical noise on CTDs was determined using single non-averaged spectra.</p>
+<p>(4) The ‘noise’ values have been estimated by calculating the standard deviation of instrument nitrate concentrations at depths with apparently homogeneous nitrate concentrations.</p>
+<p>(5) Deep SUNA and OPUS instruments have been used attached to a CTD and high accuracy nitrate concentrations have been compared to Deep SUNA and OPUS values at the time of bottle closing. The given values are the rms difference between the bottle and instrument values after the instrument values have been linearly corrected to match the bottle values</p>
+<p><em>Table 2: Instrument and glider pairs that have successfully been used.</em></p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Sensor / Glider</p></th>
+<th class="head"><p>Slocum</p></th>
+<th class="head"><p>Autosub/ALR (NOC)</p></th>
+<th class="head"><p>Seaglider</p></th>
+<th class="head"><p>Deepglider</p></th>
+<th class="head"><p>SeaExplorer</p></th>
+<th class="head"><p>Spray</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Deep SUNA</p></td>
+<td><p>X</p></td>
+<td><p></p></td>
+<td><p></p></td>
+<td><p></p></td>
+<td><p>X</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p>OPUS</p></td>
+<td><p></p></td>
+<td><p></p></td>
+<td><p></p></td>
+<td><p></p></td>
+<td><p></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p>LoC</p></td>
+<td><p>Integration performed by no successful deployment to date</p></td>
+<td><p>Yes, via the Autonuts project</p></td>
+<td><p>X</p></td>
+<td><p></p></td>
+<td><p>Integration currently being performed</p></td>
+<td><p></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="section" id="sensor-integration-with-gliders">
+<h2><span class="section-number">3.3. </span>Sensor integration with gliders<a class="headerlink" href="#sensor-integration-with-gliders" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id11">
+<h3><span class="section-number">3.3.1. </span>UV Spectrometers<a class="headerlink" href="#id11" title="Permalink to this headline">¶</a></h3>
+<p>Deep SUNA instruments have to our knowledge been integrated into Slocum and Seaexplorer gliders. Dedicated mounting brackets are needed to mount the instrument on top of the gliders. This position is not optimal since the sampled water volume is in a slit perpendicular to the glider’s movement direction. Whether this has a large influence on the measured values or whether the water exchange through the slit is sufficient has not been tested.</p>
+<p>TriOS OPUS have so far not been mounted to gliders.</p>
+</div>
+<div class="section" id="lab-on-chip-instruments">
+<h3><span class="section-number">3.3.2. </span>Lab-on-Chip Instruments<a class="headerlink" href="#lab-on-chip-instruments" title="Permalink to this headline">¶</a></h3>
+<p>The LoC analyser has been successfully integrated into the Ogive Seaglider faring, which allows a larger payload space to accommodate the analyser and reagent storage backs.
+A custom mounting was used to position the analyser.
+Any air bubbles in reagent bags should be expelled as much as possible and reflect the conditions under which ballast testing occurred as deviations will affect flight performance.
+The bags should be backed into the glider bay carefully, avoid snagging any cables and leave space for the Seaglider bladder to expand.
+Note that waste bags will expand during the deployment and the final volume of waste will also include any sample drawn into the analyser.
+The sample inlet tube, which extends from the analyser to the hatch cover of the glider, is fitted with a 0.45 µm poly(ether-sulfone) luer lock syringe filter (MERCK, Millipore, USA).
+The length of the sample inlet tube is minimised to keep its volume as low as possible (to prevent carryover).</p>
+<p>The LoC analyser receives power from the Seaglider and is linked via a RS232 serial communication.
+The Seaglider software uses a CNF file that contains the configuration for each on-board instrument and a CMD file that provides mission parameters.
+The CNF file enables communication between the Seaglider and the LoC NOx analyser.
+The LoC analyser is set to ‘logger’ mode in the CNF file, which enables the glider to send a number of commands.
+These commands allow the Seaglider to send and receive data to and from the analyser.
+Commands include: ‘clock-set’, used only at the start of each dive, but which enables the analyser to store any time offset between glider and analyser, ‘status’, which sends the analyser depth every 5 s and ‘download’, sent at the end of each dive requesting the sensor to send both ascent and descent data files of processed values.
+Whilst integration into the Seaglider should be straightforward and follows established procedures available from the National Oceanography Centre, human error (e.g. ‘typos’) and glider firmware updates have caused issues in the past.
+It is recommended that simulation dives are performed with the sensor and actual deployment glider ahead of the planned deployment.</p>
+</div>
+<div class="section" id="mounting-location">
+<h3><span class="section-number">3.3.3. </span>Mounting location<a class="headerlink" href="#mounting-location" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="spray">
+<h4><span class="section-number">3.3.3.1. </span>Spray<a class="headerlink" href="#spray" title="Permalink to this headline">¶</a></h4>
+<ul class="simple">
+<li><p>XXX</p></li>
+</ul>
+</div>
+<div class="section" id="seaglider">
+<h4><span class="section-number">3.3.3.2. </span>Seaglider<a class="headerlink" href="#seaglider" title="Permalink to this headline">¶</a></h4>
+<ul class="simple">
+<li><p>XXX</p></li>
+</ul>
+</div>
+<div class="section" id="slocum">
+<h4><span class="section-number">3.3.3.3. </span>Slocum<a class="headerlink" href="#slocum" title="Permalink to this headline">¶</a></h4>
+<div class="figure align-default" id="slocum-suna">
+<a class="bg-primary mb-1 reference internal image-reference" href="../_images/slocum_g2_with_suna.jpg"><img alt="Slocum G2 with SUNA" class="bg-primary mb-1" src="../_images/slocum_g2_with_suna.jpg" style="width: 600px;" /></a>
+<p class="caption"><span class="caption-number">Fig. 3.1 </span><span class="caption-text">A Teledyne Webb Research Slocum G2 glider with a Deep SUNA attached on top of it.</span><a class="headerlink" href="#slocum-suna" title="Permalink to this image">¶</a></p>
+</div>
+</div>
+<div class="section" id="seaexplorer">
+<h4><span class="section-number">3.3.3.4. </span>SeaExplorer<a class="headerlink" href="#seaexplorer" title="Permalink to this headline">¶</a></h4>
+<div class="figure align-default" id="id12">
+<a class="bg-primary mb-1 reference internal image-reference" href="../_images/SeaExplorer_with_suna_mr_arrow.jpg"><img alt="SeaExplorer X2 with SUNA" class="bg-primary mb-1" src="../_images/SeaExplorer_with_suna_mr_arrow.jpg" style="width: 600px;" /></a>
+<p class="caption"><span class="caption-number">Fig. 3.2 </span><span class="caption-text">An ALSEAMAR SeaExplorer X2 with a Deep SUNA attached on the side of the sensor payload section. The sensor attached on the glider nose is a turbulence sensor (MicroRider-1000G by Rockland Scientific). This glider is capable observing the vertical turbulent nitrate flux by combination use of the nitrate and the turbulence sensors.</span><a class="headerlink" href="#id12" title="Permalink to this image">¶</a></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./sections"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+            </div>
+        </div>
+    </div>
+    <div id="main-content" class="row noprint">
         <div class="col-12 col-md-9 pl-md-3 pr-md-0">
         
               <div>
@@ -677,15 +1069,13 @@ It is recommended that simulation dives are performed with the sensor and actual
         </div>
     </div>
     <footer class="footer">
-    <div class="container">
-      <p>
-        
-          By The Jupyter Book community<br/>
-        
-            &copy; Copyright 2021.<br/>
-      </p>
-    </div>
-  </footer>
+  <p>
+    
+      By The Jupyter Book community<br/>
+    
+        &copy; Copyright 2021.<br/>
+  </p>
+</footer>
 </main>
 
 

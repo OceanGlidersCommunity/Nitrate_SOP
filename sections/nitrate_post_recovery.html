@@ -75,7 +75,7 @@ var addUtterances = () => {
 commentsRunWhenDOMLoaded(addUtterances);
 </script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
-    <script src="../_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
+    <script src="../_static/sphinx-book-theme.d59cb220de22ca1c485ebbdc042f0030.js"></script>
     <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
     <script>
         const thebe_selector = ".thebe"
@@ -232,7 +232,7 @@ commentsRunWhenDOMLoaded(addUtterances);
                 data-placement="left">.md</button></a>
         <!-- Download PDF via print -->
         <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
-            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+                onclick="printPdf(this)" data-toggle="tooltip" data-placement="left">.pdf</button>
     </div>
 </div>
 
@@ -268,7 +268,7 @@ commentsRunWhenDOMLoaded(addUtterances);
         </div>
 
         <!-- Table of contents -->
-        <div class="d-none d-md-block col-md-2 bd-toc show">
+        <div class="d-none d-md-block col-md-2 bd-toc show noprint">
             
             <div class="tocsection onthispage pt-5 pb-3">
                 <i class="fas fa-list"></i> Contents
@@ -332,7 +332,154 @@ commentsRunWhenDOMLoaded(addUtterances);
         </div>
     </div>
 </div>
-    <div id="main-content" class="row">
+    <!-- Table of contents that is only displayed when printing the page -->
+    <div id="jb-print-docs-body" class="onlyprint">
+        <h1>Post-recovery operations and calibrations</h1>
+        <!-- Table of contents -->
+        <div id="print-main-content" class="row">
+            <div class="col-12 col-md-12 pl-md-5 pr-md-5">
+            <div id="jb-print-toc">
+                
+                <div>
+                    <h2> Contents </h2>
+                </div>
+                <nav aria-label="Page">
+                    <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#biofouling-assessment">
+   7.1. Biofouling assessment
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#post-deployment-lab-calibration">
+   7.2. Post-deployment lab calibration
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#uv-spectrometers">
+     7.2.1. UV Spectrometers
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#lab-on-chip-instruments">
+     7.2.2. Lab-on-Chip Instruments
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#post-deployment-field-calibration">
+   7.3. Post-deployment field calibration
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id2">
+     7.3.1. UV Spectrometers
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#cleaning-and-storage">
+   7.4. Cleaning and storage
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id3">
+     7.4.1. UV Spectrometers
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id4">
+     7.4.2. Lab-on-Chip Instruments
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+                </nav>
+            </div>
+            
+              <div>
+                
+  <div class="tex2jax_ignore mathjax_ignore section" id="post-recovery-operations-and-calibrations">
+<h1><span class="section-number">7. </span>Post-recovery operations and calibrations<a class="headerlink" href="#post-recovery-operations-and-calibrations" title="Permalink to this headline">¶</a></h1>
+<p>At first users should report that their mission is over to support at <a class="reference external" href="http://oceanobs.org">oceanobs.org</a></p>
+<div class="section" id="biofouling-assessment">
+<h2><span class="section-number">7.1. </span>Biofouling assessment<a class="headerlink" href="#biofouling-assessment" title="Permalink to this headline">¶</a></h2>
+<p>Pictures should be taken for biofuiling assessment.</p>
+</div>
+<div class="section" id="post-deployment-lab-calibration">
+<h2><span class="section-number">7.2. </span>Post-deployment lab calibration<a class="headerlink" href="#post-deployment-lab-calibration" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="uv-spectrometers">
+<h3><span class="section-number">7.2.1. </span>UV Spectrometers<a class="headerlink" href="#uv-spectrometers" title="Permalink to this headline">¶</a></h3>
+<p>After recovery, two lamp reference calibrations are strongly recommended.</p>
+<p>Immediately after recovery, while the instrument is still wet, a clean water lamp reference calibration should be performed. This must be done before any cleaning of the instrument.</p>
+<p>The purpose of this calibration measurement is to record the lamp strength when any possible bio-fouling is still present.
+After that the instrument should be cleaned according to the manufacturer’s instructions and we recommend a second lamp reference to be measured.</p>
+<p>The difference between these two reference measurements should be a measure of the bio-fouling.</p>
+<p>It remains to be determined which of the two lamp references should be used for the post-processing. It should theoretically be the first (bio-fouled) one as this is the end point of the effective lamp changes (aging plus bio-fouling) during the deployment.</p>
+</div>
+<div class="section" id="lab-on-chip-instruments">
+<h3><span class="section-number">7.2.2. </span>Lab-on-Chip Instruments<a class="headerlink" href="#lab-on-chip-instruments" title="Permalink to this headline">¶</a></h3>
+<p>For the lab-on-chip analysers, sub samples of blank and standard solutions should ideally be analysed post deployment, this requires clean handling (i.e. follow GO-SHIP recommendations; <span id="id1">[<a class="reference internal" href="nitrate_references.html#id4">Becker <em>et al.</em>, 2020</a>]</span>). In cases where the blank and standard solutions cannot be sub sampled (e.g. recovered by partners without such capability), it should be noted that blank and standard solutions have been shown to be stable for 12 months (they are preserved with chloroform). General recovery</p>
+<p>After the post-deployment lab calibration all data from the UV spectrometers should be downloaded and backed up. This also includes the reference spectra and lamp usage files which are accessible differently than data (see Deep SUNA user manual).</p>
+<p>The internal clock of the nitrate measuring instrument should be checked and any difference against GPS or a time server should be noted.</p>
+<p>It is recommended that the sensors are serviced periodically by ClearWater (with the frequency depending on use) and that fluidic channels should be cleaned after use, for example with weak (2%) decon 90 solution.</p>
+<p>For Deep SUNAs the lamp life time should be noted and, if necessary, a lamp replacement be organized (only possible at Sea-Bird).</p>
+<p>The raw data is stored on a flashcard on the LoC analyser and can be retrieved via USB. Visibly inspect the filter integrity, there has not been any reports of filter biofouling issues to date.</p>
+</div>
+</div>
+<div class="section" id="post-deployment-field-calibration">
+<h2><span class="section-number">7.3. </span>Post-deployment field calibration<a class="headerlink" href="#post-deployment-field-calibration" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id2">
+<h3><span class="section-number">7.3.1. </span>UV Spectrometers<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h3>
+<p>After recovery of the instrument similar field calibration procedures could be used as before the deployment.
+To get a meaningful calibration that could possibly be applied to deployment data any Spectrometer-on-CTD casts would have to be done before the instrument gets cleaned so as to have the effects of bio-fouling still present.</p>
+</div>
+</div>
+<div class="section" id="cleaning-and-storage">
+<h2><span class="section-number">7.4. </span>Cleaning and storage<a class="headerlink" href="#cleaning-and-storage" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id3">
+<h3><span class="section-number">7.4.1. </span>UV Spectrometers<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h3>
+<p>After the post-deployment lab calibrations the instrument should be cleaned and stored according to the manufacturers’ recommendations.</p>
+</div>
+<div class="section" id="id4">
+<h3><span class="section-number">7.4.2. </span>Lab-on-Chip Instruments<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h3>
+<p>For the LoC devices, dispose of waste reagents in accordance with local regulations.
+If the analyser is not intended to be used for several weeks, the cadmium tube should be removed and stored as per manufacturer instructions.
+If this is not done, there is a risk of the tube drying out and becoming blocked.</p>
+</div>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./sections"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+            </div>
+        </div>
+    </div>
+    <div id="main-content" class="row noprint">
         <div class="col-12 col-md-9 pl-md-3 pr-md-0">
         
               <div>
@@ -432,15 +579,13 @@ If this is not done, there is a risk of the tube drying out and becoming blocked
         </div>
     </div>
     <footer class="footer">
-    <div class="container">
-      <p>
-        
-          By The Jupyter Book community<br/>
-        
-            &copy; Copyright 2021.<br/>
-      </p>
-    </div>
-  </footer>
+  <p>
+    
+      By The Jupyter Book community<br/>
+    
+        &copy; Copyright 2021.<br/>
+  </p>
+</footer>
 </main>
 
 
