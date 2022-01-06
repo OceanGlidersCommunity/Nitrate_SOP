@@ -317,19 +317,20 @@ commentsRunWhenDOMLoaded(addUtterances);
         </div>
     </div>
 </div>
-    <!-- Table of contents that is only displayed when printing the page -->
-    <div id="jb-print-docs-body" class="onlyprint">
-        <h1>Required Metadata, Real Time Data Processing & Quality Control</h1>
-        <!-- Table of contents -->
-        <div id="print-main-content" class="row">
-            <div class="col-12 col-md-12 pl-md-5 pr-md-5">
-            <div id="jb-print-toc">
-                
-                <div>
-                    <h2> Contents </h2>
-                </div>
-                <nav aria-label="Page">
-                    <ul class="visible nav section-nav flex-column">
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>Required Metadata, Real Time Data Processing & Quality Control</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#required-metadata-and-real-time-data-processing">
    6.1. Required Metadata and Real Time Data Processing
@@ -368,7 +369,9 @@ commentsRunWhenDOMLoaded(addUtterances);
  </li>
 </ul>
 
-                </nav>
+                        </nav>
+                    </div>
+                </div>
             </div>
             
               <div>
@@ -400,7 +403,7 @@ However it is currently (November 2021) not implemented and not planned to be im
 </ul>
 <p>Real time quality control relies on knowledge of the typical nitrate concentration in the deployment region and on the, in most cases, slow spatial variation of the nitrate concentrations (eddies and fronts are often special cases with larger horizontal gradients). New profiles are typically compared with the previous ones to detect profiles or single values that stand out. Such data can be flagged as suspicious or even bad.</p>
 <p>For the different instruments their respective noise level has to be taken into account when creating an outlier check. Very rarely objects appear to get into the sampling volume and are usually there for only a few samples after which the measurements return to the previously measured concentrations. The result of this are spikes to higher concentrations (higher apparent absorption).</p>
-<p>A slow measurement drift is to be expected for Sea-Bird’s Deep SUNA because of lamp aging. This can not be corrected in situ as the reduction in lamp strength is not measured (see also below for the post-recovery calibration). A drift might also occur because of bio-fouling. Both lamp aging and bio-fouling drifts should lead to values increasing with deployment time. Small drifts are often difficult to detect as they might not stand out against other measurement variability. Prior knowledge, such as e.g. an expected nitrate depletion in the surface mixed layer, can potentially be used to detect a small drift. After recovery, renewed calibration and reference measurements may also be used to differentiate between lamp drift and bio-fouling.</p>
+<p>A slow measurement drift is to be expected for Sea-Bird’s Deep SUNA because of lamp aging and/or bio-fooling. This can not be corrected in situ as the reduction in lamp strength is not measured (see also below for the post-recovery calibration). A drift might also occur because of bio-fouling. Both lamp aging and bio-fouling drifts should lead to values increasing with deployment time. Small drifts are often difficult to detect as they might not stand out against other measurement variability. Prior knowledge, such as e.g. an expected nitrate depletion in the surface mixed layer, can potentially be used to detect a small drift. After recovery, renewed calibration and reference measurements may also be used to differentiate between lamp drift and bio-fouling.</p>
 </div>
 </div>
 <div class="section" id="data-submission-real-time">
@@ -442,85 +445,8 @@ GEOMAR e.g. transmits only one measurement every 30 seconds or about 3-4 m. Raw 
 
               </div>
               
-            </div>
-        </div>
-    </div>
-    <div id="main-content" class="row noprint">
-        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
-        
-              <div>
-                
-  <div class="tex2jax_ignore mathjax_ignore section" id="required-metadata-real-time-data-processing-quality-control">
-<h1><span class="section-number">6. </span>Required Metadata, Real Time Data Processing &amp; Quality Control<a class="headerlink" href="#required-metadata-real-time-data-processing-quality-control" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="required-metadata-and-real-time-data-processing">
-<h2><span class="section-number">6.1. </span>Required Metadata and Real Time Data Processing<a class="headerlink" href="#required-metadata-and-real-time-data-processing" title="Permalink to this headline">¶</a></h2>
-<div class="section" id="uv-spectrometers">
-<h3><span class="section-number">6.1.1. </span>UV Spectrometers<a class="headerlink" href="#uv-spectrometers" title="Permalink to this headline">¶</a></h3>
-<p>Both Deep SUNA and OPUS instruments are capable of real time processing the measured spectra and output a nitrate concentration.
-For OPUS instruments the possibility exists to order a version without real time processing which then allows for a more rapid sampling rate.</p>
-<p>As UV light is absorbed by the bromide ions in seawater this absorption has to be taken into account to give a number for the nitrate concentration.
-The absorption is linearly dependent on the salinity of the seawater and if the salinity is known the attenuance spectra can directly be corrected for this. If the salinity is not known, the concentration of bromide can be estimated from the spectra themselves as the UV absorption of bromide differs from that of nitrate. In Deep SUNAs the salinity is estimated using an optimization. The optimization algorithm has not been published by the manufacturer. Using the optimization algorithm however leads to elevated uncertainties of the nitrate concentrations (2.4 µM instead of 0.3 µM precision). Slocum G2 gliders equipped with a Deep SUNA do not feed their salinity measurements into the Deep SUNA, the optimization algorithm has thus to be used for real time calculations. This means that real time Deep SUNA data is typically relatively noisy. Only in post-processing the nitrate concentrations can be recalculated using the known salinities leading to better precision measurements. In theory CTD information could be fed from the glider into the Deep SUNA thereby enabling the calculation of concentrations with the lower noise levels.
-However it is currently (November 2021) not implemented and not planned to be implemented.</p>
-<p>OPUS spectrometers can also derive nitrate concentrations in real time, but to the groups involved in writing this document no instrument with that capability was available.</p>
-</div>
-</div>
-<div class="section" id="real-time-quality-control-rtqc">
-<h2><span class="section-number">6.2. </span>Real Time Quality Control (RTQC)<a class="headerlink" href="#real-time-quality-control-rtqc" title="Permalink to this headline">¶</a></h2>
-<div class="section" id="uv-spectrometer">
-<h3><span class="section-number">6.2.1. </span>UV Spectrometer<a class="headerlink" href="#uv-spectrometer" title="Permalink to this headline">¶</a></h3>
-<p>Four real time quality control checks should be implemented to detect suspicious measurements:</p>
-<ul class="simple">
-<li><p>valid range checks</p></li>
-<li><p>spike/outlier detection</p></li>
-<li><p>comparison with climatological information</p></li>
-<li><p>sensor drift detection</p></li>
-</ul>
-<p>Real time quality control relies on knowledge of the typical nitrate concentration in the deployment region and on the, in most cases, slow spatial variation of the nitrate concentrations (eddies and fronts are often special cases with larger horizontal gradients). New profiles are typically compared with the previous ones to detect profiles or single values that stand out. Such data can be flagged as suspicious or even bad.</p>
-<p>For the different instruments their respective noise level has to be taken into account when creating an outlier check. Very rarely objects appear to get into the sampling volume and are usually there for only a few samples after which the measurements return to the previously measured concentrations. The result of this are spikes to higher concentrations (higher apparent absorption).</p>
-<p>A slow measurement drift is to be expected for Sea-Bird’s Deep SUNA because of lamp aging. This can not be corrected in situ as the reduction in lamp strength is not measured (see also below for the post-recovery calibration). A drift might also occur because of bio-fouling. Both lamp aging and bio-fouling drifts should lead to values increasing with deployment time. Small drifts are often difficult to detect as they might not stand out against other measurement variability. Prior knowledge, such as e.g. an expected nitrate depletion in the surface mixed layer, can potentially be used to detect a small drift. After recovery, renewed calibration and reference measurements may also be used to differentiate between lamp drift and bio-fouling.</p>
-</div>
-</div>
-<div class="section" id="data-submission-real-time">
-<h2><span class="section-number">6.3. </span>Data submission (real time)<a class="headerlink" href="#data-submission-real-time" title="Permalink to this headline">¶</a></h2>
-<p>It is recommended that real time data is submitted to GDACs for immediate redistribution of the data.
-At the moment of writing (May 2021) it is unclear whether any GDACs process real time nitrate measurements, nevertheless we recommend implementing the submission process.</p>
-<div class="section" id="id1">
-<h3><span class="section-number">6.3.1. </span>UV Spectrometers<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h3>
-<p>Deep SUNAs on Slocum gliders currently (May 2021) transfer to the gliders only nitrate concentrations based on optimized temperature and salinity values.
-It should be possible to feed CTD data from the glider into Deep SUNAs to allow for more accurate calculations.
-This should be particularly true for modern Slocum G3 gliders which use faster processors.
-Alternatively raw spectra could be transmitted to data centres albeit at the cost of 30-40 times larger data sets with the consequence of higher costs and longer glider time spent at the sea surface.
-In the future this might also be easier with faster and cheaper satellite transmission systems.
-Because of the high costs in time at surface and in money of satellite data transmission typically only a reduced data set is transmitted.
-GEOMAR e.g. transmits only one measurement every 30 seconds or about 3-4 m. Raw spectra are not transmitted.</p>
-</div>
-</div>
-</div>
-
-    <script type="text/x-thebe-config">
-    {
-        requestKernel: true,
-        binderOptions: {
-            repo: "binder-examples/jupyter-stacks-datascience",
-            ref: "master",
-        },
-        codeMirrorConfig: {
-            theme: "abcdef",
-            mode: "python"
-        },
-        kernelOptions: {
-            kernelName: "python3",
-            path: "./sections"
-        },
-        predefinedOutput: true
-    }
-    </script>
-    <script>kernelName = 'python3'</script>
-
-              </div>
-              
-        
-            <!-- Previous / next buttons -->
+            
+                <!-- Previous / next buttons -->
 <div class='prev-next-area'> 
     <a class='left-prev' id="prev-link" href="nitrate_mission_execution.html" title="previous page">
         <i class="fas fa-angle-left"></i>
@@ -537,7 +463,7 @@ GEOMAR e.g. transmits only one measurement every 30 seconds or about 3-4 m. Raw 
     <i class="fas fa-angle-right"></i>
     </a>
 </div>
-        
+            
         </div>
     </div>
     <footer class="footer">

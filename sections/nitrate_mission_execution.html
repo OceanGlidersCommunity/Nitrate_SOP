@@ -291,19 +291,20 @@ commentsRunWhenDOMLoaded(addUtterances);
         </div>
     </div>
 </div>
-    <!-- Table of contents that is only displayed when printing the page -->
-    <div id="jb-print-docs-body" class="onlyprint">
-        <h1>Missions execution</h1>
-        <!-- Table of contents -->
-        <div id="print-main-content" class="row">
-            <div class="col-12 col-md-12 pl-md-5 pr-md-5">
-            <div id="jb-print-toc">
-                
-                <div>
-                    <h2> Contents </h2>
-                </div>
-                <nav aria-label="Page">
-                    <ul class="visible nav section-nav flex-column">
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>Missions execution</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#uv-spectrometers">
    5.1. UV Spectrometers
@@ -316,7 +317,9 @@ commentsRunWhenDOMLoaded(addUtterances);
  </li>
 </ul>
 
-                </nav>
+                        </nav>
+                    </div>
+                </div>
             </div>
             
               <div>
@@ -365,60 +368,8 @@ Pumped CTD packages should ideally be used to overcome this issue.</p>
 
               </div>
               
-            </div>
-        </div>
-    </div>
-    <div id="main-content" class="row noprint">
-        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
-        
-              <div>
-                
-  <div class="tex2jax_ignore mathjax_ignore section" id="missions-execution">
-<h1><span class="section-number">5. </span>Missions execution<a class="headerlink" href="#missions-execution" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="uv-spectrometers">
-<h2><span class="section-number">5.1. </span>UV Spectrometers<a class="headerlink" href="#uv-spectrometers" title="Permalink to this headline">¶</a></h2>
-<p>For nitrate measuring UV spectrometers glider mission execution is fairly straightforward. As there are no sensor delays or similar to consider, the main point in mission planning and execution is energy consumption and possibly minimization of bio-fouling. Since these instruments use a significant amount of power the need for vertical resolution has to be balanced against the length of the deployment.</p>
-<p>In difference to e.g. Oxygen optodes the measurement of only down- or upcasts is a possibility as there is no reason for them to differ (optodes have significant lags). For Deep-SUNAs with their relatively low noise levels one measurement every few seconds appears sufficient to resolve the larger scale nitrate concentration variations.</p>
-<p>On Slocum, seaglider and seaexplorer gliders it is also possible to run different sample rates for different depth ranges. At GEOMAR reduced sampling rates have occasionally been used at depths below 500 m where nitrate concentrations were relatively constant.</p>
-<p>When programming the Deep SUNA there are several options for how the data is stored internally. Storing of reduced spectra has also shown to be problematic and storage space will not likely be a limiting factor for normal operations.</p>
-<p>We strongly recommend daily storage files and internal storage of full spectra. Data transmitted to Slocum gliders via the serial connection must however be ‘reduced spectra’ as the glider processor cannot handle more data.</p>
-<p>We recommend as many nearby CTD casts with water samples for high accuracy lab based nitrate measurements as possible.</p>
-<p>The water sample based concentrations can be used to cross-check the concentrations from the UV spectrometers. If no spectrometer-on-CTD calibration casts or lab calibrations are available the water sample data can also be used to determine correction factors and offsets albeit at a higher uncertainty.</p>
-</div>
-<div class="section" id="lab-on-chip-instruments">
-<h2><span class="section-number">5.2. </span>Lab-on-Chip instruments<a class="headerlink" href="#lab-on-chip-instruments" title="Permalink to this headline">¶</a></h2>
-<p>The relatively slow sampling frequency of the LoC analyser means that following ‘standard’ dive flight paths results in a small number of samples in shallow waters (e.g. 4-5 in 150 m water column; <span id="id1">[<a class="reference internal" href="nitrate_references.html#id18">Vincent <em>et al.</em>, 2018</a>]</span>).
-In such circumstances a ‘loiter’ profile is preferred, allowing a greater number of NO<sub>3</sub> measurements (e.g. 10 in 150 m water column; <span id="id2">[<a class="reference internal" href="nitrate_references.html#id18">Vincent <em>et al.</em>, 2018</a>]</span>).
-Using a glider with an unpumped CTD package operating in loiter mode can result in slow and variable flow through the conductivity cell and result in suboptimal conductivity measurements when passing through temperature gradients.
-Therefore, when using unpumped CT the loiter dive must be paired with a standard profile and the CT values extrapolated to the loiter.
-Pumped CTD packages should ideally be used to overcome this issue.</p>
-</div>
-</div>
-
-    <script type="text/x-thebe-config">
-    {
-        requestKernel: true,
-        binderOptions: {
-            repo: "binder-examples/jupyter-stacks-datascience",
-            ref: "master",
-        },
-        codeMirrorConfig: {
-            theme: "abcdef",
-            mode: "python"
-        },
-        kernelOptions: {
-            kernelName: "python3",
-            path: "./sections"
-        },
-        predefinedOutput: true
-    }
-    </script>
-    <script>kernelName = 'python3'</script>
-
-              </div>
-              
-        
-            <!-- Previous / next buttons -->
+            
+                <!-- Previous / next buttons -->
 <div class='prev-next-area'> 
     <a class='left-prev' id="prev-link" href="nitrate_pre_deployment.html" title="previous page">
         <i class="fas fa-angle-left"></i>
@@ -435,7 +386,7 @@ Pumped CTD packages should ideally be used to overcome this issue.</p>
     <i class="fas fa-angle-right"></i>
     </a>
 </div>
-        
+            
         </div>
     </div>
     <footer class="footer">
