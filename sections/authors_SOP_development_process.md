@@ -53,4 +53,4 @@ He helps to maintain the SOP on GitHub.
 
 [Takahiro Tanaka](https://github.com/Tanaka7800) provided feedback to the overall SOP and specific input about the SUNA SeaExplorer integration. 
 
-[Orens de Fommervault](https://github.com/@orensDef) provided to the overall SOP and specific input about the SUNA SeaExplorer integration including an image of an alternative mounting position. 
+[Orens Pasqueron de Fommervault](https://github.com/@orensDef) provided to the overall SOP and specific input about the SUNA SeaExplorer integration including an image of an alternative mounting position. 
