@@ -9,9 +9,8 @@
   6. [Soeren Thomsen](https://github.com/soerenthomsen), *LOCEAN, ISPL, Sorbonne University, Paris, France,* [0000-0002-0598-8340](https://orcid.org/0000-0002-0598-8340)
   7. [Daisuke Hasegawa](https://github.com/daisuke-hasegawa), *Japan Fisheries Research and Education Agency (FRA), Shiogama, Japan,* [0000-0002-8685-7042](https://orcid.org/0000-0002-8685-7042)
   8. [Takahiro Tanaka](https://github.com/Tanaka7800), *Japan Fisheries Research and Education Agency (FRA), Shiogama, Japan,* [0000-0003-0700-5907](https://orcid.org/0000-0003-0700-5907)
-  9. [Orens de Fommervault](https://github.com/@orensDef), *XXXXX, XXXXX, France,*
+  9. [Orens Pasqueron de Fommervault](https://github.com/@orensDef), *ALSEAMAR-ALCEN, France,* [0000-0001-7418-0874](https://orcid.org/0000-0001-7418-0874)
 
- 
 ## SOP development process
 
 1) Initial SOP was drafted by [Gerd Krahmann](https://github.com/gkrahmann), Christian Begler and [Soeren Thomsen](https://github.com/soerenthomsen) in April 2021. 
