@@ -9,8 +9,8 @@
   6. [Soeren Thomsen](https://github.com/soerenthomsen), *LOCEAN, ISPL, Sorbonne University, Paris, France,* [0000-0002-0598-8340](https://orcid.org/0000-0002-0598-8340)
   7. [Daisuke Hasegawa](https://github.com/daisuke-hasegawa), *Japan Fisheries Research and Education Agency (FRA), Shiogama, Japan,* [0000-0002-8685-7042](https://orcid.org/0000-0002-8685-7042)
   8. [Takahiro Tanaka](https://github.com/Tanaka7800), *Japan Fisheries Research and Education Agency (FRA), Shiogama, Japan,* [0000-0003-0700-5907](https://orcid.org/0000-0003-0700-5907)
+  9. [Orens Pasqueron de Fommervault](https://github.com/@orensDef), *ALSEAMAR-ALCEN, France,* [0000-0001-7418-0874](https://orcid.org/0000-0001-7418-0874)
 
- 
 ## SOP development process
 
 1) Initial SOP was drafted by [Gerd Krahmann](https://github.com/gkrahmann), Christian Begler and [Soeren Thomsen](https://github.com/soerenthomsen) in April 2021. 
@@ -52,3 +52,5 @@ He helps to maintain the SOP on GitHub.
 [Daisuke Hasegawa](https://github.com/daisuke-hasegawa) provided feedback to the overall SOP and specific input including an image about the SUNA SeaExplorer integration. 
 
 [Takahiro Tanaka](https://github.com/Tanaka7800) provided feedback to the overall SOP and specific input about the SUNA SeaExplorer integration. 
+
+[Orens Pasqueron de Fommervault](https://github.com/@orensDef) provided to the overall SOP and specific input about the SUNA SeaExplorer integration including an image of an alternative mounting position. 
