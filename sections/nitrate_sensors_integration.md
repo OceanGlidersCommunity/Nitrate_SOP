@@ -139,6 +139,8 @@ Deep SUNA instruments have to our knowledge been integrated into Slocum and Seae
 
 TriOS OPUS have so far not been mounted to gliders.
 
+Regarding the mounting location of UV spectrometers some thought has to be put into the best location of their sampling volume relative to the CTD sensor location. Since the CTD data is used to correct for the influence of salt in the seawater a spatial distance between the sensors might have to be taken into account possibly by time-shifting the CTD data. This is particularly relevant when measuring across strong haloclines and mismatches between the measurements might lead to artifical spikes in the Nitrate data. The optimal time shift should be dependent on the vertical and horizontal speed of the glider and the vertical and horizontal separation of the sensors. For Slocum gliders with Deep SUNAs the distance is about 30 cm (15 cm vertical and 20 cm horizontal) which, depending on the glider speed, translates to a 1-2 second long shift. With the typical Slocoum CTD sampling rate of one measurement every 4 seconds and a Deep SUNA sampling rate even slower, this has so far not been compensated for. However for other gliders with a slower speed and a larger separation of the sensors such a correction might be necessary.
+
 ### Lab-on-Chip Instruments
 The LoC analyser has been successfully integrated into the Ogive Seaglider faring, which allows a larger payload space to accommodate the analyser and reagent storage backs. 
 A custom mounting was used to position the analyser. 
