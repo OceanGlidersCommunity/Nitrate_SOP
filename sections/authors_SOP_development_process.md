@@ -26,7 +26,7 @@ additional authors joined: Antony Birchill, Alexander Beaton, [Matthew Patey](ht
 
 6) 4 months community review on GitHub until 31 March 2022.
 
-7) Additional authors joined on GitHub during the community review: XXX
+7) Additional authors joined on GitHub during the community review: [Orens Pasqueron de Fommervault](https://github.com/orensDef)
 
 ## Contributions 
 [Gerd Krahmann](https://github.com/gkrahmann) initiated the development of the nitrate SOP in March 2021. He wrote the SUNA sections. He co-chaired the expert session during the OceanGliders Best Practice Workshop, May 11 - 25 2021. He helps to maintain the SOP on GitHub.
