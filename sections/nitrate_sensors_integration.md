@@ -12,7 +12,7 @@ Apart from these instruments there exists a larger number of submersible Nitrate
 Whether these could be modified for use in seawater and on gliders is not known.
 
 #### Sea-Bird Scientific Deep SUNA
-These instruments are based on the original development by {cite}`Johnson2002` from MBARI. 
+These instruments are based on the original development by {cite:t}`Johnson2002` from MBARI. 
 The original was intended for use in underwater moorings and thus had a more voluminous housing to accommodate batteries. 
 The MBARI-ISUS was commercialized by Satlantic under the same name (Satlantic-ISUS). 
 Satlantic was in 2011 acquired by Sea-Bird Scientific which continues to produce the instruments. 
