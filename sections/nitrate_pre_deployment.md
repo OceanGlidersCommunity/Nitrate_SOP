@@ -1,6 +1,6 @@
 # Pre-deployment operations and calibrations
 
-## Storage and Maintenance
+## Operation after storage
 
 ### UV Spectrometers
 The described UV sensors have no special storage needs apart from that typical for high sensitivity optical instruments. Follow the manufacturer’s instructions in the instrument manuals. 
