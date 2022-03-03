@@ -14,7 +14,7 @@ Similarly, the LoC analysers have limited storage requirements (room temperature
 Reagents have also been shown to be remarkably stable, year long deployments have been conducted in the marine environment and replacement reagents can be purchased. 
 For long term storage (several weeks and more), it is recommended to remove the cadmium reduction tube (accessible outside the housing) and store as per manufacturer instructions (so that it cannot dry out and risk becoming blocked).
 
-## Generic function test
+## Generic setup
 ### UV Spectrometers
 Before deployment a full function test of the UV spectrometer in the lab is recommended. 
 
