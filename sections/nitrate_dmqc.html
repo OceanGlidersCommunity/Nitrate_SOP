@@ -37,9 +37,12 @@
     <script src="../_static/jquery.js"></script>
     <script src="../_static/underscore.js"></script>
     <script src="../_static/doctools.js"></script>
-    <script src="../_static/togglebutton.js"></script>
     <script src="../_static/clipboard.min.js"></script>
     <script src="../_static/copybutton.js"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js"></script>
     <script kind="utterances">
 
     var commentsRunWhenDOMLoaded = cb => {
@@ -76,12 +79,11 @@ commentsRunWhenDOMLoaded(addUtterances);
 </script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="../_static/sphinx-book-theme.d59cb220de22ca1c485ebbdc042f0030.js"></script>
-    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
-    <script>
-        const thebe_selector = ".thebe"
-        const thebe_selector_input = "pre"
-        const thebe_selector_output = ".output"
-    </script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
     <script async="async" src="../_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
@@ -368,7 +370,7 @@ commentsRunWhenDOMLoaded(addUtterances);
 <h2><span class="section-number">8.1. </span>Delayed Mode Processing<a class="headerlink" href="#delayed-mode-processing" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="uv-spectrometers">
 <h3><span class="section-number">8.1.1. </span>UV Spectrometers<a class="headerlink" href="#uv-spectrometers" title="Permalink to this headline">¶</a></h3>
-<p>The processing of UV attenuance spectra to obtain nitrate concentrations has been fully described in <span id="id1">[<a class="reference internal" href="nitrate_references.html#id15">Sakamoto <em>et al.</em>, 2009</a>]</span>, <span id="id2">[<a class="reference internal" href="nitrate_references.html#id16">Sakamoto <em>et al.</em>, 2017</a>]</span>, <span id="id3">[<a class="reference internal" href="nitrate_references.html#id12">Johnson <em>et al.</em>, 2018</a>]</span>.
+<p>The processing of UV attenuance spectra to obtain nitrate concentrations has been fully described in <span id="id1">[<a class="reference internal" href="nitrate_references.html#id15" title="Carole M. Sakamoto, Kenneth S. Johnson, and Luke J. Coletti. Improved algorithm for the computation of nitrate concentrations in seawater using an in situ ultraviolet spectrophotometer. Limnol. Oceanogr. Methods, 7():, 2009. URL:, arXiv:, doi:https://doi.org/10.4319/lom.2009.7.132.">Sakamoto <em>et al.</em>, 2009</a>]</span>, <span id="id2">[<a class="reference internal" href="nitrate_references.html#id16" title="Carole M. Sakamoto, Kenneth S. Johnson, Luke J. Coletti, and H.W. Jannasch. Pressure correction for the computation of nitrate concentrations in seawater using an in situ ultraviolet spectrophotometer. Limnol. Oceanogr. Methods, 15():897-902, 2017. URL:, arXiv:, doi:https://doi.org/10.1002/lom3.10209.">Sakamoto <em>et al.</em>, 2017</a>]</span>, <span id="id3">[<a class="reference internal" href="nitrate_references.html#id12" title="Ken Johnson, Orens Pasqueron De Fommervault, Romain Serra, Fabrizio D'Ortenzio, Catherine Schmechtig, Hervé Claustre, and Antoine Poteau. Processing bio-argo nitrate concentration at the dac level. ():, 2018. URL:, arXiv:, doi:https://doi.org/10.13155/46121.">Johnson <em>et al.</em>, 2018</a>]</span>.
 In delayed mode  temperature and salinity can be used to remove the effects of Bromide on the observed spectra.
 For an additional correction pressure data can be fed into the calculations.
 Matlab code has been published for Deep SUNA processing (<a class="reference external" href="https://github.com/SOCCOM-BGCArgo">https://github.com/SOCCOM-BGCArgo</a>), but can be adapted to other spectrometers.

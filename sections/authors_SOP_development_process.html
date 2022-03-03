@@ -37,9 +37,12 @@
     <script src="../_static/jquery.js"></script>
     <script src="../_static/underscore.js"></script>
     <script src="../_static/doctools.js"></script>
-    <script src="../_static/togglebutton.js"></script>
     <script src="../_static/clipboard.min.js"></script>
     <script src="../_static/copybutton.js"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js"></script>
     <script kind="utterances">
 
     var commentsRunWhenDOMLoaded = cb => {
@@ -76,12 +79,11 @@ commentsRunWhenDOMLoaded(addUtterances);
 </script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="../_static/sphinx-book-theme.d59cb220de22ca1c485ebbdc042f0030.js"></script>
-    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
-    <script>
-        const thebe_selector = ".thebe"
-        const thebe_selector_input = "pre"
-        const thebe_selector_output = ".output"
-    </script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
     <script async="async" src="../_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
@@ -340,7 +342,7 @@ commentsRunWhenDOMLoaded(addUtterances);
 <h2><span class="section-number">1.1. </span>Authors<a class="headerlink" href="#authors" title="Permalink to this headline">¶</a></h2>
 <ol class="simple">
 <li><p><a class="reference external" href="https://github.com/gkrahmann">Gerd Krahmann</a>, <em>GEOMAR Helmholtz Centre for Ocean Research Kiel, Germany,</em> <a class="reference external" href="https://orcid.org/0000-0003-0944-8795">0000-0003-0944-8795</a></p></li>
-<li><p>Christian Begler, <em>GEOMAR Helmholtz Centre for Ocean Research Kiel, Germany</em></p></li>
+<li><p>Christian Begler, <em>GEOMAR Helmholtz Centre for Ocean Research Kiel, Germany,</em> <a class="reference external" href="https://orcid.org/0000-0002-1674-0404">0000-0002-1674-0404</a></p></li>
 <li><p>Antony Birchill, <em>School of Geography, Earth and Environment Sciences, University of Plymouth, UK</em> <a class="reference external" href="https://orcid.org/0000-0002-1453-5781">0000-0002-1453-5781</a></p></li>
 <li><p><a class="reference external" href="https://github.com/mpatey">Matthew Patey</a>, <em>National Oceanography Centre, Southampton, UK,</em> <a class="reference external" href="https://orcid.org/0000-0001-8677-2818">0000-0001-8677-2818</a></p></li>
 <li><p>Alexander Beaton, <em>National Oceanography Centre, Southampton, UK</em> <a class="reference external" href="https://orcid.org/0000-0002-0206-7466">0000-0002-0206-7466</a></p></li>

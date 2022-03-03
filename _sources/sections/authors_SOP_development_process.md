@@ -2,7 +2,7 @@
 
 ## Authors
   1. [Gerd Krahmann](https://github.com/gkrahmann), *GEOMAR Helmholtz Centre for Ocean Research Kiel, Germany,* [0000-0003-0944-8795](https://orcid.org/0000-0003-0944-8795) 
-  2. Christian Begler, *GEOMAR Helmholtz Centre for Ocean Research Kiel, Germany* 
+  2. Christian Begler, *GEOMAR Helmholtz Centre for Ocean Research Kiel, Germany,* [0000-0002-1674-0404](https://orcid.org/0000-0002-1674-0404)
   3. Antony Birchill, *School of Geography, Earth and Environment Sciences, University of Plymouth, UK* [0000-0002-1453-5781](https://orcid.org/0000-0002-1453-5781)
   4. [Matthew Patey](https://github.com/mpatey), *National Oceanography Centre, Southampton, UK,* [0000-0001-8677-2818](https://orcid.org/0000-0001-8677-2818)
   5. Alexander Beaton, *National Oceanography Centre, Southampton, UK* [0000-0002-0206-7466](https://orcid.org/0000-0002-0206-7466)

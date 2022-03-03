@@ -37,9 +37,12 @@
     <script src="../_static/jquery.js"></script>
     <script src="../_static/underscore.js"></script>
     <script src="../_static/doctools.js"></script>
-    <script src="../_static/togglebutton.js"></script>
     <script src="../_static/clipboard.min.js"></script>
     <script src="../_static/copybutton.js"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js"></script>
     <script kind="utterances">
 
     var commentsRunWhenDOMLoaded = cb => {
@@ -76,12 +79,11 @@ commentsRunWhenDOMLoaded(addUtterances);
 </script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="../_static/sphinx-book-theme.d59cb220de22ca1c485ebbdc042f0030.js"></script>
-    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
-    <script>
-        const thebe_selector = ".thebe"
-        const thebe_selector_input = "pre"
-        const thebe_selector_output = ".output"
-    </script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
     <script async="async" src="../_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
@@ -495,7 +497,7 @@ commentsRunWhenDOMLoaded(addUtterances);
 <div class="section" id="uv-spectrometers">
 <h3><span class="section-number">3.1.1. </span>UV Spectrometers<a class="headerlink" href="#uv-spectrometers" title="Permalink to this headline">¶</a></h3>
 <p>To our knowledge there are currently at least two different instruments for UV spectroscopy Nitrate measurements in seawater, one manufactured by Sea-Bird Scientific (USA) called Deep SUNA and one by TriOS (Germany) called OPUS.
-A similar instrument has been developed in China <span id="id1">[<a class="reference internal" href="nitrate_references.html#id19">Zhu <em>et al.</em>, 2021</a>]</span> but is not yet commercially available.
+A similar instrument has been developed in China <span id="id1">[<a class="reference internal" href="nitrate_references.html#id19" title="X. Zhu, K. Yu, X. Zhu, J. Su, and C. Wu. An improved algorithm for measuring nitrate concentrations in seawater based on deep-ultraviolet spectrophotometry: a case study of the aoshan bay seawater and western pacific seawater. Sensors, 21(3):965, 2021. URL:, arXiv:, doi:https://doi.org/10.3390/s21030965.">Zhu <em>et al.</em>, 2021</a>]</span> but is not yet commercially available.
 Deep SUNAs have been specially developed for use on gliders and Argo floats and have been in use now for several years with good experiences.
 OPUS instruments have been tested on floats within the <a class="reference external" href="https://www.euro-argo.eu">Euro-Argo project</a> but not yet on gliders.
 Both instruments have a 10 mm sample path length in common as this appears to be optimal for the used light sources and spectral sensors and the Nitrate concentrations expected in seawater.
@@ -503,13 +505,13 @@ Apart from these instruments there exists a larger number of submersible Nitrate
 Whether these could be modified for use in seawater and on gliders is not known.</p>
 <div class="section" id="sea-bird-scientific-deep-suna">
 <h4><span class="section-number">3.1.1.1. </span>Sea-Bird Scientific Deep SUNA<a class="headerlink" href="#sea-bird-scientific-deep-suna" title="Permalink to this headline">¶</a></h4>
-<p>These instruments are based on the original development by <span id="id2">Johnson and Coletti [<a class="reference internal" href="nitrate_references.html#id11">2002</a>]</span> from MBARI.
+<p>These instruments are based on the original development by <span id="id2">Johnson and Coletti [<a class="reference internal" href="nitrate_references.html#id11" title="Kenneth Johnson and Luke Coletti. In situ ultraviolet spectrophotometry for high resolution and long-term monitoring of nitrate, bromide and bisulfide in the ocean. Deep Sea Research Part I: Oceanographic Research Papers, 49():1291-1305, 2002. URL:, arXiv:, doi:https://doi.org/10.1016/S0967-0637(02)00020-1.">2002</a>]</span> from MBARI.
 The original was intended for use in underwater moorings and thus had a more voluminous housing to accommodate batteries.
 The MBARI-ISUS was commercialized by Satlantic under the same name (Satlantic-ISUS).
 Satlantic was in 2011 acquired by Sea-Bird Scientific which continues to produce the instruments.
 Satlantic modified the design of the ISUS which used a mirror together with a light source and a spectrometer next to each other to that of the SUNA which has a light source and a spectrometer on opposing sides of the sample volume.
 This modified instrument relied on external power and thus was able to have a much more lightweight and streamlined design.
-The SUNA was further developed into the Deep SUNA which was optimized for the use on autonomous vehicles like gliders or floats with a pressure rating of 2000 dbar and a large internal memory (see also <span id="id3">[<a class="reference internal" href="nitrate_references.html#id12">Johnson <em>et al.</em>, 2018</a>]</span>).</p>
+The SUNA was further developed into the Deep SUNA which was optimized for the use on autonomous vehicles like gliders or floats with a pressure rating of 2000 dbar and a large internal memory (see also <span id="id3">[<a class="reference internal" href="nitrate_references.html#id12" title="Ken Johnson, Orens Pasqueron De Fommervault, Romain Serra, Fabrizio D'Ortenzio, Catherine Schmechtig, Hervé Claustre, and Antoine Poteau. Processing bio-argo nitrate concentration at the dac level. ():, 2018. URL:, arXiv:, doi:https://doi.org/10.13155/46121.">Johnson <em>et al.</em>, 2018</a>]</span>).</p>
 <p>All these instruments share the same basic configuration with a Deuterium UV lamp and a 256 channel UV spectrometer covering the wavelengths from 190 to 370 nm.
 Their internal processor is capable of not only storing the measured spectra but also of converting the data in real time into estimates of the Nitrate concentration.</p>
 <p>Deep SUNA have so far been attached to Teledyne Webb Research Slocum (see Figure <a class="reference internal" href="#slocum-suna"><span class="std std-ref">A Teledyne Webb Research Slocum G2 glider with a Deep SUNA attached on top of it.</span></a>) and ALSEAMAR SeaExplorer gliders.</p>
@@ -554,14 +556,14 @@ The sampling volume has, however, a shape that allows for a better water exchang
 <div class="section" id="lab-on-chip-loc-instruments">
 <h3><span class="section-number">3.1.2. </span>Lab-on-Chip (LoC) Instruments<a class="headerlink" href="#lab-on-chip-loc-instruments" title="Permalink to this headline">¶</a></h3>
 <p>Lab-on-Chip nitrate+nitrite analysers developed at the National Oceanography Centre, UK have been recently commercialized by ClearWater sensors, UK (<a class="reference external" href="https://www.clearwatersensors.com/nitrate-sensor/">https://www.clearwatersensors.com/nitrate-sensor/</a>).</p>
-<p>Lab-on-Chip analysers developed at the National Oceanography Centre, and recently commercialized by ClearWater sensors have been successfully deployed on Seagliders to observe key seasonal transitions of biogeochemistry, such as spring bloom dynamics, in the Celtic Sea and North Sea <span id="id4">[<a class="reference internal" href="nitrate_references.html#id18">Vincent <em>et al.</em>, 2018</a>]</span>, <span id="id5">[<a class="reference internal" href="nitrate_references.html#id9">Hull <em>et al.</em>, 2021</a>]</span>.
+<p>Lab-on-Chip analysers developed at the National Oceanography Centre, and recently commercialized by ClearWater sensors have been successfully deployed on Seagliders to observe key seasonal transitions of biogeochemistry, such as spring bloom dynamics, in the Celtic Sea and North Sea <span id="id4">[<a class="reference internal" href="nitrate_references.html#id18" title="A. G. Vincent, R. W. Pascal, A. D. Beaton, J. Walk, J. E. Hopkins, E. M. S. Woodward, M. Mowlem, and M. C. Lohan. Nitrate drawdown during a shelf sea spring bloom revealed using a novel microfluidic in situ chemical sensor deployed within an autonomous underwater glider. Marine Chemistry, 205():29-36, 2018. URL:, arXiv:, doi:https://doi.org/10.1016/j.marchem.2018.07.005.">Vincent <em>et al.</em>, 2018</a>]</span>, <span id="id5">[<a class="reference internal" href="nitrate_references.html#id9" title="T. Hull, N. Greenwood, A. Birchill, A. Beaton, M. Palmer, and J. Kaiser. Simultaneous assessment of oxygen and nitrate-based net community production in a temperate shelf sea from a single ocean glider. Biogeosciences Discussions, 2021:1-25, 2021. URL: https://bg.copernicus.org/articles/18/6167/2021/, doi:https://doi.org/10.5194/bg-2021-170.">Hull <em>et al.</em>, 2021</a>]</span>.
 A variant of this sensor that measures phosphate has also been developed and deployed on a Seaglider (Birchill et al, in review).</p>
 <div class="section" id="clearwater-national-oceanography-centre-noc-lab-on-chip-analyser">
 <h4><span class="section-number">3.1.2.1. </span>ClearWater (National Oceanography Centre, NOC) Lab-on-Chip analyser<a class="headerlink" href="#clearwater-national-oceanography-centre-noc-lab-on-chip-analyser" title="Permalink to this headline">¶</a></h4>
 <p>The LoC analyser contains a three layer poly(methyl methacrylate) (PMMA) optofluidic chip with precision milled microchannels, mixers and optical components consisting of light emitting diodes and photodiodes, electronics, solenoid valves and syringe pumps mounted on the chip.
 The chip forms the end cap of a dark watertight pressure compensated PVC housing, which is rated to 6000 dbar. The chip is fitted with a cadmium column for the reduction of nitrate to nitrite.
 The system is automated using a 32 bit microcontroller-based electronics package with 18-bit analogue to digital inputs and can stream raw data (1 Hz) over USB, as well as store data on a 8 GB flash memory card.
-Provided with the values of the on-board standards, the LoC analyser is capable of outputting processed data (µM NO<sub>2-</sub><sup>-</sup> + NO<sub>3-</sub><sup>-</sup>) over RS232 or RS485 interfaces <span id="id6">[<a class="reference internal" href="nitrate_references.html#id3">Beaton <em>et al.</em>, 2012</a>]</span>.
+Provided with the values of the on-board standards, the LoC analyser is capable of outputting processed data (µM NO<sub>2-</sub><sup>-</sup> + NO<sub>3-</sub><sup>-</sup>) over RS232 or RS485 interfaces <span id="id6">[<a class="reference internal" href="nitrate_references.html#id3" title="Beaton, A. D., C. L. Cardwell, R. S. Thomas, V. J. Sieben, F.-E. Legiret, E. M. Waugh, P. J. Statham, M. C. Mowlem, and H. Morgan. Lab-on-chip measurement of nitrate and nitrite for in situ analysis of natural waters. Environmental science &amp; technology, 46(17):9548-9556, 2012. URL:, arXiv:, doi:https://doi.org/10.1021/es300419u.">Beaton <em>et al.</em>, 2012</a>]</span>.
 The analyser is capable of measuring concentrations ranging from 0.025 to 1000 µM NO<sub>3</sub><sup>-</sup> due to the chip containing 3 measurement cells with differing path lengths.
 Measurement frequency during glider operations is approximately every 7 minutes, this is preceded by a calibration period of approximately 21 minutes during which blank and standard measurements are made at the start of each dive.</p>
 </div>
@@ -584,7 +586,7 @@ As soon as instruments are in the water bio-fouling will set in and is not accou
 Drift because of lamp aging is significant for Deuterium UV lamps and degrades the nominal accuracy very quickly.
 The precision and detection limit also significantly depend on the availability of temperature and salinity information (see sections on processing).</p>
 <p>Note: To get optimal nitrate concentrations frequent cross-calibration against higher quality measurements from water samples is recommended.</p>
-<p>Cross-calibration can significantly reduce the overall uncertainty of the nitrate concentrations. Different cross-calibration approaches are possible. The best results will be obtained by attaching the instrument to the CTD and run calibration casts with high quality water sample measurements before and after the deployment. A similar quality should be possible with in-lab calibrations using known reference material before and after the deployment. If neither of these are possible, CTD casts with high quality water samples can be done near the glider and be used to evaluate and possibly correct the instrument concentrations. A priori knowledge of local concentrations can also be used to calibrate albeit at the cost of not being able to detect real deviations from the a priori knowledge. Experiences suggest that the calibration coefficients (for a linear correction) are relatively stable between subsequent deployments <span id="id8">[<a class="reference internal" href="nitrate_references.html#id13">Krahmann <em>et al.</em>, 2021</a>]</span>.</p>
+<p>Cross-calibration can significantly reduce the overall uncertainty of the nitrate concentrations. Different cross-calibration approaches are possible. The best results will be obtained by attaching the instrument to the CTD and run calibration casts with high quality water sample measurements before and after the deployment. A similar quality should be possible with in-lab calibrations using known reference material before and after the deployment. If neither of these are possible, CTD casts with high quality water samples can be done near the glider and be used to evaluate and possibly correct the instrument concentrations. A priori knowledge of local concentrations can also be used to calibrate albeit at the cost of not being able to detect real deviations from the a priori knowledge. Experiences suggest that the calibration coefficients (for a linear correction) are relatively stable between subsequent deployments <span id="id8">[<a class="reference internal" href="nitrate_references.html#id13" title="Gerd Krahmann, Damian L. Arévalo-Martínez, Andrew W. Dale, Marcus Dengler, Anja Engel, Nicolaas Glock, Patricia Grasse, Johannes Hahn, Helena Hauss, Mark J. Hopwood, Rainer Kiko, Alexandra N. Loginova, Carolin R. Löscher, Marie Maßmig, Alexandra-Sophie Roy, Renato Salvatteci, Stefan Sommer, Toste Tanhua, and Hela Mehrtens. Climate-biogeochemistry interactions in the tropical ocean: data collection and legacy. Frontiers in Marine Science, 8:1270, 2021. URL: https://www.frontiersin.org/article/10.3389/fmars.2021.723304, doi:10.3389/fmars.2021.723304.">Krahmann <em>et al.</em>, 2021</a>]</span>.</p>
 <p><em>Table 1: Some specifications for the different instruments.</em></p>
 <p>Please note that it is not known how exactly the manufacturer’s values are determined and whether the same terminology is used.
 Typically they are valid for recently manufactured and calibrated instruments.
@@ -640,8 +642,8 @@ Bio-fouling and other influences are not included.</p>
 </tr>
 </tbody>
 </table>
-<p>(1) from estimates of combined uncertainty estimated via the analysis of certified reference materials using 7 analysers <span id="id9">[<a class="reference internal" href="nitrate_references.html#id5">Birchill <em>et al.</em>, 2019</a>]</span>.</p>
-<p>(2) not a standard mode of operation for the LoC analyser, values are from a CTD trial deployment <span id="id10">[<a class="reference internal" href="nitrate_references.html#id18">Vincent <em>et al.</em>, 2018</a>]</span>.</p>
+<p>(1) from estimates of combined uncertainty estimated via the analysis of certified reference materials using 7 analysers <span id="id9">[<a class="reference internal" href="nitrate_references.html#id5" title="A.J. Birchill, G. Clinton-Bailey, R. Hanz, E. Mawji, T. Cariou, C. White, S.J. Ussher, P.J. Worsfold, E. P. Achterberg, and M. Mowlem. Realistic measurement uncertainties for marine macronutrient measurements conducted using gas segmented flow and lab-on-chip techniques. Talanta, 200():228-235, 2019. URL:, arXiv:, doi:https://doi.org/10.1016/j.talanta.2019.03.032.">Birchill <em>et al.</em>, 2019</a>]</span>.</p>
+<p>(2) not a standard mode of operation for the LoC analyser, values are from a CTD trial deployment <span id="id10">[<a class="reference internal" href="nitrate_references.html#id18" title="A. G. Vincent, R. W. Pascal, A. D. Beaton, J. Walk, J. E. Hopkins, E. M. S. Woodward, M. Mowlem, and M. C. Lohan. Nitrate drawdown during a shelf sea spring bloom revealed using a novel microfluidic in situ chemical sensor deployed within an autonomous underwater glider. Marine Chemistry, 205():29-36, 2018. URL:, arXiv:, doi:https://doi.org/10.1016/j.marchem.2018.07.005.">Vincent <em>et al.</em>, 2018</a>]</span>.</p>
 <p>(3) It is unclear whether the OPUS’ accuracy and precision values given by the manufacturer use internal averaging of several spectra. The typical noise on CTDs was determined using single non-averaged spectra.</p>
 <p>(4) The ‘noise’ values have been estimated by calculating the standard deviation of instrument nitrate concentrations at depths with apparently homogeneous nitrate concentrations.</p>
 <p>(5) Deep SUNA and OPUS instruments have been used attached to a CTD and high accuracy nitrate concentrations have been compared to Deep SUNA and OPUS values at the time of bottle closing. The given values are the rms difference between the bottle and instrument values after the instrument values have been linearly corrected to match the bottle values</p>
