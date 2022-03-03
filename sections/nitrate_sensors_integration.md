@@ -1,14 +1,14 @@
-# Sensors and integrations 
+# Sensors specifications and glider integrations 
 
-## Nitrate sensors
+## Nitrate sensors specifications
 
 ### UV Spectrometers
-To our knowledge there are currently at least two different instruments for UV spectroscopy Nitrate measurements in seawater, one manufactured by Sea-Bird Scientific (USA) called Deep SUNA and one by TriOS (Germany) called OPUS. 
+To our knowledge there are currently at least two different instruments for UV spectroscopy nitrate measurements in seawater, one manufactured by Sea-Bird Scientific (USA) called Deep SUNA and one by TriOS (Germany) called OPUS. 
 A similar instrument has been developed in China {cite}`Zhu2021` but is not yet commercially available.
 Deep SUNAs have been specially developed for use on gliders and Argo floats and have been in use now for several years with good experiences. 
 OPUS instruments have been tested on floats within the [Euro-Argo project](https://www.euro-argo.eu) but not yet on gliders. 
-Both instruments have a 10 mm sample path length in common as this appears to be optimal for the used light sources and spectral sensors and the Nitrate concentrations expected in seawater.
-Apart from these instruments there exists a larger number of submersible Nitrate sensors that are optimized for use in freshwater lakes and rivers or for monitoring wastewater (e.g. by [YSI](https://www.ysi.com/parameters/nitrate); by [Xylem](https://www.xylemanalytics.com/en/products/listing-wtw-process-all)). 
+Both instruments have a 10 mm sample path length in common as this appears to be optimal for the used light sources and spectral sensors and the nitrate concentrations expected in seawater.
+Apart from these instruments there exists a larger number of submersible nitrate sensors that are optimized for use in freshwater lakes and rivers or for monitoring wastewater (e.g. by [YSI](https://www.ysi.com/parameters/nitrate); by [Xylem](https://www.xylemanalytics.com/en/products/listing-wtw-process-all)). 
 Whether these could be modified for use in seawater and on gliders is not known.
 
 #### Sea-Bird Scientific Deep SUNA
@@ -21,7 +21,7 @@ This modified instrument relied on external power and thus was able to have a mu
 The SUNA was further developed into the Deep SUNA which was optimized for the use on autonomous vehicles like gliders or floats with a pressure rating of 2000 dbar and a large internal memory (see also {cite}`Johnson2018`).
 
 All these instruments share the same basic configuration with a Deuterium UV lamp and a 256 channel UV spectrometer covering the wavelengths from 190 to 370 nm. 
-Their internal processor is capable of not only storing the measured spectra but also of converting the data in real time into estimates of the Nitrate concentration.
+Their internal processor is capable of not only storing the measured spectra but also of converting the data in real time into estimates of the nitrate concentration.
 
 Deep SUNA have so far been attached to Teledyne Webb Research Slocum (see Figure {ref}`slocum_suna`) and ALSEAMAR SeaExplorer gliders.
 
@@ -79,13 +79,12 @@ The LoC analyser contains a three layer poly(methyl methacrylate) (PMMA) optoflu
 The chip forms the end cap of a dark watertight pressure compensated PVC housing, which is rated to 6000 dbar. The chip is fitted with a cadmium column for the reduction of nitrate to nitrite. 
 The system is automated using a 32 bit microcontroller-based electronics package with 18-bit analogue to digital inputs and can stream raw data (1 Hz) over USB, as well as store data on a 8 GB flash memory card. 
 Provided with the values of the on-board standards, the LoC analyser is capable of outputting processed data (µM NO<sub>2-</sub><sup>-</sup> + NO<sub>3-</sub><sup>-</sup>) over RS232 or RS485 interfaces {cite}`Beaton2012`. 
-The analyser is capable of measuring concentrations ranging from 0.025 to 1000 µM NO<sub>3</sub><sup>-</sup> due to the chip containing 3 measurement cells with differing path lengths. 
+The analyser is capable of measuring concentrations ranging from 0.025 to 1000 µM NO<sub>2-</sub><sup>-</sup> + NO<sub>3-</sub><sup>-</sup> due to the chip containing 3 measurement cells with differing path lengths. 
 Measurement frequency during glider operations is approximately every 7 minutes, this is preceded by a calibration period of approximately 21 minutes during which blank and standard measurements are made at the start of each dive.  
 
-## Instrument comparison and uncertainty numbers
+## General considerations of measurements quality control
 
-### UV Spectrometers
-The quality of the nitrate concentrations derived from UV spectrometer measurements depends on a number of conditions:
+The quality of the nitrate concentrations derived from sensors depends on a number of conditions:
 - time since manufacturer maintenance/calibration (lamp aging)
 - time in the water (bio-fouling)
 - cross-calibration availability (via instrument-on-CTD or nearby water samples or other knowledge)
@@ -139,7 +138,7 @@ Deep SUNA instruments have to our knowledge been integrated into Slocum and Seae
 
 TriOS OPUS have so far not been mounted to gliders.
 
-Regarding the mounting location of UV spectrometers some thought has to be put into the best location of their sampling volume relative to the CTD sensor location. Since the CTD data is used to correct for the influence of salt in the seawater a spatial distance between the sensors might have to be taken into account possibly by time-shifting the CTD data. This is particularly relevant when measuring across strong haloclines and mismatches between the measurements might lead to artifical spikes in the Nitrate data. The optimal time shift should be dependent on the vertical and horizontal speed of the glider and the vertical and horizontal separation of the sensors. For Slocum gliders with Deep SUNAs the distance is about 30 cm (15 cm vertical and 20 cm horizontal) which, depending on the glider speed, translates to a 1-2 second long shift. With the typical Slocoum CTD sampling rate of one measurement every 4 seconds and a Deep SUNA sampling rate even slower, this has so far not been compensated for. However for other gliders with a slower speed and a larger separation of the sensors such a correction might be necessary.
+Regarding the mounting location of UV spectrometers some thought has to be put into the best location of their sampling volume relative to the CTD sensor location. Since the CTD data is used to correct for the influence of salt in the seawater a spatial distance between the sensors might have to be taken into account possibly by time-shifting the CTD data. This is particularly relevant when measuring across strong haloclines and mismatches between the measurements might lead to artifical spikes in the nitrate data. The optimal time shift should be dependent on the vertical and horizontal speed of the glider and the vertical and horizontal separation of the sensors. For Slocum gliders with Deep SUNAs the distance is about 30 cm (15 cm vertical and 20 cm horizontal) which, depending on the glider speed, translates to a 1-2 second long shift. With the typical Slocoum CTD sampling rate of one measurement every 4 seconds and a Deep SUNA sampling rate even slower, this has so far not been compensated for. However for other gliders with a slower speed and a larger separation of the sensors such a correction might be necessary.
 
 ### Lab-on-Chip Instruments
 The LoC analyser has been successfully integrated into the Ogive Seaglider faring, which allows a larger payload space to accommodate the analyser and reagent storage backs. 
