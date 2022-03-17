@@ -12,25 +12,28 @@ However it is currently (November 2021) not implemented and not planned to be im
 OPUS spectrometers can also derive nitrate concentrations in real time, but to the groups involved in writing this document no instrument with that capability was available.
 
 ## Real Time Quality Control (RTQC)
-### UV Spectrometer
+### UV Spectrometers
 Four real time quality control checks should be implemented to detect suspicious measurements:
 - valid range checks
 - spike/outlier detection 
-- comparison with climatological information 
+- comparison with climatological information, when available
 - sensor drift detection
 
 Real time quality control relies on knowledge of the typical nitrate concentration in the deployment region and on the, in most cases, slow spatial variation of the nitrate concentrations (eddies and fronts are often special cases with larger horizontal gradients). New profiles are typically compared with the previous ones to detect profiles or single values that stand out. Such data can be flagged as suspicious or even bad.
 
-For the different instruments their respective noise level has to be taken into account when creating an outlier check. Very rarely objects appear to get into the sampling volume and are usually there for only a few samples after which the measurements return to the previously measured concentrations. The result of this are spikes to higher concentrations (higher apparent absorption).
+For the different instruments their respective noise level, concentration range and limit of detection has to be taken into account when creating an outlier check. Very rarely objects appear to get into the sampling volume and are usually there for only a few samples after which the measurements return to the previously measured concentrations. The result of this are spikes to higher concentrations (higher apparent absorption).
 
-A slow measurement drift is to be expected for Sea-Bird’s Deep SUNA because of lamp aging and/or bio-fooling. This can not be corrected in situ as the reduction in lamp strength is not measured (see also below for the post-recovery calibration). A drift might also occur because of bio-fouling. Both lamp aging and bio-fouling drifts should lead to values increasing with deployment time. Small drifts are often difficult to detect as they might not stand out against other measurement variability. Prior knowledge, such as e.g. an expected nitrate depletion in the surface mixed layer, can potentially be used to detect a small drift. After recovery, renewed calibration and reference measurements may also be used to differentiate between lamp drift and bio-fouling.
+A slow measurement drift is to be expected for Sea-Bird’s Deep SUNA because of lamp aging and/or bio-fouling. This can not be corrected *in situ* as the reduction in lamp strength is not measured (see also below for the post-recovery calibration). A drift might also occur because of bio-fouling. Both lamp aging and bio-fouling drifts should lead to values increasing with deployment time. Small drifts are often difficult to detect as they might not stand out against other measurement variability. Prior knowledge, such as e.g. an expected nitrate depletion in the surface mixed layer, can potentially be used to detect a small drift. After recovery, renewed calibration and reference measurements may also be used to differentiate between lamp drift and bio-fouling.
+
+### Lab-On-Chip instruments
 
 ## Data submission (real time)
 It is recommended that real time data is submitted to GDACs for immediate redistribution of the data. 
 At the moment of writing (May 2021) it is unclear whether any GDACs process real time nitrate measurements, nevertheless we recommend implementing the submission process.
 
 ### UV Spectrometers
-Deep SUNAs on Slocum gliders currently (May 2021) transfer to the gliders only nitrate concentrations based on optimized temperature and salinity values. 
+Deep SUNAs on Slocum gliders currently (May 2021) transfer to the gliders only nitrate concentrations based on internally optimized temperature and salinity values.
+An unknown internal optimization scheme determines temperature and salinity values as well as a nitrate concentration for which the expected spectrum agrees best with the observed one. These optimized temperatures and salinities are often significantly off (by several degrees or PSU) and consequently result in wrong nitrate concentrations.
 It should be possible to feed CTD data from the glider into Deep SUNAs to allow for more accurate calculations. 
 This should be particularly true for modern Slocum G3 gliders which use faster processors. 
 Alternatively raw spectra could be transmitted to data centres albeit at the cost of 30-40 times larger data sets with the consequence of higher costs and longer glider time spent at the sea surface. 
