@@ -3,16 +3,14 @@
 ## Delayed Mode Processing 
 ### UV Spectrometers
 The processing of UV attenuance spectra to obtain nitrate concentrations has been fully described in {cite}`Sakamoto2009`, {cite}`Sakamoto2017`, {cite}`Johnson2018`. 
-In delayed mode  temperature and salinity can be used to remove the effects of Bromide on the observed spectra. 
+In delayed mode  temperature and salinity can be used to remove their interference effects on the observed spectra. 
 For an additional correction pressure data can be fed into the calculations. 
 Matlab code has been published for Deep SUNA processing (https://github.com/SOCCOM-BGCArgo), but can be adapted to other spectrometers. 
-Recently (2020) a modified temperature dependency of the Bromide correction has been developed (https://argo.ucsd.edu/wp-content/uploads/sites/361/2021/04/BGC_meeting_ADMT2020_Minutes.pdf). 
+Recently (2020) a modified temperature dependency of the bromide correction has been developed (https://argo.ucsd.edu/wp-content/uploads/sites/361/2021/04/BGC_meeting_ADMT2020_Minutes.pdf). 
 Another code version is available at https://github.com/oceanobservatories/ion-functions/blob/master/ion_functions/data/nit_functions.py.
 
-Reference lamp spectra taken before and after the deployment can now be used to remove the effects of lamp aging on the attenuance spectra. 
-Nitrate concentrations should be calculated for both pre- and post-deployment lamp reference spectra. 
-A linear blend of the two concentrations gives probably the optimal nitrate concentration estimate. 
-Depending on the strength of the bio-fouling the linear blend calculation should probably be based on either lamp use time (no or weak bio-fouling) or deployment time (strong bio-fouling).
+Reference lamp spectra taken before and after the deployment can now be used to remove the effects of lamp aging and possibly also of bio-fouling on the attenuance spectra. The simplest way is to calculate two nitrate concentrations using the pre- and post-deployment lamp reference spectra and then calculate a weighted average of the two concentrations.
+Depending on the strength of the bio-fouling the linear weighting should probably be based on either lamp use time (no or weak bio-fouling) or deployment time (strong bio-fouling).
 
 A cross-calibration of the resulting nitrate concentrations is strongly recommended. 
 
@@ -41,6 +39,8 @@ It is important to note that LoC sample intake takes approximately 15-20 seconds
 ### UV Spectrometers
 Delayed mode quality control for UV spectrometers is comparable to that of real time quality control. See the chapter on RTQC.
 
-The detection limit of SUNA measurements is 0.3 µM which has to be considered when observing oligotrophic regions. Typical issues occur near the surface due to interférence with sunlight and highly turbid regions. 
+The detection limit of SUNA measurements is 0.3 µM which has to be considered when observing oligotrophic regions. Typical issues occur near the surface due to interference with sunlight and highly turbid regions. 
 
 Based on longitude, latitude, pressure, temperature, salinity and oxygen Argo floats users estimate the delayed mode values for nitrate with CANYON B  (https://doi.org/10.3389/fmars.2018.00328. , https://doi.org/10.1002/2017JC012838). This approach can similarly be followed for glider based data and should be based on data at depth where nitrate values are not so variable.
+
+### Lab-On-Chip Instruments

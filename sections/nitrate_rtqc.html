@@ -295,8 +295,13 @@ const thebe_selector_output = ".output, .cell_output"
   </a>
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#uv-spectrometer">
-     6.2.1. UV Spectrometer
+    <a class="reference internal nav-link" href="#id1">
+     6.2.1. UV Spectrometers
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#lab-on-chip-instruments">
+     6.2.2. Lab-On-Chip instruments
     </a>
    </li>
   </ul>
@@ -307,7 +312,7 @@ const thebe_selector_output = ".output, .cell_output"
   </a>
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#id1">
+    <a class="reference internal nav-link" href="#id2">
      6.3.1. UV Spectrometers
     </a>
    </li>
@@ -351,8 +356,13 @@ const thebe_selector_output = ".output, .cell_output"
   </a>
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#uv-spectrometer">
-     6.2.1. UV Spectrometer
+    <a class="reference internal nav-link" href="#id1">
+     6.2.1. UV Spectrometers
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#lab-on-chip-instruments">
+     6.2.2. Lab-On-Chip instruments
     </a>
    </li>
   </ul>
@@ -363,7 +373,7 @@ const thebe_selector_output = ".output, .cell_output"
   </a>
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#id1">
+    <a class="reference internal nav-link" href="#id2">
      6.3.1. UV Spectrometers
     </a>
    </li>
@@ -394,27 +404,31 @@ However it is currently (November 2021) not implemented and not planned to be im
 </div>
 <div class="section" id="real-time-quality-control-rtqc">
 <h2><span class="section-number">6.2. </span>Real Time Quality Control (RTQC)<a class="headerlink" href="#real-time-quality-control-rtqc" title="Permalink to this headline">¶</a></h2>
-<div class="section" id="uv-spectrometer">
-<h3><span class="section-number">6.2.1. </span>UV Spectrometer<a class="headerlink" href="#uv-spectrometer" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id1">
+<h3><span class="section-number">6.2.1. </span>UV Spectrometers<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h3>
 <p>Four real time quality control checks should be implemented to detect suspicious measurements:</p>
 <ul class="simple">
 <li><p>valid range checks</p></li>
 <li><p>spike/outlier detection</p></li>
-<li><p>comparison with climatological information</p></li>
+<li><p>comparison with climatological information, when available</p></li>
 <li><p>sensor drift detection</p></li>
 </ul>
 <p>Real time quality control relies on knowledge of the typical nitrate concentration in the deployment region and on the, in most cases, slow spatial variation of the nitrate concentrations (eddies and fronts are often special cases with larger horizontal gradients). New profiles are typically compared with the previous ones to detect profiles or single values that stand out. Such data can be flagged as suspicious or even bad.</p>
-<p>For the different instruments their respective noise level has to be taken into account when creating an outlier check. Very rarely objects appear to get into the sampling volume and are usually there for only a few samples after which the measurements return to the previously measured concentrations. The result of this are spikes to higher concentrations (higher apparent absorption).</p>
-<p>A slow measurement drift is to be expected for Sea-Bird’s Deep SUNA because of lamp aging and/or bio-fooling. This can not be corrected in situ as the reduction in lamp strength is not measured (see also below for the post-recovery calibration). A drift might also occur because of bio-fouling. Both lamp aging and bio-fouling drifts should lead to values increasing with deployment time. Small drifts are often difficult to detect as they might not stand out against other measurement variability. Prior knowledge, such as e.g. an expected nitrate depletion in the surface mixed layer, can potentially be used to detect a small drift. After recovery, renewed calibration and reference measurements may also be used to differentiate between lamp drift and bio-fouling.</p>
+<p>For the different instruments their respective noise level, concentration range and limit of detection has to be taken into account when creating an outlier check. Very rarely objects appear to get into the sampling volume and are usually there for only a few samples after which the measurements return to the previously measured concentrations. The result of this are spikes to higher concentrations (higher apparent absorption).</p>
+<p>A slow measurement drift is to be expected for Sea-Bird’s Deep SUNA because of lamp aging and/or bio-fouling. This can not be corrected <em>in situ</em> as the reduction in lamp strength is not measured (see also below for the post-recovery calibration). A drift might also occur because of bio-fouling. Both lamp aging and bio-fouling drifts should lead to values increasing with deployment time. Small drifts are often difficult to detect as they might not stand out against other measurement variability. Prior knowledge, such as e.g. an expected nitrate depletion in the surface mixed layer, can potentially be used to detect a small drift. After recovery, renewed calibration and reference measurements may also be used to differentiate between lamp drift and bio-fouling.</p>
+</div>
+<div class="section" id="lab-on-chip-instruments">
+<h3><span class="section-number">6.2.2. </span>Lab-On-Chip instruments<a class="headerlink" href="#lab-on-chip-instruments" title="Permalink to this headline">¶</a></h3>
 </div>
 </div>
 <div class="section" id="data-submission-real-time">
 <h2><span class="section-number">6.3. </span>Data submission (real time)<a class="headerlink" href="#data-submission-real-time" title="Permalink to this headline">¶</a></h2>
 <p>It is recommended that real time data is submitted to GDACs for immediate redistribution of the data.
 At the moment of writing (May 2021) it is unclear whether any GDACs process real time nitrate measurements, nevertheless we recommend implementing the submission process.</p>
-<div class="section" id="id1">
-<h3><span class="section-number">6.3.1. </span>UV Spectrometers<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h3>
-<p>Deep SUNAs on Slocum gliders currently (May 2021) transfer to the gliders only nitrate concentrations based on optimized temperature and salinity values.
+<div class="section" id="id2">
+<h3><span class="section-number">6.3.1. </span>UV Spectrometers<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h3>
+<p>Deep SUNAs on Slocum gliders currently (May 2021) transfer to the gliders only nitrate concentrations based on internally optimized temperature and salinity values.
+An unknown internal optimization scheme determines temperature and salinity values as well as a nitrate concentration for which the expected spectrum agrees best with the observed one. These optimized temperatures and salinities are often significantly off (by several degrees or PSU) and consequently result in wrong nitrate concentrations.
 It should be possible to feed CTD data from the glider into Deep SUNAs to allow for more accurate calculations.
 This should be particularly true for modern Slocum G3 gliders which use faster processors.
 Alternatively raw spectra could be transmitted to data centres albeit at the cost of 30-40 times larger data sets with the consequence of higher costs and longer glider time spent at the sea surface.

@@ -304,6 +304,11 @@ const thebe_selector_output = ".output, .cell_output"
      8.2.1. UV Spectrometers
     </a>
    </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id5">
+     8.2.2. Lab-On-Chip Instruments
+    </a>
+   </li>
   </ul>
  </li>
 </ul>
@@ -353,6 +358,11 @@ const thebe_selector_output = ".output, .cell_output"
      8.2.1. UV Spectrometers
     </a>
    </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id5">
+     8.2.2. Lab-On-Chip Instruments
+    </a>
+   </li>
   </ul>
  </li>
 </ul>
@@ -371,15 +381,13 @@ const thebe_selector_output = ".output, .cell_output"
 <div class="section" id="uv-spectrometers">
 <h3><span class="section-number">8.1.1. </span>UV Spectrometers<a class="headerlink" href="#uv-spectrometers" title="Permalink to this headline">¶</a></h3>
 <p>The processing of UV attenuance spectra to obtain nitrate concentrations has been fully described in <span id="id1">[<a class="reference internal" href="nitrate_references.html#id15" title="Carole M. Sakamoto, Kenneth S. Johnson, and Luke J. Coletti. Improved algorithm for the computation of nitrate concentrations in seawater using an in situ ultraviolet spectrophotometer. Limnol. Oceanogr. Methods, 7():, 2009. URL:, arXiv:, doi:https://doi.org/10.4319/lom.2009.7.132.">Sakamoto <em>et al.</em>, 2009</a>]</span>, <span id="id2">[<a class="reference internal" href="nitrate_references.html#id16" title="Carole M. Sakamoto, Kenneth S. Johnson, Luke J. Coletti, and H.W. Jannasch. Pressure correction for the computation of nitrate concentrations in seawater using an in situ ultraviolet spectrophotometer. Limnol. Oceanogr. Methods, 15():897-902, 2017. URL:, arXiv:, doi:https://doi.org/10.1002/lom3.10209.">Sakamoto <em>et al.</em>, 2017</a>]</span>, <span id="id3">[<a class="reference internal" href="nitrate_references.html#id12" title="Ken Johnson, Orens Pasqueron De Fommervault, Romain Serra, Fabrizio D'Ortenzio, Catherine Schmechtig, Hervé Claustre, and Antoine Poteau. Processing bio-argo nitrate concentration at the dac level. ():, 2018. URL:, arXiv:, doi:https://doi.org/10.13155/46121.">Johnson <em>et al.</em>, 2018</a>]</span>.
-In delayed mode  temperature and salinity can be used to remove the effects of Bromide on the observed spectra.
+In delayed mode  temperature and salinity can be used to remove their interference effects on the observed spectra.
 For an additional correction pressure data can be fed into the calculations.
 Matlab code has been published for Deep SUNA processing (<a class="reference external" href="https://github.com/SOCCOM-BGCArgo">https://github.com/SOCCOM-BGCArgo</a>), but can be adapted to other spectrometers.
-Recently (2020) a modified temperature dependency of the Bromide correction has been developed (<a class="reference external" href="https://argo.ucsd.edu/wp-content/uploads/sites/361/2021/04/BGC_meeting_ADMT2020_Minutes.pdf">https://argo.ucsd.edu/wp-content/uploads/sites/361/2021/04/BGC_meeting_ADMT2020_Minutes.pdf</a>).
+Recently (2020) a modified temperature dependency of the bromide correction has been developed (<a class="reference external" href="https://argo.ucsd.edu/wp-content/uploads/sites/361/2021/04/BGC_meeting_ADMT2020_Minutes.pdf">https://argo.ucsd.edu/wp-content/uploads/sites/361/2021/04/BGC_meeting_ADMT2020_Minutes.pdf</a>).
 Another code version is available at <a class="reference external" href="https://github.com/oceanobservatories/ion-functions/blob/master/ion_functions/data/nit_functions.py">https://github.com/oceanobservatories/ion-functions/blob/master/ion_functions/data/nit_functions.py</a>.</p>
-<p>Reference lamp spectra taken before and after the deployment can now be used to remove the effects of lamp aging on the attenuance spectra.
-Nitrate concentrations should be calculated for both pre- and post-deployment lamp reference spectra.
-A linear blend of the two concentrations gives probably the optimal nitrate concentration estimate.
-Depending on the strength of the bio-fouling the linear blend calculation should probably be based on either lamp use time (no or weak bio-fouling) or deployment time (strong bio-fouling).</p>
+<p>Reference lamp spectra taken before and after the deployment can now be used to remove the effects of lamp aging and possibly also of bio-fouling on the attenuance spectra. The simplest way is to calculate two nitrate concentrations using the pre- and post-deployment lamp reference spectra and then calculate a weighted average of the two concentrations.
+Depending on the strength of the bio-fouling the linear weighting should probably be based on either lamp use time (no or weak bio-fouling) or deployment time (strong bio-fouling).</p>
 <p>A cross-calibration of the resulting nitrate concentrations is strongly recommended.</p>
 <p>Reprocessed nitrate concentrations typically differ from higher quality water sample based measurements by a few % (see also Table 1).
 The differences are linear with the concentrations and can be corrected by applying an offset and a slope factor.
@@ -407,8 +415,11 @@ Calibrations using data from the nutricline will be rather uncertain and one mig
 <div class="section" id="id4">
 <h3><span class="section-number">8.2.1. </span>UV Spectrometers<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h3>
 <p>Delayed mode quality control for UV spectrometers is comparable to that of real time quality control. See the chapter on RTQC.</p>
-<p>The detection limit of SUNA measurements is 0.3 µM which has to be considered when observing oligotrophic regions. Typical issues occur near the surface due to interférence with sunlight and highly turbid regions.</p>
+<p>The detection limit of SUNA measurements is 0.3 µM which has to be considered when observing oligotrophic regions. Typical issues occur near the surface due to interference with sunlight and highly turbid regions.</p>
 <p>Based on longitude, latitude, pressure, temperature, salinity and oxygen Argo floats users estimate the delayed mode values for nitrate with CANYON B  (<a class="reference external" href="https://doi.org/10.3389/fmars.2018.00328">https://doi.org/10.3389/fmars.2018.00328</a>. , <a class="reference external" href="https://doi.org/10.1002/2017JC012838">https://doi.org/10.1002/2017JC012838</a>). This approach can similarly be followed for glider based data and should be based on data at depth where nitrate values are not so variable.</p>
+</div>
+<div class="section" id="id5">
+<h3><span class="section-number">8.2.2. </span>Lab-On-Chip Instruments<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h3>
 </div>
 </div>
 </div>
