@@ -1,5 +1,7 @@
 # Missions execution
 
+We recommend as many nearby CTD casts with water samples for high accuracy lab based nitrate or nitrate+nitrite measurements as possible. Measurements of temperature, salinity and turbidity are required, especially in areas with high gradients. Dissolved and particulate organic matter measurements can be useful for validation of UV spectra. If there is no cross-comparison and no control of the environmental interferences variation, the uncertainty of the measurement must be increased. 
+
 ## UV Spectrometers
 For nitrate measuring UV spectrometers glider mission execution is fairly straightforward. As there are no sensor delays or similar to consider, the main point in mission planning and execution is energy consumption and possibly minimization of bio-fouling. Since these instruments use a significant amount of power the need for vertical resolution has to be balanced against the length of the deployment.
 
@@ -10,10 +12,6 @@ On Slocum, seaglider and seaexplorer gliders it is also possible to run differen
 When programming the Deep SUNA there are several options for how the data is stored internally. Storing of reduced spectra has also shown to be problematic and storage space will not likely be a limiting factor for normal operations.
 
 We strongly recommend daily storage files and internal storage of full spectra. Data transmitted to Slocum gliders via the serial connection must however be ‘reduced spectra’ as the glider processor cannot handle more data.
-
-We recommend as many nearby CTD casts with water samples for high accuracy lab based nitrate measurements as possible. 
-
-The water sample based concentrations can be used to cross-check the concentrations from the UV spectrometers. If no spectrometer-on-CTD calibration casts or lab calibrations are available the water sample data can also be used to determine correction factors and offsets albeit at a higher uncertainty.
 
 ## Lab-on-Chip instruments
 The relatively slow sampling frequency of the LoC analyser means that following ‘standard’ dive flight paths results in a small number of samples in shallow waters (e.g. 4-5 in 150 m water column; {cite}`Vincent2018`). 
