@@ -4,7 +4,7 @@
   1. [Gerd Krahmann](https://github.com/gkrahmann), *GEOMAR Helmholtz Centre for Ocean Research Kiel, Germany,* [0000-0003-0944-8795](https://orcid.org/0000-0003-0944-8795) 
   2. Antony Birchill, *School of Geography, Earth and Environment Sciences, University of Plymouth, UK* [0000-0002-1453-5781](https://orcid.org/0000-0002-1453-5781)
   3. [Matthew Patey](https://github.com/mpatey), *National Oceanography Centre, Southampton, UK,* [0000-0001-8677-2818](https://orcid.org/0000-0001-8677-2818)
-  4. Anne Daniel, *Ifremer, Plouzané, France* 
+  4. [Anne Daniel](https://github.com/annedaniel), *Ifremer, Plouzané, France* 
   5. Alexander Beaton, *National Oceanography Centre, Southampton, UK* [0000-0002-0206-7466](https://orcid.org/0000-0002-0206-7466)
   6. [Soeren Thomsen](https://github.com/soerenthomsen), *LOCEAN, ISPL, Sorbonne University, Paris, France,* [0000-0002-0598-8340](https://orcid.org/0000-0002-0598-8340)
   7. [Daisuke Hasegawa](https://github.com/daisuke-hasegawa), *Japan Fisheries Research and Education Agency (FRA), Shiogama, Japan,* [0000-0002-8685-7042](https://orcid.org/0000-0002-8685-7042)
