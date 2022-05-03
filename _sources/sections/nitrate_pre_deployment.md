@@ -1,25 +1,37 @@
 # Pre-deployment operations and calibrations
+Before any deployment a number of operations and checks have to be executed to ensure the proper functioning of any oceanographic instrument. For nitrate sensing instruments a calibration is also an important part of the pre-deployment procedures.
 
-## Operation after storage
-
-## Generic setup
-### UV Spectrometers
-Before deployment a full function test of the UV spectrometer in the lab is recommended. 
-
-A running self-registering instrument should be immersed into water samples with different nitrate concentrations.
-E.g. into distilled water (or low nutrient surface water) and, if available, into a sample from a deeper water mass which is known to contain nitrate. 
-The instruments have to be able to detect the difference and, if calibrated,  should give good values and, if not calibrated, should at least detect a difference of the correct order of magnitude.
-
-## General setup
+## Operations after removal from storage
 Before any measurement (UV & LoC) with a nitrate measuring instrument it is most important and strongly recommended that the instrument’s internal clock is properly set.
+This is particularly important for self-registering instruments with no data exchange with other instruments. If the clock is not properly set, the data can become untracable in space and time and thus basically useless.
 
 In Slocum gliders the clock offset of Deep SUNAs can be recovered by comparing glider timestamps and Deep SUNA timestamps for exactly matching nitrate concentrations which are sent in real-time from the Deep SUNA to the glider.
-It is however much better to set the clock properly.
+It is however much better to set the clock properly before the deployment.
+
+### UV Spectrometers
+Instruments should be removed from storage and inspected according to the manufacturer's instructions.
+
+### Lab-on-Chip Instruments
+All the components of the hydraulic circuit must be inspected (lamp, tubing, reagent and standards bags, cadmium reduction column, syringe filter) and changed if necessary (keep ready supply of spare parts).
+
+## Generic setup
+
+### UV Spectrometers
+Before a deployment a full function test of the UV spectrometer in the lab is recommended. The simplest way is to run some test measurements in waters with different nitrate concentrations. These concentrations do not necessarily need to be known as this is just a function test and no calibration.
+
+For that a running self-registering instrument should be immersed into water samples with different nitrate concentrations. This can e.g. be different mixtures of filtered low nutrient surface water with deep water with higher nitrate concentratins.
+The instruments have to be able to detect the difference and, if calibrated, should give good values and, if not calibrated, should at least detect a difference of the correct order of magnitude.
+
+### Lab-on-Chip Instruments
 
 ## Pre-deployment lab calibrations
-### Data traceability
+
+### General considerations
+Depending on the deployment area, the possible impact of instrumental interferences (warm-up drift) and environmental interferences (e.g. température, salinity, turbidity, dissolved and particulate organic matter) can be simulated in the lab to assess the sensor performances (calibration range, limit of detection, linearity, accuracy and uncertainty). These results from these preparatory measurements or considerations should be compiled in a detailed report. 
+
+### Data and calibration quality control
 Cross-checking a measurement against a reference material with a certified value has become the most important test of the accuracy of a device or procedure for many environmental measurements. 
-Certified reference materials (CRMs) for nutrient analysis have only recently become available due to the poor stability of solutions of dissolved nutrients. 
+Certified reference materials (CRMs) for nutrient analysis have only recently become available due to the poor stability of solutions of nutrients. 
 However materials are now available from the National Research Council of Canada (https://doi.org/10.4224/crm.2014.moos-3) and KANSO in Japan (http://www.kanso.co.jp/eng/production/). 
 
 SCOR working group 147 (https://scor-int.org/group/147/) recommends the use of certified reference materials for every set of field measurements and has collaborated with the Japan Agency for Marine-Earth Science and Technology (JAMSTEC) to make KANSO nutrient CRMs more widely available to purchase by the community (http://www.jamstec.go.jp/scor/background.html).
@@ -36,13 +48,13 @@ A sample of this water should be taken and immediately analysed or frozen for la
 
 For the relatively voluminous UV spectrometers a method for using the small volumina CRMs has to be developed.
 
-In the absence of CRM measurements, measurements from CTD samples collected as close as possible in space and time to the glider can be used to provide some reassurance as to the validity of the data obtained from the autonomous platform.
+In the absence of controls with CRM, measurements from CTD samples collected as close as possible in space and time to the glider can be used to provide some reassurance as to the validity of the data obtained from the autonomous platform.
 This method can be problematic if there are gradients in nutrient concentration (e.g. {cite}`Vincent2018`) and since this effectively results in the comparison of two separate measurements of two samples that differ to an unknown degree, the measurement uncertainty information provided is greatly diminished. 
 
 In some cases where no cross-checks have been possible, it has sometimes been necessary to use values from historic databases to compare with the data obtained. Such an approach should be avoided if at all possible, since such datasets are often very limited in temporal and spatial coverage and provide no way to quantitatively verify a new dataset.
 
-## UV Spectrometers
-### Deep SUNA
+### UV Spectrometers
+#### Deep SUNA
 Deuterium UV lamps as used in Sea-Bird Deep SUNA instruments suffer from relatively rapid aging. 
 With increasing age the output strength reduces and possibly shifts. 
 It appears that the changes are relatively linear over deployment length time scales and can be estimated by measuring the lamp spectra before and after deployment on a glider. 
@@ -57,7 +69,7 @@ In theory there is no need to determine absorption spectra from nitrate as they 
 
 We recommend these reference measurements particularly when there are doubts on the instrument performance.
 
-### TriOS OPUS
+#### TriOS OPUS
 Xenon UV flash lamps as used in TriOS OPUS instruments should suffer much less from aging. The before-and-after deployment lamp reference measurements should thus not be as important as for instruments with Deuterium lamps. However, in one instrument we (GEOMAR) have found possible changes in lamp intensity or spectrometer sensitivity which we were able to correct for by measuring the lamp reference spectra before and after a deployment (the OPUS was used on a CTD not on a glider).
 
 While Deuterium UV lamps have a very stable output with little noise, the Xenon flash lamps of the TriOS OPUS result in considerable noise from one measurement to the next. To obtain a reliable reference lamp spectrum, a larger number of measured spectra (>10) should be averaged.
@@ -66,12 +78,16 @@ If ever a TriOS OPUS is used on a glider, we would strongly recommend lamp refer
 
 Again, in theory there is no need to determine spectra from nitrate containing reference samples. They can however easily be collected when nitrate reference samples are available and they then can be used to confirm the linearity of the sensor response. 
 
-### Lab-on-Chip Instruments
+#### Lab-on-Chip Instruments
 For a LoC analyser it is recommended that the analyser makes multiple measurements (>10) of solutions with known nitrate concentrations that span the range expected during deployment. 
 For this, the sensor can be powered externally (e.g. using a  benchtop power supply). 
 The analytical cycle (blank-standard-sample sequence) can be tailored to for each deployment, therefore a platform simulation, which can be performed using the GUI, should be conducted using solutions of known concentrations as the sample to ensure that the analytical cycle produces expected results. 
 
 ## Pre-deployment field calibration
+
+### General considerations
+The technical limitations of the nitrate sensor (power consumption, data memory, measurement rate, anti-fouling options, volume of reagents and standards) have to be carefully evaluated in relation to the specifics of the deployment (duration, study area). Additional measurements (water sampling, temperature, salinity and turbidity) and several factors (measurement rate, calibration range) must be adapted to match the expected uncertainty of the nitrate measurement. Pictures of the sensors should be taken before and after deployment.
+
 ### UV Spectrometers
 If possible, we recommend any nitrate sensing UV spectrometer to be attached to the CTD and run through a CTD cast with several bottle stops. 
 
