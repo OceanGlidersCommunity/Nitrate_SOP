@@ -4,11 +4,13 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
     <title>4. Pre-deployment operations and calibrations &#8212; Nitrate SOP</title>
     
-  <link href="../_static/css/theme.css" rel="stylesheet">
-  <link href="../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
 
     
   <link rel="stylesheet"
@@ -18,20 +20,16 @@
   <link rel="preload" as="font" type="font/woff2" crossorigin
     href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
 
-    
-      
-
-    
     <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
+    <link rel="stylesheet" href="../_static/styles/sphinx-book-theme.css?digest=62ba249389abaaa9ffc34bf36a076bdc1d65ee18" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/design-style.b7bb847fb20b106c3d81b95245e65545.min.css" />
     
-  <link rel="preload" as="script" href="../_static/js/index.be7d3bbb2ef33a8344ce.js">
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
 
     <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
     <script src="../_static/jquery.js"></script>
@@ -39,6 +37,7 @@
     <script src="../_static/doctools.js"></script>
     <script src="../_static/clipboard.min.js"></script>
     <script src="../_static/copybutton.js"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?digest=f31d14ad54b65d19161ba51d4ffff3a77ae00456"></script>
     <script>let toggleHintShow = 'Click to show';</script>
     <script>let toggleHintHide = 'Click to hide';</script>
     <script>let toggleOpenOnPrint = 'true';</script>
@@ -78,7 +77,7 @@ var addUtterances = () => {
 commentsRunWhenDOMLoaded(addUtterances);
 </script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
-    <script src="../_static/sphinx-book-theme.d59cb220de22ca1c485ebbdc042f0030.js"></script>
+    <script src="../_static/design-tabs.js"></script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
 const thebe_selector = ".thebe,.cell"
 const thebe_selector_input = "pre"
@@ -96,7 +95,21 @@ const thebe_selector_output = ".output, .cell_output"
     <!-- Google Analytics -->
     
   </head>
-  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
+<!-- Checkboxes to toggle the left sidebar -->
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
+<label class="overlay overlay-navbar" for="__navigation">
+    <div class="visually-hidden">Toggle navigation sidebar</div>
+</label>
+<!-- Checkboxes to toggle the in-page toc -->
+<input type="checkbox" class="sidebar-toggle" name="__page-toc" id="__page-toc" aria-label="Toggle in-page Table of Contents">
+<label class="overlay overlay-pagetoc" for="__page-toc">
+    <div class="visually-hidden">Toggle in-page Table of Contents</div>
+</label>
+<!-- Headers at the top -->
+<div class="announcement header-item noprint"></div>
+<div class="header header-item noprint"></div>
+
     
     <div class="container-fluid" id="banner"></div>
 
@@ -105,9 +118,10 @@ const thebe_selector_output = ".output, .cell_output"
     <div class="container-xl">
       <div class="row">
           
-<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
-    
-        <div class="navbar-brand-box">
+<!-- Sidebar -->
+<div class="bd-sidebar noprint" id="site-navigation">
+    <div class="bd-sidebar__content">
+        <div class="bd-sidebar__top"><div class="navbar-brand-box">
     <a class="navbar-brand text-wrap" href="../index.html">
       
         <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
@@ -125,14 +139,15 @@ const thebe_selector_output = ".output, .cell_output"
   <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
 </form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item active">
-        <ul class="nav bd-sidenav">
- <li class="toctree-l1">
-  <a class="reference internal" href="../README.html">
-   OceanGliders Nitrate SOP
-  </a>
- </li>
-</ul>
-<ul class="current nav bd-sidenav">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../README.html">
+                    OceanGliders Nitrate SOP
+                </a>
+            </li>
+        </ul>
+        <ul class="current nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="authors_SOP_development_process.html">
    1. Authors, development process and contributions
@@ -191,92 +206,197 @@ const thebe_selector_output = ".output, .cell_output"
 </ul>
 
     </div>
-</nav> <!-- To handle the deprecated key -->
-
-<div class="navbar_extra_footer">
-  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
-</div>
-
-</div>
-
-
-          
-
-
-          
-<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
-    
-    <div class="topbar container-xl fixed-top">
-    <div class="topbar-contents row">
-        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
-        <div class="col pl-md-4 topbar-main">
+</nav></div>
+        <div class="bd-sidebar__bottom">
+             <!-- To handle the deprecated key -->
             
-            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
-                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
-                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
-                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
-                <i class="fas fa-bars"></i>
-                <i class="fas fa-arrow-left"></i>
-                <i class="fas fa-arrow-up"></i>
-            </button>
-            
-            
-<div class="dropdown-buttons-trigger">
-    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
-            class="fas fa-download"></i></button>
-
-    <div class="dropdown-buttons">
-        <!-- ipynb file if we had a myst markdown file -->
-        
-        <!-- Download raw file -->
-        <a class="dropdown-buttons" href="../_sources/sections/nitrate_pre_deployment.md"><button type="button"
-                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
-                data-placement="left">.md</button></a>
-        <!-- Download PDF via print -->
-        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
-                onclick="printPdf(this)" data-toggle="tooltip" data-placement="left">.pdf</button>
-    </div>
-</div>
-
-            <!-- Source interaction buttons -->
-
-<div class="dropdown-buttons-trigger">
-    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
-        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
-    <div class="dropdown-buttons sourcebuttons">
-        <a class="repository-button"
-            href="https://github.com/OceanGlidersCommunity/Nitrate_SOP"><button type="button" class="btn btn-secondary topbarbtn"
-                data-toggle="tooltip" data-placement="left" title="Source repository"><i
-                    class="fab fa-github"></i>repository</button></a>
-        <a class="issues-button"
-            href="https://github.com/OceanGlidersCommunity/Nitrate_SOP/issues/new?title=Issue%20on%20page%20%2Fsections/nitrate_pre_deployment.html&body=Your%20issue%20content%20here."><button
-                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
-                title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
-        <a class="edit-button" href="https://github.com/OceanGlidersCommunity/Nitrate_SOP/edit/main/sections/nitrate_pre_deployment.md"><button
-                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
-                title="Edit this page"><i class="fas fa-pencil-alt"></i>suggest edit</button></a>
-    </div>
-</div>
-
-            <!-- Full screen (wrap in <a> to have style consistency -->
-
-<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
-        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
-        title="Fullscreen mode"><i
-            class="fas fa-expand"></i></button></a>
-
-            <!-- Launch buttons -->
-
-        </div>
-
-        <!-- Table of contents -->
-        <div class="d-none d-md-block col-md-2 bd-toc show noprint">
-            
-            <div class="tocsection onthispage pt-5 pb-3">
-                <i class="fas fa-list"></i> Contents
+            <div class="navbar_extra_footer">
+            Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
             </div>
-            <nav id="bd-toc-nav" aria-label="Page">
-                <ul class="visible nav section-nav flex-column">
+            
+        </div>
+    </div>
+    <div id="rtd-footer-container"></div>
+</div>
+
+
+          
+
+
+          
+<!-- A tiny helper pixel to detect if we've scrolled -->
+<div class="sbt-scroll-pixel-helper"></div>
+<!-- Main content -->
+<div class="col py-0 content-container">
+    
+    <div class="header-article row sticky-top noprint">
+        
+
+
+
+<div class="col py-1 d-flex header-article-main">
+    <div class="header-article__left">
+        
+        <label for="__navigation"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="right"
+title="Toggle navigation"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-bars"></i>
+  </span>
+
+</label>
+
+        
+    </div>
+    <div class="header-article__right">
+<button onclick="toggleFullScreen()"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="bottom"
+title="Fullscreen mode"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+<div class="menu-dropdown menu-dropdown-repository-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Source repositories">
+      <i class="fab fa-github"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="https://github.com/OceanGlidersCommunity/Nitrate_SOP"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Source repository"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="headerbtn__text-container">repository</span>
+</a>
+
+      </li>
+      
+      <li>
+        <a href="https://github.com/OceanGlidersCommunity/Nitrate_SOP/issues/new?title=Issue%20on%20page%20%2Fsections/nitrate_pre_deployment.html&body=Your%20issue%20content%20here."
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Open an issue"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="headerbtn__text-container">open issue</span>
+</a>
+
+      </li>
+      
+      <li>
+        <a href="https://github.com/OceanGlidersCommunity/Nitrate_SOP/edit/main/sections/nitrate_pre_deployment.md"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Edit this page"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-pencil-alt"></i>
+  </span>
+<span class="headerbtn__text-container">suggest edit</span>
+</a>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+
+<div class="menu-dropdown menu-dropdown-download-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Download this page">
+      <i class="fas fa-download"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="../_sources/sections/nitrate_pre_deployment.md"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Download source file"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="headerbtn__text-container">.md</span>
+</a>
+
+      </li>
+      
+      <li>
+        
+<button onclick="printPdf(this)"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="left"
+title="Print to PDF"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="headerbtn__text-container">.pdf</span>
+</button>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+<label for="__page-toc"
+  class="headerbtn headerbtn-page-toc"
+  
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-list"></i>
+  </span>
+
+</label>
+
+    </div>
+</div>
+
+<!-- Table of contents -->
+<div class="col-md-3 bd-toc show noprint">
+    <div class="tocsection onthispage pt-5 pb-3">
+        <i class="fas fa-list"></i> Contents
+    </div>
+    <nav id="bd-toc-nav" aria-label="Page">
+        <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#operations-after-removal-from-storage">
    4.1. Operations after removal from storage
@@ -386,12 +506,11 @@ const thebe_selector_output = ".output, .cell_output"
  </li>
 </ul>
 
-            </nav>
-        </div>
-    </div>
+    </nav>
 </div>
-    <div id="main-content" class="row">
-        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+    </div>
+    <div class="article row">
+        <div class="col pl-md-3 pl-lg-5 content-container">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
                 <h1>Pre-deployment operations and calibrations</h1>
@@ -517,47 +636,48 @@ const thebe_selector_output = ".output, .cell_output"
                     </div>
                 </div>
             </div>
-            
+            <main id="main-content" role="main">
+                
               <div>
                 
-  <div class="tex2jax_ignore mathjax_ignore section" id="pre-deployment-operations-and-calibrations">
-<h1><span class="section-number">4. </span>Pre-deployment operations and calibrations<a class="headerlink" href="#pre-deployment-operations-and-calibrations" title="Permalink to this headline">¶</a></h1>
+  <section class="tex2jax_ignore mathjax_ignore" id="pre-deployment-operations-and-calibrations">
+<h1><span class="section-number">4. </span>Pre-deployment operations and calibrations<a class="headerlink" href="#pre-deployment-operations-and-calibrations" title="Permalink to this headline">#</a></h1>
 <p>Before any deployment a number of operations and checks have to be executed to ensure the proper functioning of any oceanographic instrument. For nitrate sensing instruments a calibration is also an important part of the pre-deployment procedures.</p>
-<div class="section" id="operations-after-removal-from-storage">
-<h2><span class="section-number">4.1. </span>Operations after removal from storage<a class="headerlink" href="#operations-after-removal-from-storage" title="Permalink to this headline">¶</a></h2>
+<section id="operations-after-removal-from-storage">
+<h2><span class="section-number">4.1. </span>Operations after removal from storage<a class="headerlink" href="#operations-after-removal-from-storage" title="Permalink to this headline">#</a></h2>
 <p>Before any measurement (UV &amp; LoC) with a nitrate measuring instrument it is most important and strongly recommended that the instrument’s internal clock is properly set.
 This is particularly important for self-registering instruments with no data exchange with other instruments. If the clock is not properly set, the data can become untracable in space and time and thus basically useless.</p>
 <p>In Slocum gliders the clock offset of Deep SUNAs can be recovered by comparing glider timestamps and Deep SUNA timestamps for exactly matching nitrate concentrations which are sent in real-time from the Deep SUNA to the glider.
 It is however much better to set the clock properly before the deployment.</p>
-<div class="section" id="uv-spectrometers">
-<h3><span class="section-number">4.1.1. </span>UV Spectrometers<a class="headerlink" href="#uv-spectrometers" title="Permalink to this headline">¶</a></h3>
+<section id="uv-spectrometers">
+<h3><span class="section-number">4.1.1. </span>UV Spectrometers<a class="headerlink" href="#uv-spectrometers" title="Permalink to this headline">#</a></h3>
 <p>Instruments should be removed from storage and inspected according to the manufacturer’s instructions.</p>
-</div>
-<div class="section" id="lab-on-chip-instruments">
-<h3><span class="section-number">4.1.2. </span>Lab-on-Chip Instruments<a class="headerlink" href="#lab-on-chip-instruments" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="lab-on-chip-instruments">
+<h3><span class="section-number">4.1.2. </span>Lab-on-Chip Instruments<a class="headerlink" href="#lab-on-chip-instruments" title="Permalink to this headline">#</a></h3>
 <p>All the components of the hydraulic circuit must be inspected (lamp, tubing, reagent and standards bags, cadmium reduction column, syringe filter) and changed if necessary (keep ready supply of spare parts).</p>
-</div>
-</div>
-<div class="section" id="generic-setup">
-<h2><span class="section-number">4.2. </span>Generic setup<a class="headerlink" href="#generic-setup" title="Permalink to this headline">¶</a></h2>
-<div class="section" id="id1">
-<h3><span class="section-number">4.2.1. </span>UV Spectrometers<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h3>
+</section>
+</section>
+<section id="generic-setup">
+<h2><span class="section-number">4.2. </span>Generic setup<a class="headerlink" href="#generic-setup" title="Permalink to this headline">#</a></h2>
+<section id="id1">
+<h3><span class="section-number">4.2.1. </span>UV Spectrometers<a class="headerlink" href="#id1" title="Permalink to this headline">#</a></h3>
 <p>Before a deployment a full function test of the UV spectrometer in the lab is recommended. The simplest way is to run some test measurements in waters with different nitrate concentrations. These concentrations do not necessarily need to be known as this is just a function test and no calibration.</p>
 <p>For that a running self-registering instrument should be immersed into water samples with different nitrate concentrations. This can e.g. be different mixtures of filtered low nutrient surface water with deep water with higher nitrate concentratins.
 The instruments have to be able to detect the difference and, if calibrated, should give good values and, if not calibrated, should at least detect a difference of the correct order of magnitude.</p>
-</div>
-<div class="section" id="id2">
-<h3><span class="section-number">4.2.2. </span>Lab-on-Chip Instruments<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h3>
-</div>
-</div>
-<div class="section" id="pre-deployment-lab-calibrations">
-<h2><span class="section-number">4.3. </span>Pre-deployment lab calibrations<a class="headerlink" href="#pre-deployment-lab-calibrations" title="Permalink to this headline">¶</a></h2>
-<div class="section" id="general-considerations">
-<h3><span class="section-number">4.3.1. </span>General considerations<a class="headerlink" href="#general-considerations" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="id2">
+<h3><span class="section-number">4.2.2. </span>Lab-on-Chip Instruments<a class="headerlink" href="#id2" title="Permalink to this headline">#</a></h3>
+</section>
+</section>
+<section id="pre-deployment-lab-calibrations">
+<h2><span class="section-number">4.3. </span>Pre-deployment lab calibrations<a class="headerlink" href="#pre-deployment-lab-calibrations" title="Permalink to this headline">#</a></h2>
+<section id="general-considerations">
+<h3><span class="section-number">4.3.1. </span>General considerations<a class="headerlink" href="#general-considerations" title="Permalink to this headline">#</a></h3>
 <p>Depending on the deployment area, the possible impact of instrumental interferences (warm-up drift) and environmental interferences (e.g. température, salinity, turbidity, dissolved and particulate organic matter) can be simulated in the lab to assess the sensor performances (calibration range, limit of detection, linearity, accuracy and uncertainty). These results from these preparatory measurements or considerations should be compiled in a detailed report.</p>
-</div>
-<div class="section" id="data-and-calibration-quality-control">
-<h3><span class="section-number">4.3.2. </span>Data and calibration quality control<a class="headerlink" href="#data-and-calibration-quality-control" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="data-and-calibration-quality-control">
+<h3><span class="section-number">4.3.2. </span>Data and calibration quality control<a class="headerlink" href="#data-and-calibration-quality-control" title="Permalink to this headline">#</a></h3>
 <p>Cross-checking a measurement against a reference material with a certified value has become the most important test of the accuracy of a device or procedure for many environmental measurements.
 Certified reference materials (CRMs) for nutrient analysis have only recently become available due to the poor stability of solutions of nutrients.
 However materials are now available from the National Research Council of Canada (<a class="reference external" href="https://doi.org/10.4224/crm.2014.moos-3">https://doi.org/10.4224/crm.2014.moos-3</a>) and KANSO in Japan (<a class="reference external" href="http://www.kanso.co.jp/eng/production/">http://www.kanso.co.jp/eng/production/</a>).</p>
@@ -574,11 +694,11 @@ A sample of this water should be taken and immediately analysed or frozen for la
 <p>In the absence of controls with CRM, measurements from CTD samples collected as close as possible in space and time to the glider can be used to provide some reassurance as to the validity of the data obtained from the autonomous platform.
 This method can be problematic if there are gradients in nutrient concentration (e.g. <span id="id3">[<a class="reference internal" href="nitrate_references.html#id18" title="A. G. Vincent, R. W. Pascal, A. D. Beaton, J. Walk, J. E. Hopkins, E. M. S. Woodward, M. Mowlem, and M. C. Lohan. Nitrate drawdown during a shelf sea spring bloom revealed using a novel microfluidic in situ chemical sensor deployed within an autonomous underwater glider. Marine Chemistry, 205():29-36, 2018. URL:, arXiv:, doi:https://doi.org/10.1016/j.marchem.2018.07.005.">Vincent <em>et al.</em>, 2018</a>]</span>) and since this effectively results in the comparison of two separate measurements of two samples that differ to an unknown degree, the measurement uncertainty information provided is greatly diminished.</p>
 <p>In some cases where no cross-checks have been possible, it has sometimes been necessary to use values from historic databases to compare with the data obtained. Such an approach should be avoided if at all possible, since such datasets are often very limited in temporal and spatial coverage and provide no way to quantitatively verify a new dataset.</p>
-</div>
-<div class="section" id="id4">
-<h3><span class="section-number">4.3.3. </span>UV Spectrometers<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h3>
-<div class="section" id="deep-suna">
-<h4><span class="section-number">4.3.3.1. </span>Deep SUNA<a class="headerlink" href="#deep-suna" title="Permalink to this headline">¶</a></h4>
+</section>
+<section id="id4">
+<h3><span class="section-number">4.3.3. </span>UV Spectrometers<a class="headerlink" href="#id4" title="Permalink to this headline">#</a></h3>
+<section id="deep-suna">
+<h4><span class="section-number">4.3.3.1. </span>Deep SUNA<a class="headerlink" href="#deep-suna" title="Permalink to this headline">#</a></h4>
 <p>Deuterium UV lamps as used in Sea-Bird Deep SUNA instruments suffer from relatively rapid aging.
 With increasing age the output strength reduces and possibly shifts.
 It appears that the changes are relatively linear over deployment length time scales and can be estimated by measuring the lamp spectra before and after deployment on a glider.
@@ -588,50 +708,50 @@ At the same time these reference measurements should take care of any changes of
 <p>Instead of a lamp reference calibration before a deployment, a lamp reference calibration directly after the previous deployment can possibly be used.</p>
 <p>In theory there is no need to determine absorption spectra from nitrate as they are a  material property. These spectra are given by the manufacturer and stored in the instruments. Nevertheless reference measurements can easily be made when nitrate reference samples are available (e.g. by using nitrate CRM). They can be used to check the manufacturer’s nitrate absorption spectra and can also be used to confirm the linearity of the sensor response. Deep SUNA will directly output nitrate concentrations when measuring reference samples. These concentrations should within the uncertainty given by the manufacturer agree with the known concentration in the reference sample.</p>
 <p>We recommend these reference measurements particularly when there are doubts on the instrument performance.</p>
-</div>
-<div class="section" id="trios-opus">
-<h4><span class="section-number">4.3.3.2. </span>TriOS OPUS<a class="headerlink" href="#trios-opus" title="Permalink to this headline">¶</a></h4>
+</section>
+<section id="trios-opus">
+<h4><span class="section-number">4.3.3.2. </span>TriOS OPUS<a class="headerlink" href="#trios-opus" title="Permalink to this headline">#</a></h4>
 <p>Xenon UV flash lamps as used in TriOS OPUS instruments should suffer much less from aging. The before-and-after deployment lamp reference measurements should thus not be as important as for instruments with Deuterium lamps. However, in one instrument we (GEOMAR) have found possible changes in lamp intensity or spectrometer sensitivity which we were able to correct for by measuring the lamp reference spectra before and after a deployment (the OPUS was used on a CTD not on a glider).</p>
 <p>While Deuterium UV lamps have a very stable output with little noise, the Xenon flash lamps of the TriOS OPUS result in considerable noise from one measurement to the next. To obtain a reliable reference lamp spectrum, a larger number of measured spectra (&gt;10) should be averaged.</p>
 <p>If ever a TriOS OPUS is used on a glider, we would strongly recommend lamp reference calibrations before each deployment.</p>
 <p>Again, in theory there is no need to determine spectra from nitrate containing reference samples. They can however easily be collected when nitrate reference samples are available and they then can be used to confirm the linearity of the sensor response.</p>
-</div>
-<div class="section" id="id5">
-<h4><span class="section-number">4.3.3.3. </span>Lab-on-Chip Instruments<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h4>
+</section>
+<section id="id5">
+<h4><span class="section-number">4.3.3.3. </span>Lab-on-Chip Instruments<a class="headerlink" href="#id5" title="Permalink to this headline">#</a></h4>
 <p>For a LoC analyser it is recommended that the analyser makes multiple measurements (&gt;10) of solutions with known nitrate concentrations that span the range expected during deployment.
 For this, the sensor can be powered externally (e.g. using a  benchtop power supply).
 The analytical cycle (blank-standard-sample sequence) can be tailored to for each deployment, therefore a platform simulation, which can be performed using the GUI, should be conducted using solutions of known concentrations as the sample to ensure that the analytical cycle produces expected results.</p>
-</div>
-</div>
-</div>
-<div class="section" id="pre-deployment-field-calibration">
-<h2><span class="section-number">4.4. </span>Pre-deployment field calibration<a class="headerlink" href="#pre-deployment-field-calibration" title="Permalink to this headline">¶</a></h2>
-<div class="section" id="id6">
-<h3><span class="section-number">4.4.1. </span>General considerations<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h3>
+</section>
+</section>
+</section>
+<section id="pre-deployment-field-calibration">
+<h2><span class="section-number">4.4. </span>Pre-deployment field calibration<a class="headerlink" href="#pre-deployment-field-calibration" title="Permalink to this headline">#</a></h2>
+<section id="id6">
+<h3><span class="section-number">4.4.1. </span>General considerations<a class="headerlink" href="#id6" title="Permalink to this headline">#</a></h3>
 <p>The technical limitations of the nitrate sensor (power consumption, data memory, measurement rate, anti-fouling options, volume of reagents and standards) have to be carefully evaluated in relation to the specifics of the deployment (duration, study area). Additional measurements (water sampling, temperature, salinity and turbidity) and several factors (measurement rate, calibration range) must be adapted to match the expected uncertainty of the nitrate measurement. Pictures of the sensors should be taken before and after deployment.</p>
-</div>
-<div class="section" id="id7">
-<h3><span class="section-number">4.4.2. </span>UV Spectrometers<a class="headerlink" href="#id7" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="id7">
+<h3><span class="section-number">4.4.2. </span>UV Spectrometers<a class="headerlink" href="#id7" title="Permalink to this headline">#</a></h3>
 <p>If possible, we recommend any nitrate sensing UV spectrometer to be attached to the CTD and run through a CTD cast with several bottle stops.</p>
 <p>The bottle stops have to be long enough (a few minutes) for the instrument to measure several spectra. During the bottle stops water samples for high accuracy nitrate concentration measurements have to be taken and later measured according to GO-SHIP recommendations <span id="id8">[<a class="reference internal" href="nitrate_references.html#id4" title="Susan Becker, Michio Aoyama, E. Malcolm S. Woodward, Karel Bakker, Stephen Coverly, Claire Mahaffey, and Toste Tanhua. Go-ship repeat hydrography nutrient manual: the precise and accurate determination of dissolved inorganic nutrients in seawater, using continuous flow analysis methods. Frontiers in Marine Science, 7:908, 2020. URL: https://www.frontiersin.org/article/10.3389/fmars.2020.581790, doi:https://doi.org/10.3389/fmars.2020.581790.">Becker <em>et al.</em>, 2020</a>]</span>. Depths with significant gradients in nitrate concentrations should be avoided for these stops.</p>
 <p>This type of field calibration requires an external power source for the spectrometer. This can be a dedicated battery pack or a special cable connecting the instrument to one of the CTD’s connectors (GEOMAR has followed this second way for both Deep SUNA and TriOS OPUS instruments).</p>
 <p>Note that Deep SUNAs have to be reconfigured for such a calibration cast and that the configuration has to be reverted back to the glider-specific configuration thereafter.</p>
-</div>
-<div class="section" id="id9">
-<h3><span class="section-number">4.4.3. </span>Lab-on-Chip Instruments<a class="headerlink" href="#id9" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="id9">
+<h3><span class="section-number">4.4.3. </span>Lab-on-Chip Instruments<a class="headerlink" href="#id9" title="Permalink to this headline">#</a></h3>
 <p>Pre-deployment field calibration is not required for the LoC analyser as the blank and standard solutions are assessed during the lab calibration. However, when deploying a LoC-glider platform it is ideal to manually collect samples, following GO-SHIP protocols <span id="id10">[<a class="reference internal" href="nitrate_references.html#id4" title="Susan Becker, Michio Aoyama, E. Malcolm S. Woodward, Karel Bakker, Stephen Coverly, Claire Mahaffey, and Toste Tanhua. Go-ship repeat hydrography nutrient manual: the precise and accurate determination of dissolved inorganic nutrients in seawater, using continuous flow analysis methods. Frontiers in Marine Science, 7:908, 2020. URL: https://www.frontiersin.org/article/10.3389/fmars.2020.581790, doi:https://doi.org/10.3389/fmars.2020.581790.">Becker <em>et al.</em>, 2020</a>]</span>, in order for a field validation. Experience shows that after a period of dormancy the first dive may not produce reliable data as the chip ‘equilibrates’, this is typical of many flow analysis instruments. Initially conducting simultaneous dives with LoC measurements to generate a robust comparison is advisable.</p>
-<div class="section" id="cadmium-column-checks">
-<h4><span class="section-number">4.4.3.1. </span>Cadmium column checks<a class="headerlink" href="#cadmium-column-checks" title="Permalink to this headline">¶</a></h4>
+<section id="cadmium-column-checks">
+<h4><span class="section-number">4.4.3.1. </span>Cadmium column checks<a class="headerlink" href="#cadmium-column-checks" title="Permalink to this headline">#</a></h4>
 <p>Performance of the Cu-Cd reduction column requires careful monitoring. For best results, the efficiency of conversion of nitrate to nitrite should be &gt; 95% <span id="id11">[<a class="reference internal" href="nitrate_references.html#id4" title="Susan Becker, Michio Aoyama, E. Malcolm S. Woodward, Karel Bakker, Stephen Coverly, Claire Mahaffey, and Toste Tanhua. Go-ship repeat hydrography nutrient manual: the precise and accurate determination of dissolved inorganic nutrients in seawater, using continuous flow analysis methods. Frontiers in Marine Science, 7:908, 2020. URL: https://www.frontiersin.org/article/10.3389/fmars.2020.581790, doi:https://doi.org/10.3389/fmars.2020.581790.">Becker <em>et al.</em>, 2020</a>]</span>. Columns operating at lower efficiency can give reliable measurements, provided their performance does not vary with time, but this will result in erroneously high measured values for NO<sub>2</sub>+NO<sub>3</sub> if the sample contains significant amounts of nitrite, which can occur near the nitracline in many ocean regions. It is thus essential that the performance and stability of the column should be evaluated in the laboratory prior to any deployment, and it is advisable that its performance be checked in the field immediately prior to and following the glider mission by measuring a pure nitrite standard of known concentration. Such a check can be invaluable in diagnosing faults after recovery of the sensor.</p>
-</div>
-</div>
-</div>
-<div class="section" id="data-submission-pre-deployment">
-<h2><span class="section-number">4.5. </span>Data submission (pre-deployment)<a class="headerlink" href="#data-submission-pre-deployment" title="Permalink to this headline">¶</a></h2>
+</section>
+</section>
+</section>
+<section id="data-submission-pre-deployment">
+<h2><span class="section-number">4.5. </span>Data submission (pre-deployment)<a class="headerlink" href="#data-submission-pre-deployment" title="Permalink to this headline">#</a></h2>
 <p>To ensure a smooth processing of real-time data by Global Data Assembly Centers (GDACs) it is important that glider operators contact their respective GDAC and prepare them for the data that will be collected.
 This typically includes the collection of various Metadata for all sensors present on the glider as well as other deployment specific information.</p>
-</div>
-</div>
+</section>
+</section>
 
     <script type="text/x-thebe-config">
     {
@@ -655,9 +775,11 @@ This typically includes the collection of various Metadata for all sensors prese
 
               </div>
               
-            
-                <!-- Previous / next buttons -->
-<div class='prev-next-area'> 
+            </main>
+            <footer class="footer-article noprint">
+                
+    <!-- Previous / next buttons -->
+<div class='prev-next-area'>
     <a class='left-prev' id="prev-link" href="nitrate_sensors_integration.html" title="previous page">
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
@@ -673,29 +795,33 @@ This typically includes the collection of various Metadata for all sensors prese
     <i class="fas fa-angle-right"></i>
     </a>
 </div>
-            
+            </footer>
         </div>
     </div>
-    <footer class="footer">
-  <p>
-    
-      <div class="extra_footer">
-        <p>  By the OceanGliders community using
+    <div class="footer-content row">
+        <footer class="col footer"><p>
+  
+    <div class="extra_footer">
+      <p>  By the OceanGliders community using
   <a href="https://jupyterbook.org/intro.html"   target="_blank">Jupyter Book</a>. 
   This work is licensed under a 
   <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank"> Creative Commons Attribution 4.0 Generic License.</a> 
 </p>
 
-      </div>
-  </p>
-</footer>
-</main>
+    </div>
+</p>
+        </footer>
+    </div>
+    
+</div>
 
 
       </div>
     </div>
   
-  <script src="../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
+
 
   </body>
 </html>

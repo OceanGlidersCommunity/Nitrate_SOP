@@ -4,11 +4,13 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
     <title>3. Sensors specifications and glider integrations &#8212; Nitrate SOP</title>
     
-  <link href="../_static/css/theme.css" rel="stylesheet">
-  <link href="../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
 
     
   <link rel="stylesheet"
@@ -18,20 +20,16 @@
   <link rel="preload" as="font" type="font/woff2" crossorigin
     href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
 
-    
-      
-
-    
     <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
+    <link rel="stylesheet" href="../_static/styles/sphinx-book-theme.css?digest=62ba249389abaaa9ffc34bf36a076bdc1d65ee18" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/design-style.b7bb847fb20b106c3d81b95245e65545.min.css" />
     
-  <link rel="preload" as="script" href="../_static/js/index.be7d3bbb2ef33a8344ce.js">
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
 
     <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
     <script src="../_static/jquery.js"></script>
@@ -39,6 +37,7 @@
     <script src="../_static/doctools.js"></script>
     <script src="../_static/clipboard.min.js"></script>
     <script src="../_static/copybutton.js"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?digest=f31d14ad54b65d19161ba51d4ffff3a77ae00456"></script>
     <script>let toggleHintShow = 'Click to show';</script>
     <script>let toggleHintHide = 'Click to hide';</script>
     <script>let toggleOpenOnPrint = 'true';</script>
@@ -78,7 +77,7 @@ var addUtterances = () => {
 commentsRunWhenDOMLoaded(addUtterances);
 </script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
-    <script src="../_static/sphinx-book-theme.d59cb220de22ca1c485ebbdc042f0030.js"></script>
+    <script src="../_static/design-tabs.js"></script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
 const thebe_selector = ".thebe,.cell"
 const thebe_selector_input = "pre"
@@ -96,7 +95,21 @@ const thebe_selector_output = ".output, .cell_output"
     <!-- Google Analytics -->
     
   </head>
-  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
+<!-- Checkboxes to toggle the left sidebar -->
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
+<label class="overlay overlay-navbar" for="__navigation">
+    <div class="visually-hidden">Toggle navigation sidebar</div>
+</label>
+<!-- Checkboxes to toggle the in-page toc -->
+<input type="checkbox" class="sidebar-toggle" name="__page-toc" id="__page-toc" aria-label="Toggle in-page Table of Contents">
+<label class="overlay overlay-pagetoc" for="__page-toc">
+    <div class="visually-hidden">Toggle in-page Table of Contents</div>
+</label>
+<!-- Headers at the top -->
+<div class="announcement header-item noprint"></div>
+<div class="header header-item noprint"></div>
+
     
     <div class="container-fluid" id="banner"></div>
 
@@ -105,9 +118,10 @@ const thebe_selector_output = ".output, .cell_output"
     <div class="container-xl">
       <div class="row">
           
-<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
-    
-        <div class="navbar-brand-box">
+<!-- Sidebar -->
+<div class="bd-sidebar noprint" id="site-navigation">
+    <div class="bd-sidebar__content">
+        <div class="bd-sidebar__top"><div class="navbar-brand-box">
     <a class="navbar-brand text-wrap" href="../index.html">
       
         <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
@@ -125,14 +139,15 @@ const thebe_selector_output = ".output, .cell_output"
   <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
 </form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item active">
-        <ul class="nav bd-sidenav">
- <li class="toctree-l1">
-  <a class="reference internal" href="../README.html">
-   OceanGliders Nitrate SOP
-  </a>
- </li>
-</ul>
-<ul class="current nav bd-sidenav">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../README.html">
+                    OceanGliders Nitrate SOP
+                </a>
+            </li>
+        </ul>
+        <ul class="current nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="authors_SOP_development_process.html">
    1. Authors, development process and contributions
@@ -191,92 +206,197 @@ const thebe_selector_output = ".output, .cell_output"
 </ul>
 
     </div>
-</nav> <!-- To handle the deprecated key -->
-
-<div class="navbar_extra_footer">
-  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
-</div>
-
-</div>
-
-
-          
-
-
-          
-<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
-    
-    <div class="topbar container-xl fixed-top">
-    <div class="topbar-contents row">
-        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
-        <div class="col pl-md-4 topbar-main">
+</nav></div>
+        <div class="bd-sidebar__bottom">
+             <!-- To handle the deprecated key -->
             
-            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
-                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
-                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
-                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
-                <i class="fas fa-bars"></i>
-                <i class="fas fa-arrow-left"></i>
-                <i class="fas fa-arrow-up"></i>
-            </button>
-            
-            
-<div class="dropdown-buttons-trigger">
-    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
-            class="fas fa-download"></i></button>
-
-    <div class="dropdown-buttons">
-        <!-- ipynb file if we had a myst markdown file -->
-        
-        <!-- Download raw file -->
-        <a class="dropdown-buttons" href="../_sources/sections/nitrate_sensors_integration.md"><button type="button"
-                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
-                data-placement="left">.md</button></a>
-        <!-- Download PDF via print -->
-        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
-                onclick="printPdf(this)" data-toggle="tooltip" data-placement="left">.pdf</button>
-    </div>
-</div>
-
-            <!-- Source interaction buttons -->
-
-<div class="dropdown-buttons-trigger">
-    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
-        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
-    <div class="dropdown-buttons sourcebuttons">
-        <a class="repository-button"
-            href="https://github.com/OceanGlidersCommunity/Nitrate_SOP"><button type="button" class="btn btn-secondary topbarbtn"
-                data-toggle="tooltip" data-placement="left" title="Source repository"><i
-                    class="fab fa-github"></i>repository</button></a>
-        <a class="issues-button"
-            href="https://github.com/OceanGlidersCommunity/Nitrate_SOP/issues/new?title=Issue%20on%20page%20%2Fsections/nitrate_sensors_integration.html&body=Your%20issue%20content%20here."><button
-                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
-                title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
-        <a class="edit-button" href="https://github.com/OceanGlidersCommunity/Nitrate_SOP/edit/main/sections/nitrate_sensors_integration.md"><button
-                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
-                title="Edit this page"><i class="fas fa-pencil-alt"></i>suggest edit</button></a>
-    </div>
-</div>
-
-            <!-- Full screen (wrap in <a> to have style consistency -->
-
-<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
-        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
-        title="Fullscreen mode"><i
-            class="fas fa-expand"></i></button></a>
-
-            <!-- Launch buttons -->
-
-        </div>
-
-        <!-- Table of contents -->
-        <div class="d-none d-md-block col-md-2 bd-toc show noprint">
-            
-            <div class="tocsection onthispage pt-5 pb-3">
-                <i class="fas fa-list"></i> Contents
+            <div class="navbar_extra_footer">
+            Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
             </div>
-            <nav id="bd-toc-nav" aria-label="Page">
-                <ul class="visible nav section-nav flex-column">
+            
+        </div>
+    </div>
+    <div id="rtd-footer-container"></div>
+</div>
+
+
+          
+
+
+          
+<!-- A tiny helper pixel to detect if we've scrolled -->
+<div class="sbt-scroll-pixel-helper"></div>
+<!-- Main content -->
+<div class="col py-0 content-container">
+    
+    <div class="header-article row sticky-top noprint">
+        
+
+
+
+<div class="col py-1 d-flex header-article-main">
+    <div class="header-article__left">
+        
+        <label for="__navigation"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="right"
+title="Toggle navigation"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-bars"></i>
+  </span>
+
+</label>
+
+        
+    </div>
+    <div class="header-article__right">
+<button onclick="toggleFullScreen()"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="bottom"
+title="Fullscreen mode"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+<div class="menu-dropdown menu-dropdown-repository-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Source repositories">
+      <i class="fab fa-github"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="https://github.com/OceanGlidersCommunity/Nitrate_SOP"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Source repository"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="headerbtn__text-container">repository</span>
+</a>
+
+      </li>
+      
+      <li>
+        <a href="https://github.com/OceanGlidersCommunity/Nitrate_SOP/issues/new?title=Issue%20on%20page%20%2Fsections/nitrate_sensors_integration.html&body=Your%20issue%20content%20here."
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Open an issue"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="headerbtn__text-container">open issue</span>
+</a>
+
+      </li>
+      
+      <li>
+        <a href="https://github.com/OceanGlidersCommunity/Nitrate_SOP/edit/main/sections/nitrate_sensors_integration.md"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Edit this page"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-pencil-alt"></i>
+  </span>
+<span class="headerbtn__text-container">suggest edit</span>
+</a>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+
+<div class="menu-dropdown menu-dropdown-download-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Download this page">
+      <i class="fas fa-download"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="../_sources/sections/nitrate_sensors_integration.md"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Download source file"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="headerbtn__text-container">.md</span>
+</a>
+
+      </li>
+      
+      <li>
+        
+<button onclick="printPdf(this)"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="left"
+title="Print to PDF"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="headerbtn__text-container">.pdf</span>
+</button>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+<label for="__page-toc"
+  class="headerbtn headerbtn-page-toc"
+  
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-list"></i>
+  </span>
+
+</label>
+
+    </div>
+</div>
+
+<!-- Table of contents -->
+<div class="col-md-3 bd-toc show noprint">
+    <div class="tocsection onthispage pt-5 pb-3">
+        <i class="fas fa-list"></i> Contents
+    </div>
+    <nav id="bd-toc-nav" aria-label="Page">
+        <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#nitrate-sensors-specifications">
    3.1. Nitrate sensors specifications
@@ -364,12 +484,11 @@ const thebe_selector_output = ".output, .cell_output"
  </li>
 </ul>
 
-            </nav>
-        </div>
-    </div>
+    </nav>
 </div>
-    <div id="main-content" class="row">
-        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+    </div>
+    <div class="article row">
+        <div class="col pl-md-3 pl-lg-5 content-container">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
                 <h1>Sensors specifications and glider integrations</h1>
@@ -473,15 +592,16 @@ const thebe_selector_output = ".output, .cell_output"
                     </div>
                 </div>
             </div>
-            
+            <main id="main-content" role="main">
+                
               <div>
                 
-  <div class="tex2jax_ignore mathjax_ignore section" id="sensors-specifications-and-glider-integrations">
-<h1><span class="section-number">3. </span>Sensors specifications and glider integrations<a class="headerlink" href="#sensors-specifications-and-glider-integrations" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="nitrate-sensors-specifications">
-<h2><span class="section-number">3.1. </span>Nitrate sensors specifications<a class="headerlink" href="#nitrate-sensors-specifications" title="Permalink to this headline">¶</a></h2>
-<div class="section" id="uv-spectrometers">
-<h3><span class="section-number">3.1.1. </span>UV Spectrometers<a class="headerlink" href="#uv-spectrometers" title="Permalink to this headline">¶</a></h3>
+  <section class="tex2jax_ignore mathjax_ignore" id="sensors-specifications-and-glider-integrations">
+<h1><span class="section-number">3. </span>Sensors specifications and glider integrations<a class="headerlink" href="#sensors-specifications-and-glider-integrations" title="Permalink to this headline">#</a></h1>
+<section id="nitrate-sensors-specifications">
+<h2><span class="section-number">3.1. </span>Nitrate sensors specifications<a class="headerlink" href="#nitrate-sensors-specifications" title="Permalink to this headline">#</a></h2>
+<section id="uv-spectrometers">
+<h3><span class="section-number">3.1.1. </span>UV Spectrometers<a class="headerlink" href="#uv-spectrometers" title="Permalink to this headline">#</a></h3>
 <p>To our knowledge there are currently at least two different instruments for UV spectroscopy nitrate measurements in seawater, one manufactured by Sea-Bird Scientific (USA) called Deep SUNA and one by TriOS (Germany) called OPUS.
 A similar instrument has been developed in China <span id="id1">[<a class="reference internal" href="nitrate_references.html#id19" title="X. Zhu, K. Yu, X. Zhu, J. Su, and C. Wu. An improved algorithm for measuring nitrate concentrations in seawater based on deep-ultraviolet spectrophotometry: a case study of the aoshan bay seawater and western pacific seawater. Sensors, 21(3):965, 2021. URL:, arXiv:, doi:https://doi.org/10.3390/s21030965.">Zhu <em>et al.</em>, 2021</a>]</span> but is not yet commercially available.
 Deep SUNAs have been specially developed for use on gliders and Argo floats and have been in use now for several years with good experiences.
@@ -489,8 +609,8 @@ OPUS instruments have been tested on floats within the <a class="reference exter
 Both instruments have a 10 mm sample path length in common as this appears to be optimal for the used light sources and spectral sensors and the nitrate concentrations expected in seawater.
 Apart from these instruments there exists a larger number of submersible nitrate sensors that are optimized for use in freshwater lakes and rivers or for monitoring wastewater (e.g. by <a class="reference external" href="https://www.ysi.com/parameters/nitrate">YSI</a>; by <a class="reference external" href="https://www.xylemanalytics.com/en/products/listing-wtw-process-all">Xylem</a>).
 Whether these could be modified for use in seawater and on gliders is not known.</p>
-<div class="section" id="sea-bird-scientific-deep-suna">
-<h4><span class="section-number">3.1.1.1. </span>Sea-Bird Scientific Deep SUNA<a class="headerlink" href="#sea-bird-scientific-deep-suna" title="Permalink to this headline">¶</a></h4>
+<section id="sea-bird-scientific-deep-suna">
+<h4><span class="section-number">3.1.1.1. </span>Sea-Bird Scientific Deep SUNA<a class="headerlink" href="#sea-bird-scientific-deep-suna" title="Permalink to this headline">#</a></h4>
 <p>These instruments are based on the original development by <span id="id2">Johnson and Coletti [<a class="reference internal" href="nitrate_references.html#id11" title="Kenneth Johnson and Luke Coletti. In situ ultraviolet spectrophotometry for high resolution and long-term monitoring of nitrate, bromide and bisulfide in the ocean. Deep Sea Research Part I: Oceanographic Research Papers, 49():1291-1305, 2002. URL:, arXiv:, doi:https://doi.org/10.1016/S0967-0637(02)00020-1.">2002</a>]</span> from MBARI.
 The original was intended for use in underwater moorings and thus had a more voluminous housing to accommodate batteries.
 The MBARI-ISUS was commercialized by Satlantic under the same name (Satlantic-ISUS).
@@ -522,9 +642,9 @@ With a reduced sampling rate of 1 measurement every 5.5 seconds the power consum
 This is still significantly higher than the power consumption of the CTD or Aanderaa optodes but comparable to that of Microrider microstructure sensors.
 For comparison, a Slocum glider with only a CTD diving at full speed uses on average a total of around 5 W.</p>
 <p>Deep SUNAs are commercially available and have mounting solutions and data and power transfer cables have been developed for at least Slocum and SeaExplorer gliders.</p>
-</div>
-<div class="section" id="trios-opus">
-<h4><span class="section-number">3.1.1.2. </span>TriOS OPUS<a class="headerlink" href="#trios-opus" title="Permalink to this headline">¶</a></h4>
+</section>
+<section id="trios-opus">
+<h4><span class="section-number">3.1.1.2. </span>TriOS OPUS<a class="headerlink" href="#trios-opus" title="Permalink to this headline">#</a></h4>
 <p>TriOS (Germany) developed an instrument comparable to the Deep SUNA but decided on a couple of design choices differently.
 In principle the OPUS measures the same information based also on a 256 channel spectrometer.
 However, the OPUS’ lamp is a Xenon flash lamp that has a much longer life cycle (typically &gt;10<sup>9</sup> flashes) than Deuterium lamps (900 h).
@@ -537,26 +657,26 @@ For a vertical platform speed of 0.1 m/s this results in a vertical resolution o
 The sampling volume has, however, a shape that allows for a better water exchange.</p>
 <p>The specifications of the TriOS OPUS give a power consumption &lt;= 8 W, presumably again at the fastest sampling rate.</p>
 <p>We are not aware of any application of a TriOS OPUS on gliders, but once mounting solutions and data and power cables have been developed this should be possible.</p>
-</div>
-</div>
-<div class="section" id="lab-on-chip-loc-instruments">
-<h3><span class="section-number">3.1.2. </span>Lab-on-Chip (LoC) Instruments<a class="headerlink" href="#lab-on-chip-loc-instruments" title="Permalink to this headline">¶</a></h3>
+</section>
+</section>
+<section id="lab-on-chip-loc-instruments">
+<h3><span class="section-number">3.1.2. </span>Lab-on-Chip (LoC) Instruments<a class="headerlink" href="#lab-on-chip-loc-instruments" title="Permalink to this headline">#</a></h3>
 <p>Lab-on-Chip nitrate+nitrite analysers developed at the National Oceanography Centre, UK have been recently commercialized by ClearWater sensors, UK (<a class="reference external" href="https://www.clearwatersensors.com/nitrate-sensor/">https://www.clearwatersensors.com/nitrate-sensor/</a>).</p>
 <p>Lab-on-Chip analysers developed at the National Oceanography Centre, and recently commercialized by ClearWater sensors have been successfully deployed on Seagliders to observe key seasonal transitions of biogeochemistry, such as spring bloom dynamics, in the Celtic Sea and North Sea <span id="id4">[<a class="reference internal" href="nitrate_references.html#id18" title="A. G. Vincent, R. W. Pascal, A. D. Beaton, J. Walk, J. E. Hopkins, E. M. S. Woodward, M. Mowlem, and M. C. Lohan. Nitrate drawdown during a shelf sea spring bloom revealed using a novel microfluidic in situ chemical sensor deployed within an autonomous underwater glider. Marine Chemistry, 205():29-36, 2018. URL:, arXiv:, doi:https://doi.org/10.1016/j.marchem.2018.07.005.">Vincent <em>et al.</em>, 2018</a>]</span>, <span id="id5">[<a class="reference internal" href="nitrate_references.html#id9" title="T. Hull, N. Greenwood, A. Birchill, A. Beaton, M. Palmer, and J. Kaiser. Simultaneous assessment of oxygen and nitrate-based net community production in a temperate shelf sea from a single ocean glider. Biogeosciences Discussions, 2021:1-25, 2021. URL: https://bg.copernicus.org/articles/18/6167/2021/, doi:https://doi.org/10.5194/bg-2021-170.">Hull <em>et al.</em>, 2021</a>]</span>.
 A variant of this sensor that measures phosphate has also been developed and deployed on a Seaglider (Birchill et al, in review).</p>
-<div class="section" id="clearwater-national-oceanography-centre-noc-lab-on-chip-analyser">
-<h4><span class="section-number">3.1.2.1. </span>ClearWater (National Oceanography Centre, NOC) Lab-on-Chip analyser<a class="headerlink" href="#clearwater-national-oceanography-centre-noc-lab-on-chip-analyser" title="Permalink to this headline">¶</a></h4>
+<section id="clearwater-national-oceanography-centre-noc-lab-on-chip-analyser">
+<h4><span class="section-number">3.1.2.1. </span>ClearWater (National Oceanography Centre, NOC) Lab-on-Chip analyser<a class="headerlink" href="#clearwater-national-oceanography-centre-noc-lab-on-chip-analyser" title="Permalink to this headline">#</a></h4>
 <p>The LoC analyser contains a three layer poly(methyl methacrylate) (PMMA) optofluidic chip with precision milled microchannels, mixers and optical components consisting of light emitting diodes and photodiodes, electronics, solenoid valves and syringe pumps mounted on the chip.
 The chip forms the end cap of a dark watertight pressure compensated PVC housing, which is rated to 6000 dbar. The chip is fitted with a cadmium column for the reduction of nitrate to nitrite.
 The system is automated using a 32 bit microcontroller-based electronics package with 18-bit analogue to digital inputs and can stream raw data (1 Hz) over USB, as well as store data on a 8 GB flash memory card.
 Provided with the values of the on-board standards, the LoC analyser is capable of outputting processed data (µM NO<sub>2-</sub><sup>-</sup> + NO<sub>3-</sub><sup>-</sup>) over RS232 or RS485 interfaces <span id="id6">[<a class="reference internal" href="nitrate_references.html#id3" title="Beaton, A. D., C. L. Cardwell, R. S. Thomas, V. J. Sieben, F.-E. Legiret, E. M. Waugh, P. J. Statham, M. C. Mowlem, and H. Morgan. Lab-on-chip measurement of nitrate and nitrite for in situ analysis of natural waters. Environmental science &amp; technology, 46(17):9548-9556, 2012. URL:, arXiv:, doi:https://doi.org/10.1021/es300419u.">Beaton <em>et al.</em>, 2012</a>]</span>.
 The analyser is capable of measuring concentrations ranging from 0.025 to 1000 µM NO<sub>2-</sub><sup>-</sup> + NO<sub>3-</sub><sup>-</sup> due to the chip containing 3 measurement cells with differing path lengths.
 Measurement frequency during glider operations is approximately every 7 minutes, this is preceded by a calibration period of approximately 21 minutes during which blank and standard measurements are made at the start of each dive.</p>
-</div>
-</div>
-</div>
-<div class="section" id="general-considerations-of-measurements-quality-control">
-<h2><span class="section-number">3.2. </span>General considerations of measurements quality control<a class="headerlink" href="#general-considerations-of-measurements-quality-control" title="Permalink to this headline">¶</a></h2>
+</section>
+</section>
+</section>
+<section id="general-considerations-of-measurements-quality-control">
+<h2><span class="section-number">3.2. </span>General considerations of measurements quality control<a class="headerlink" href="#general-considerations-of-measurements-quality-control" title="Permalink to this headline">#</a></h2>
 <p>The quality of the nitrate concentrations derived from sensors depends on a number of conditions:</p>
 <ul class="simple">
 <li><p>time since manufacturer maintenance/calibration (lamp aging)</p></li>
@@ -670,17 +790,17 @@ Bio-fouling and other influences are not included.</p>
 </tr>
 </tbody>
 </table>
-</div>
-<div class="section" id="sensor-integration-with-gliders">
-<h2><span class="section-number">3.3. </span>Sensor integration with gliders<a class="headerlink" href="#sensor-integration-with-gliders" title="Permalink to this headline">¶</a></h2>
-<div class="section" id="id10">
-<h3><span class="section-number">3.3.1. </span>UV Spectrometers<a class="headerlink" href="#id10" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="sensor-integration-with-gliders">
+<h2><span class="section-number">3.3. </span>Sensor integration with gliders<a class="headerlink" href="#sensor-integration-with-gliders" title="Permalink to this headline">#</a></h2>
+<section id="id10">
+<h3><span class="section-number">3.3.1. </span>UV Spectrometers<a class="headerlink" href="#id10" title="Permalink to this headline">#</a></h3>
 <p>Deep SUNA instruments have to our knowledge been integrated into Slocum and Seaexplorer gliders. Dedicated mounting brackets are needed to mount the instrument on top of the gliders. This position is not optimal since the sampled water volume is in a slit perpendicular to the glider’s movement direction. Whether this has a large influence on the measured values or whether the water exchange through the slit is sufficient has not been tested.</p>
 <p>TriOS OPUS have so far not been mounted to gliders.</p>
 <p>Regarding the mounting location of UV spectrometers some thought has to be put into the best location of their sampling volume relative to the CTD sensor location. Since the CTD data is used to correct for the influence of salt in the seawater a spatial distance between the sensors might have to be taken into account possibly by time-shifting the CTD data. This is particularly relevant when measuring across strong haloclines and mismatches between the measurements might lead to artifical spikes in the nitrate data. The optimal time shift should be dependent on the vertical and horizontal speed of the glider and the vertical and horizontal separation of the sensors. For Slocum gliders with Deep SUNAs the distance is about 30 cm (15 cm vertical and 20 cm horizontal) which, depending on the glider speed, translates to a 1-2 second long shift. With the typical Slocoum CTD sampling rate of one measurement every 4 seconds and a Deep SUNA sampling rate even slower, this has so far not been compensated for. However for other gliders with a slower speed and a larger separation of the sensors such a correction might be necessary.</p>
-</div>
-<div class="section" id="lab-on-chip-instruments">
-<h3><span class="section-number">3.3.2. </span>Lab-on-Chip Instruments<a class="headerlink" href="#lab-on-chip-instruments" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="lab-on-chip-instruments">
+<h3><span class="section-number">3.3.2. </span>Lab-on-Chip Instruments<a class="headerlink" href="#lab-on-chip-instruments" title="Permalink to this headline">#</a></h3>
 <p>The LoC analyser has been successfully integrated into the Ogive Seaglider faring, which allows a larger payload space to accommodate the analyser and reagent storage backs.
 A custom mounting was used to position the analyser.
 Any air bubbles in reagent bags should be expelled as much as possible and reflect the conditions under which ballast testing occurred as deviations will affect flight performance.
@@ -696,42 +816,48 @@ These commands allow the Seaglider to send and receive data to and from the anal
 Commands include: ‘clock-set’, used only at the start of each dive, but which enables the analyser to store any time offset between glider and analyser, ‘status’, which sends the analyser depth every 5 s and ‘download’, sent at the end of each dive requesting the sensor to send both ascent and descent data files of processed values.
 Whilst integration into the Seaglider should be straightforward and follows established procedures available from the National Oceanography Centre, human error (e.g. ‘typos’) and glider firmware updates have caused issues in the past.
 It is recommended that simulation dives are performed with the sensor and actual deployment glider ahead of the planned deployment.</p>
-</div>
-<div class="section" id="mounting-location">
-<h3><span class="section-number">3.3.3. </span>Mounting location<a class="headerlink" href="#mounting-location" title="Permalink to this headline">¶</a></h3>
-<div class="section" id="spray">
-<h4><span class="section-number">3.3.3.1. </span>Spray<a class="headerlink" href="#spray" title="Permalink to this headline">¶</a></h4>
+</section>
+<section id="mounting-location">
+<h3><span class="section-number">3.3.3. </span>Mounting location<a class="headerlink" href="#mounting-location" title="Permalink to this headline">#</a></h3>
+<section id="spray">
+<h4><span class="section-number">3.3.3.1. </span>Spray<a class="headerlink" href="#spray" title="Permalink to this headline">#</a></h4>
 <ul class="simple">
 <li><p>XXX</p></li>
 </ul>
-</div>
-<div class="section" id="seaglider">
-<h4><span class="section-number">3.3.3.2. </span>Seaglider<a class="headerlink" href="#seaglider" title="Permalink to this headline">¶</a></h4>
+</section>
+<section id="seaglider">
+<h4><span class="section-number">3.3.3.2. </span>Seaglider<a class="headerlink" href="#seaglider" title="Permalink to this headline">#</a></h4>
 <ul class="simple">
 <li><p>XXX</p></li>
 </ul>
-</div>
-<div class="section" id="slocum">
-<h4><span class="section-number">3.3.3.3. </span>Slocum<a class="headerlink" href="#slocum" title="Permalink to this headline">¶</a></h4>
-<div class="figure align-default" id="slocum-suna">
+</section>
+<section id="slocum">
+<h4><span class="section-number">3.3.3.3. </span>Slocum<a class="headerlink" href="#slocum" title="Permalink to this headline">#</a></h4>
+<figure class="align-default" id="slocum-suna">
 <a class="bg-primary mb-1 reference internal image-reference" href="../_images/slocum_g2_with_suna.jpg"><img alt="Slocum G2 with SUNA" class="bg-primary mb-1" src="../_images/slocum_g2_with_suna.jpg" style="width: 600px;" /></a>
-<p class="caption"><span class="caption-number">Fig. 3.1 </span><span class="caption-text">A Teledyne Webb Research Slocum G2 glider with a Deep SUNA attached on top of it.</span><a class="headerlink" href="#slocum-suna" title="Permalink to this image">¶</a></p>
-</div>
-</div>
-<div class="section" id="seaexplorer">
-<h4><span class="section-number">3.3.3.4. </span>SeaExplorer<a class="headerlink" href="#seaexplorer" title="Permalink to this headline">¶</a></h4>
-<div class="figure align-default" id="seaexplorer-suna-mr">
+<figcaption>
+<p><span class="caption-number">Fig. 3.1 </span><span class="caption-text">A Teledyne Webb Research Slocum G2 glider with a Deep SUNA attached on top of it.</span><a class="headerlink" href="#slocum-suna" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+</section>
+<section id="seaexplorer">
+<h4><span class="section-number">3.3.3.4. </span>SeaExplorer<a class="headerlink" href="#seaexplorer" title="Permalink to this headline">#</a></h4>
+<figure class="align-default" id="seaexplorer-suna-mr">
 <a class="bg-primary mb-1 reference internal image-reference" href="../_images/SeaExplorer_with_suna_mr_arrow.jpg"><img alt="SeaExplorer X2 with SUNA" class="bg-primary mb-1" src="../_images/SeaExplorer_with_suna_mr_arrow.jpg" style="width: 600px;" /></a>
-<p class="caption"><span class="caption-number">Fig. 3.2 </span><span class="caption-text">An ALSEAMAR SeaExplorer X2 with a Deep SUNA attached on the side of the sensor payload section. The sensor attached on the glider nose is a turbulence sensor (MicroRider-1000G by Rockland Scientific). This glider is capable observing the vertical turbulent nitrate flux by combination use of the nitrate and the turbulence sensors.</span><a class="headerlink" href="#seaexplorer-suna-mr" title="Permalink to this image">¶</a></p>
-</div>
-<div class="figure align-default" id="seaexplorer-suna">
+<figcaption>
+<p><span class="caption-number">Fig. 3.2 </span><span class="caption-text">An ALSEAMAR SeaExplorer X2 with a Deep SUNA attached on the side of the sensor payload section. The sensor attached on the glider nose is a turbulence sensor (MicroRider-1000G by Rockland Scientific). This glider is capable observing the vertical turbulent nitrate flux by combination use of the nitrate and the turbulence sensors.</span><a class="headerlink" href="#seaexplorer-suna-mr" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<figure class="align-default" id="seaexplorer-suna">
 <a class="bg-primary mb-1 reference internal image-reference" href="../_images/seaexplorer_with_suna_configuration_2a.jpg"><img alt="SeaExplorer X2 with SUNA" class="bg-primary mb-1" src="../_images/seaexplorer_with_suna_configuration_2a.jpg" style="width: 600px;" /></a>
-<p class="caption"><span class="caption-number">Fig. 3.3 </span><span class="caption-text">An ALSEAMAR SeaExplorer X2 with a Deep SUNA in a different configuration with the Deep SUNA attached to the top of the glider.</span><a class="headerlink" href="#seaexplorer-suna" title="Permalink to this image">¶</a></p>
-</div>
-</div>
-</div>
-</div>
-</div>
+<figcaption>
+<p><span class="caption-number">Fig. 3.3 </span><span class="caption-text">An ALSEAMAR SeaExplorer X2 with a Deep SUNA in a different configuration with the Deep SUNA attached to the top of the glider.</span><a class="headerlink" href="#seaexplorer-suna" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+</section>
+</section>
+</section>
+</section>
 
     <script type="text/x-thebe-config">
     {
@@ -755,9 +881,11 @@ It is recommended that simulation dives are performed with the sensor and actual
 
               </div>
               
-            
-                <!-- Previous / next buttons -->
-<div class='prev-next-area'> 
+            </main>
+            <footer class="footer-article noprint">
+                
+    <!-- Previous / next buttons -->
+<div class='prev-next-area'>
     <a class='left-prev' id="prev-link" href="nitrate_introduction.html" title="previous page">
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
@@ -773,29 +901,33 @@ It is recommended that simulation dives are performed with the sensor and actual
     <i class="fas fa-angle-right"></i>
     </a>
 </div>
-            
+            </footer>
         </div>
     </div>
-    <footer class="footer">
-  <p>
-    
-      <div class="extra_footer">
-        <p>  By the OceanGliders community using
+    <div class="footer-content row">
+        <footer class="col footer"><p>
+  
+    <div class="extra_footer">
+      <p>  By the OceanGliders community using
   <a href="https://jupyterbook.org/intro.html"   target="_blank">Jupyter Book</a>. 
   This work is licensed under a 
   <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank"> Creative Commons Attribution 4.0 Generic License.</a> 
 </p>
 
-      </div>
-  </p>
-</footer>
-</main>
+    </div>
+</p>
+        </footer>
+    </div>
+    
+</div>
 
 
       </div>
     </div>
   
-  <script src="../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
+
 
   </body>
 </html>

@@ -4,11 +4,13 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
     <title>7. Post-recovery operations and calibrations &#8212; Nitrate SOP</title>
     
-  <link href="../_static/css/theme.css" rel="stylesheet">
-  <link href="../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
 
     
   <link rel="stylesheet"
@@ -18,20 +20,16 @@
   <link rel="preload" as="font" type="font/woff2" crossorigin
     href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
 
-    
-      
-
-    
     <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
+    <link rel="stylesheet" href="../_static/styles/sphinx-book-theme.css?digest=62ba249389abaaa9ffc34bf36a076bdc1d65ee18" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/design-style.b7bb847fb20b106c3d81b95245e65545.min.css" />
     
-  <link rel="preload" as="script" href="../_static/js/index.be7d3bbb2ef33a8344ce.js">
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
 
     <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
     <script src="../_static/jquery.js"></script>
@@ -39,6 +37,7 @@
     <script src="../_static/doctools.js"></script>
     <script src="../_static/clipboard.min.js"></script>
     <script src="../_static/copybutton.js"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?digest=f31d14ad54b65d19161ba51d4ffff3a77ae00456"></script>
     <script>let toggleHintShow = 'Click to show';</script>
     <script>let toggleHintHide = 'Click to hide';</script>
     <script>let toggleOpenOnPrint = 'true';</script>
@@ -78,7 +77,7 @@ var addUtterances = () => {
 commentsRunWhenDOMLoaded(addUtterances);
 </script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
-    <script src="../_static/sphinx-book-theme.d59cb220de22ca1c485ebbdc042f0030.js"></script>
+    <script src="../_static/design-tabs.js"></script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
 const thebe_selector = ".thebe,.cell"
 const thebe_selector_input = "pre"
@@ -96,7 +95,21 @@ const thebe_selector_output = ".output, .cell_output"
     <!-- Google Analytics -->
     
   </head>
-  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
+<!-- Checkboxes to toggle the left sidebar -->
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
+<label class="overlay overlay-navbar" for="__navigation">
+    <div class="visually-hidden">Toggle navigation sidebar</div>
+</label>
+<!-- Checkboxes to toggle the in-page toc -->
+<input type="checkbox" class="sidebar-toggle" name="__page-toc" id="__page-toc" aria-label="Toggle in-page Table of Contents">
+<label class="overlay overlay-pagetoc" for="__page-toc">
+    <div class="visually-hidden">Toggle in-page Table of Contents</div>
+</label>
+<!-- Headers at the top -->
+<div class="announcement header-item noprint"></div>
+<div class="header header-item noprint"></div>
+
     
     <div class="container-fluid" id="banner"></div>
 
@@ -105,9 +118,10 @@ const thebe_selector_output = ".output, .cell_output"
     <div class="container-xl">
       <div class="row">
           
-<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
-    
-        <div class="navbar-brand-box">
+<!-- Sidebar -->
+<div class="bd-sidebar noprint" id="site-navigation">
+    <div class="bd-sidebar__content">
+        <div class="bd-sidebar__top"><div class="navbar-brand-box">
     <a class="navbar-brand text-wrap" href="../index.html">
       
         <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
@@ -125,14 +139,15 @@ const thebe_selector_output = ".output, .cell_output"
   <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
 </form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item active">
-        <ul class="nav bd-sidenav">
- <li class="toctree-l1">
-  <a class="reference internal" href="../README.html">
-   OceanGliders Nitrate SOP
-  </a>
- </li>
-</ul>
-<ul class="current nav bd-sidenav">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../README.html">
+                    OceanGliders Nitrate SOP
+                </a>
+            </li>
+        </ul>
+        <ul class="current nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="authors_SOP_development_process.html">
    1. Authors, development process and contributions
@@ -191,92 +206,197 @@ const thebe_selector_output = ".output, .cell_output"
 </ul>
 
     </div>
-</nav> <!-- To handle the deprecated key -->
-
-<div class="navbar_extra_footer">
-  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
-</div>
-
-</div>
-
-
-          
-
-
-          
-<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
-    
-    <div class="topbar container-xl fixed-top">
-    <div class="topbar-contents row">
-        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
-        <div class="col pl-md-4 topbar-main">
+</nav></div>
+        <div class="bd-sidebar__bottom">
+             <!-- To handle the deprecated key -->
             
-            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
-                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
-                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
-                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
-                <i class="fas fa-bars"></i>
-                <i class="fas fa-arrow-left"></i>
-                <i class="fas fa-arrow-up"></i>
-            </button>
-            
-            
-<div class="dropdown-buttons-trigger">
-    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
-            class="fas fa-download"></i></button>
-
-    <div class="dropdown-buttons">
-        <!-- ipynb file if we had a myst markdown file -->
-        
-        <!-- Download raw file -->
-        <a class="dropdown-buttons" href="../_sources/sections/nitrate_post_recovery.md"><button type="button"
-                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
-                data-placement="left">.md</button></a>
-        <!-- Download PDF via print -->
-        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
-                onclick="printPdf(this)" data-toggle="tooltip" data-placement="left">.pdf</button>
-    </div>
-</div>
-
-            <!-- Source interaction buttons -->
-
-<div class="dropdown-buttons-trigger">
-    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
-        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
-    <div class="dropdown-buttons sourcebuttons">
-        <a class="repository-button"
-            href="https://github.com/OceanGlidersCommunity/Nitrate_SOP"><button type="button" class="btn btn-secondary topbarbtn"
-                data-toggle="tooltip" data-placement="left" title="Source repository"><i
-                    class="fab fa-github"></i>repository</button></a>
-        <a class="issues-button"
-            href="https://github.com/OceanGlidersCommunity/Nitrate_SOP/issues/new?title=Issue%20on%20page%20%2Fsections/nitrate_post_recovery.html&body=Your%20issue%20content%20here."><button
-                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
-                title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
-        <a class="edit-button" href="https://github.com/OceanGlidersCommunity/Nitrate_SOP/edit/main/sections/nitrate_post_recovery.md"><button
-                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
-                title="Edit this page"><i class="fas fa-pencil-alt"></i>suggest edit</button></a>
-    </div>
-</div>
-
-            <!-- Full screen (wrap in <a> to have style consistency -->
-
-<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
-        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
-        title="Fullscreen mode"><i
-            class="fas fa-expand"></i></button></a>
-
-            <!-- Launch buttons -->
-
-        </div>
-
-        <!-- Table of contents -->
-        <div class="d-none d-md-block col-md-2 bd-toc show noprint">
-            
-            <div class="tocsection onthispage pt-5 pb-3">
-                <i class="fas fa-list"></i> Contents
+            <div class="navbar_extra_footer">
+            Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
             </div>
-            <nav id="bd-toc-nav" aria-label="Page">
-                <ul class="visible nav section-nav flex-column">
+            
+        </div>
+    </div>
+    <div id="rtd-footer-container"></div>
+</div>
+
+
+          
+
+
+          
+<!-- A tiny helper pixel to detect if we've scrolled -->
+<div class="sbt-scroll-pixel-helper"></div>
+<!-- Main content -->
+<div class="col py-0 content-container">
+    
+    <div class="header-article row sticky-top noprint">
+        
+
+
+
+<div class="col py-1 d-flex header-article-main">
+    <div class="header-article__left">
+        
+        <label for="__navigation"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="right"
+title="Toggle navigation"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-bars"></i>
+  </span>
+
+</label>
+
+        
+    </div>
+    <div class="header-article__right">
+<button onclick="toggleFullScreen()"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="bottom"
+title="Fullscreen mode"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+<div class="menu-dropdown menu-dropdown-repository-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Source repositories">
+      <i class="fab fa-github"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="https://github.com/OceanGlidersCommunity/Nitrate_SOP"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Source repository"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="headerbtn__text-container">repository</span>
+</a>
+
+      </li>
+      
+      <li>
+        <a href="https://github.com/OceanGlidersCommunity/Nitrate_SOP/issues/new?title=Issue%20on%20page%20%2Fsections/nitrate_post_recovery.html&body=Your%20issue%20content%20here."
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Open an issue"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="headerbtn__text-container">open issue</span>
+</a>
+
+      </li>
+      
+      <li>
+        <a href="https://github.com/OceanGlidersCommunity/Nitrate_SOP/edit/main/sections/nitrate_post_recovery.md"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Edit this page"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-pencil-alt"></i>
+  </span>
+<span class="headerbtn__text-container">suggest edit</span>
+</a>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+
+<div class="menu-dropdown menu-dropdown-download-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Download this page">
+      <i class="fas fa-download"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="../_sources/sections/nitrate_post_recovery.md"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Download source file"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="headerbtn__text-container">.md</span>
+</a>
+
+      </li>
+      
+      <li>
+        
+<button onclick="printPdf(this)"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="left"
+title="Print to PDF"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="headerbtn__text-container">.pdf</span>
+</button>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+<label for="__page-toc"
+  class="headerbtn headerbtn-page-toc"
+  
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-list"></i>
+  </span>
+
+</label>
+
+    </div>
+</div>
+
+<!-- Table of contents -->
+<div class="col-md-3 bd-toc show noprint">
+    <div class="tocsection onthispage pt-5 pb-3">
+        <i class="fas fa-list"></i> Contents
+    </div>
+    <nav id="bd-toc-nav" aria-label="Page">
+        <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#general-considerations">
    7.1. General considerations
@@ -330,12 +450,11 @@ const thebe_selector_output = ".output, .cell_output"
  </li>
 </ul>
 
-            </nav>
-        </div>
-    </div>
+    </nav>
 </div>
-    <div id="main-content" class="row">
-        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+    </div>
+    <div class="article row">
+        <div class="col pl-md-3 pl-lg-5 content-container">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
                 <h1>Post-recovery operations and calibrations</h1>
@@ -405,28 +524,29 @@ const thebe_selector_output = ".output, .cell_output"
                     </div>
                 </div>
             </div>
-            
+            <main id="main-content" role="main">
+                
               <div>
                 
-  <div class="tex2jax_ignore mathjax_ignore section" id="post-recovery-operations-and-calibrations">
-<h1><span class="section-number">7. </span>Post-recovery operations and calibrations<a class="headerlink" href="#post-recovery-operations-and-calibrations" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="general-considerations">
-<h2><span class="section-number">7.1. </span>General considerations<a class="headerlink" href="#general-considerations" title="Permalink to this headline">¶</a></h2>
+  <section class="tex2jax_ignore mathjax_ignore" id="post-recovery-operations-and-calibrations">
+<h1><span class="section-number">7. </span>Post-recovery operations and calibrations<a class="headerlink" href="#post-recovery-operations-and-calibrations" title="Permalink to this headline">#</a></h1>
+<section id="general-considerations">
+<h2><span class="section-number">7.1. </span>General considerations<a class="headerlink" href="#general-considerations" title="Permalink to this headline">#</a></h2>
 <p>The most essential action after a recovery is to safely archive the collected data following the Standard Operating Procedures for glider mission control and data handling.</p>
 <p>The internal clock of the nitrate measuring instrument should be checked and any difference against GPS or a time server should be noted.</p>
 <p>To be able to evaluate the performance of biogeochemical (and other) sensors pictures should be taken for a biofuiling assessment.</p>
-</div>
-<div class="section" id="post-deployment-field-calibration">
-<h2><span class="section-number">7.2. </span>Post-deployment field calibration<a class="headerlink" href="#post-deployment-field-calibration" title="Permalink to this headline">¶</a></h2>
-<div class="section" id="uv-spectrometers">
-<h3><span class="section-number">7.2.1. </span>UV Spectrometers<a class="headerlink" href="#uv-spectrometers" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="post-deployment-field-calibration">
+<h2><span class="section-number">7.2. </span>Post-deployment field calibration<a class="headerlink" href="#post-deployment-field-calibration" title="Permalink to this headline">#</a></h2>
+<section id="uv-spectrometers">
+<h3><span class="section-number">7.2.1. </span>UV Spectrometers<a class="headerlink" href="#uv-spectrometers" title="Permalink to this headline">#</a></h3>
 <p>After recovery of the instrument similar field calibration procedures can be used as before the deployment. The best option is a Spectrometer-on-CTD cast before the instrument gets cleaned so as to have the effects of bio-fouling still present. During that cast discrete water samples have to be taken and analyzed for reference nitrate values. The second best option is to take discrete water samples when and where the last nitrate measurements were performed during the glider deployment.</p>
-</div>
-</div>
-<div class="section" id="post-deployment-lab-operations">
-<h2><span class="section-number">7.3. </span>Post-deployment lab operations<a class="headerlink" href="#post-deployment-lab-operations" title="Permalink to this headline">¶</a></h2>
-<div class="section" id="id1">
-<h3><span class="section-number">7.3.1. </span>UV Spectrometers<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h3>
+</section>
+</section>
+<section id="post-deployment-lab-operations">
+<h2><span class="section-number">7.3. </span>Post-deployment lab operations<a class="headerlink" href="#post-deployment-lab-operations" title="Permalink to this headline">#</a></h2>
+<section id="id1">
+<h3><span class="section-number">7.3.1. </span>UV Spectrometers<a class="headerlink" href="#id1" title="Permalink to this headline">#</a></h3>
 <p>After recovery, two lamp reference calibrations are strongly recommended.</p>
 <p>Immediately after recovery, while the instrument is still wet, a clean water lamp reference calibration should be performed. This must be done before any cleaning of the instrument.</p>
 <p>The purpose of this calibration measurement is to record the lamp strength when any possible bio-fouling is still present.
@@ -435,34 +555,34 @@ After that the instrument should be cleaned according to the manufacturer’s in
 <p>It remains to be determined which of the two lamp references should be used for the post-processing. It should theoretically be the first (bio-fouled) one as this is the end point of the effective lamp changes (aging plus bio-fouling) during the deployment.</p>
 <p>After the post-deployment lab calibration all data from the UV spectrometers should be downloaded and backed up. This also includes the reference spectra and lamp usage files which are accessible differently than data (see Deep SUNA user manual).</p>
 <p>For Deep SUNAs the lamp life time should be noted and, if necessary, a lamp replacement be organized (only possible at Sea-Bird).</p>
-</div>
-<div class="section" id="lab-on-chip-instruments">
-<h3><span class="section-number">7.3.2. </span>Lab-on-Chip Instruments<a class="headerlink" href="#lab-on-chip-instruments" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="lab-on-chip-instruments">
+<h3><span class="section-number">7.3.2. </span>Lab-on-Chip Instruments<a class="headerlink" href="#lab-on-chip-instruments" title="Permalink to this headline">#</a></h3>
 <p>It is required to check the state of reagent bags and their connecting tubes, to look for leaks, blockages or damage. Reagent and standard bags must be measured to check whether the expected volume has been correctly dispensed in relation to the deployment duration. Check the presence of any precipitation of reagents in the bags and on tubing walls.</p>
 <p>For the lab-on-chip analysers, sub samples of blank and standard solutions should ideally be analysed post deployment, this requires clean handling (i.e. follow GO-SHIP recommendations; <span id="id2">[<a class="reference internal" href="nitrate_references.html#id4" title="Susan Becker, Michio Aoyama, E. Malcolm S. Woodward, Karel Bakker, Stephen Coverly, Claire Mahaffey, and Toste Tanhua. Go-ship repeat hydrography nutrient manual: the precise and accurate determination of dissolved inorganic nutrients in seawater, using continuous flow analysis methods. Frontiers in Marine Science, 7:908, 2020. URL: https://www.frontiersin.org/article/10.3389/fmars.2020.581790, doi:https://doi.org/10.3389/fmars.2020.581790.">Becker <em>et al.</em>, 2020</a>]</span>). In cases where the blank and standard solutions cannot be sub sampled (e.g. recovered by partners without such capability), it should be noted that blank and standard solutions have been shown to be stable for 12 months (they are preserved with chloroform).</p>
 <p>It is recommended that the sensors are serviced periodically by ClearWater (with the frequency depending on use) and that fluidic channels should be cleaned after use, for example with weak (2%) decon 90 solution.</p>
 <p>The raw data is stored on a flashcard on the LoC analyser and can be retrieved via USB. Visibly inspect the filter integrity, there has not been any reports of filter biofouling issues to date.</p>
 <p>After recovery of the instrument similar field calibration procedures could be used as before the deployment.
 To get a meaningful calibration that could possibly be applied to deployment data any Spectrometer-on-CTD casts would have to be done before the instrument gets cleaned so as to have the effects of bio-fouling still present.</p>
-</div>
-</div>
-<div class="section" id="cleaning-and-storage">
-<h2><span class="section-number">7.4. </span>Cleaning and storage<a class="headerlink" href="#cleaning-and-storage" title="Permalink to this headline">¶</a></h2>
-<div class="section" id="id3">
-<h3><span class="section-number">7.4.1. </span>UV Spectrometers<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h3>
+</section>
+</section>
+<section id="cleaning-and-storage">
+<h2><span class="section-number">7.4. </span>Cleaning and storage<a class="headerlink" href="#cleaning-and-storage" title="Permalink to this headline">#</a></h2>
+<section id="id3">
+<h3><span class="section-number">7.4.1. </span>UV Spectrometers<a class="headerlink" href="#id3" title="Permalink to this headline">#</a></h3>
 <p>After the post-deployment lab calibrations the instrument should be cleaned and stored according to the manufacturers’ recommendations.</p>
 <p>Regular monitoring of the UV lamp usage is important for Deep SUNA instruments. The advertised lifetime of 900 h translates to more than 5 weeks of continuous operation at the fastest sampling rate of 1 Hz or nearly 30 weeks of operation at a reduced sampling rate of 5.5 seconds. At GEOMAR one Deep SUNA was in use for 7 two to three week long deployments before a lamp replacement and servicing was initiated.</p>
-</div>
-<div class="section" id="id4">
-<h3><span class="section-number">7.4.2. </span>Lab-on-Chip Instruments<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="id4">
+<h3><span class="section-number">7.4.2. </span>Lab-on-Chip Instruments<a class="headerlink" href="#id4" title="Permalink to this headline">#</a></h3>
 <p>For the LoC devices, dispose of waste reagents in accordance with local regulations.
 If the analyser is not intended to be used for several weeks, the cadmium tube should be removed and stored as per manufacturer instructions.
 If this is not done, there is a risk of the tube drying out and becoming blocked.</p>
 <p>Similarly, the LoC analysers have limited storage requirements (room temperature, clean and dry is sufficient).  However, the chemical part must be subject to special controls. Reagents have also been shown to be remarkably stable, year long deployments have been conducted in the marine environment and replacement reagents can be purchased. For long term storage (several weeks and more), it is recommended to remove the cadmium reduction tube (accessible outside the housing) and store as per manufacturer instructions (so that it cannot dry out and risk becoming blocked).
 Al the components of the hydraulic circuit must be inspected (lamp, tubing, reagent and standards bags, cadmium reduction column, syringe filter) and changed if necessary (keep ready supply of spare parts).</p>
-</div>
-</div>
-</div>
+</section>
+</section>
+</section>
 
     <script type="text/x-thebe-config">
     {
@@ -486,9 +606,11 @@ Al the components of the hydraulic circuit must be inspected (lamp, tubing, reag
 
               </div>
               
-            
-                <!-- Previous / next buttons -->
-<div class='prev-next-area'> 
+            </main>
+            <footer class="footer-article noprint">
+                
+    <!-- Previous / next buttons -->
+<div class='prev-next-area'>
     <a class='left-prev' id="prev-link" href="nitrate_rtqc.html" title="previous page">
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
@@ -504,29 +626,33 @@ Al the components of the hydraulic circuit must be inspected (lamp, tubing, reag
     <i class="fas fa-angle-right"></i>
     </a>
 </div>
-            
+            </footer>
         </div>
     </div>
-    <footer class="footer">
-  <p>
-    
-      <div class="extra_footer">
-        <p>  By the OceanGliders community using
+    <div class="footer-content row">
+        <footer class="col footer"><p>
+  
+    <div class="extra_footer">
+      <p>  By the OceanGliders community using
   <a href="https://jupyterbook.org/intro.html"   target="_blank">Jupyter Book</a>. 
   This work is licensed under a 
   <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank"> Creative Commons Attribution 4.0 Generic License.</a> 
 </p>
 
-      </div>
-  </p>
-</footer>
-</main>
+    </div>
+</p>
+        </footer>
+    </div>
+    
+</div>
 
 
       </div>
     </div>
   
-  <script src="../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
+
 
   </body>
 </html>
