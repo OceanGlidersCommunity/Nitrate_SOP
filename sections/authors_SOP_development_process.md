@@ -17,8 +17,8 @@
 
 1) Initial SOP was drafted by [Gerd Krahmann](https://github.com/gkrahmann), Christian Begler and [Soeren Thomsen](https://github.com/soerenthomsen) in April 2021. 
 
-2) During OceanGliders Best Practice Workshop, May 11 - 25 2021 one expert session was held and
-additional authors joined: Antony Birchill, Alexander Beaton, [Matthew Patey](https://github.com/mpatey)
+2) During OceanGliders Best Practice Workshop, May 11 - 25 2021 one expert session was held. [Meeting Notes](https://github.com/OceanGlidersCommunity/Nitrate_SOP/blob/main/meeting_notes/2021_05_21_OG_BP_workshop_NO3_session.md)
+Additional authors joined: Antony Birchill, Alexander Beaton, [Matthew Patey](https://github.com/mpatey)
 
 3) First community and user feedback was provided during the OceanGliders Best Practice Workshop, May 11 - 25 2021 by attendees. 
 
